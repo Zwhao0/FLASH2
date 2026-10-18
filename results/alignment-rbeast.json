@@ -1,0 +1,252 @@
+{
+  "Rbeast": "0.1.19",
+  "cases": [
+    {
+      "kind": "normal",
+      "detections": []
+    },
+    {
+      "kind": "transient",
+      "detections": []
+    },
+    {
+      "kind": "weak",
+      "detections": []
+    },
+    {
+      "kind": "persistent",
+      "detections": [
+        {
+          "observed_iteration": 48,
+          "position": 26,
+          "probability": 1.0,
+          "baseline_ms": 100.17930856890197,
+          "degraded_ms": 150.06625120028332,
+          "degradation": 0.4979765117571138,
+          "recovery_ratio": 0.0004803543601550312,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 49,
+          "position": 25,
+          "probability": 1.0,
+          "baseline_ms": 100.19174854086602,
+          "degraded_ms": 150.0464403954772,
+          "degradation": 0.49759279162870923,
+          "recovery_ratio": 0.0004598415546167944,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 50,
+          "position": 24,
+          "probability": 1.0,
+          "baseline_ms": 100.16400969186562,
+          "degraded_ms": 149.98042252168747,
+          "degradation": 0.4973484286728537,
+          "recovery_ratio": 0.0006332005893640806,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 51,
+          "position": 23,
+          "probability": 1.0,
+          "baseline_ms": 100.18958108483059,
+          "degraded_ms": 149.9084973978758,
+          "degradation": 0.4962483700869871,
+          "recovery_ratio": 0.000769807719946582,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 52,
+          "position": 22,
+          "probability": 1.0,
+          "baseline_ms": 100.21301784998833,
+          "degraded_ms": 150.06372533586864,
+          "degradation": 0.49744742305339235,
+          "recovery_ratio": 0.00021325416110544557,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 53,
+          "position": 21,
+          "probability": 1.0,
+          "baseline_ms": 100.17805030919256,
+          "degraded_ms": 150.0910429509491,
+          "degradation": 0.49824280356528766,
+          "recovery_ratio": 0.00011795145428239096,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 54,
+          "position": 20,
+          "probability": 1.0,
+          "baseline_ms": 100.20689554168551,
+          "degraded_ms": 150.069549024145,
+          "degradation": 0.49759702875653805,
+          "recovery_ratio": 0.00015284743316779827,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 55,
+          "position": 19,
+          "probability": 1.0,
+          "baseline_ms": 100.21342255669056,
+          "degraded_ms": 149.97046460505973,
+          "degradation": 0.496510754537115,
+          "recovery_ratio": 0.00033699114646636836,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 56,
+          "position": 18,
+          "probability": 1.0,
+          "baseline_ms": 100.20013817623413,
+          "degraded_ms": 149.94113030841996,
+          "degradation": 0.4964164025871931,
+          "recovery_ratio": 0.0003600672469735128,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 57,
+          "position": 17,
+          "probability": 1.0,
+          "baseline_ms": 100.19450647979082,
+          "degraded_ms": 149.9582144419493,
+          "degradation": 0.4966710222999682,
+          "recovery_ratio": 0.00030130222225051626,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 58,
+          "position": 16,
+          "probability": 1.0,
+          "baseline_ms": 100.23095306183677,
+          "degraded_ms": 149.96804242228745,
+          "degradation": 0.4962248471264734,
+          "recovery_ratio": 0.0002630740829219072,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 59,
+          "position": 15,
+          "probability": 1.0,
+          "baseline_ms": 100.25387044639025,
+          "degraded_ms": 149.98517192457444,
+          "degradation": 0.4960536810873302,
+          "recovery_ratio": 0.00021970857442943912,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 60,
+          "position": 14,
+          "probability": 1.0,
+          "baseline_ms": 100.24338094385637,
+          "degraded_ms": 149.95844104272786,
+          "degradation": 0.4959435688498532,
+          "recovery_ratio": 0.0002409737792688604,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 61,
+          "position": 13,
+          "probability": 1.0,
+          "baseline_ms": 100.17597610898608,
+          "degraded_ms": 149.91285925650018,
+          "degradation": 0.4964951186839752,
+          "recovery_ratio": 0.00028309244662872546,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 62,
+          "position": 12,
+          "probability": 1.0,
+          "baseline_ms": 100.10079201094801,
+          "degraded_ms": 149.9192069203733,
+          "degradation": 0.49768252486930037,
+          "recovery_ratio": 0.000258508840121372,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 63,
+          "position": 11,
+          "probability": 1.0,
+          "baseline_ms": 100.06549463152697,
+          "degraded_ms": 149.92932456132698,
+          "degradation": 0.49831193173445565,
+          "recovery_ratio": 0.00023265235038229481,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 64,
+          "position": 10,
+          "probability": 1.0,
+          "baseline_ms": 100.14571356905385,
+          "degraded_ms": 149.92357247459458,
+          "degradation": 0.49705431347510654,
+          "recovery_ratio": 0.0002268700029226108,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 65,
+          "position": 9,
+          "probability": 1.0,
+          "baseline_ms": 100.10733136846235,
+          "degraded_ms": 149.93769482720955,
+          "degradation": 0.4977693719088158,
+          "recovery_ratio": 0.00020112898079026553,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 66,
+          "position": 8,
+          "probability": 1.0,
+          "baseline_ms": 100.05849052271513,
+          "degraded_ms": 149.94305296396763,
+          "degradation": 0.49855401756163586,
+          "recovery_ratio": 0.0001862284957722385,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 67,
+          "position": 7,
+          "probability": 1.0,
+          "baseline_ms": 100.00726751560869,
+          "degraded_ms": 149.96074369573105,
+          "degradation": 0.4994984606726291,
+          "recovery_ratio": 0.00016142086719413788,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 68,
+          "position": 6,
+          "probability": 1.0,
+          "baseline_ms": 100.00193029300436,
+          "degraded_ms": 149.95074527763902,
+          "degradation": 0.49947850844763964,
+          "recovery_ratio": 0.00016312016343811636,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 69,
+          "position": 5,
+          "probability": 1.0,
+          "baseline_ms": 100.10905287582212,
+          "degraded_ms": 149.9345099344168,
+          "degradation": 0.4977118015530473,
+          "recovery_ratio": 0.0001702873633875466,
+          "iteration": 45
+        },
+        {
+          "observed_iteration": 70,
+          "position": 4,
+          "probability": 1.0,
+          "baseline_ms": 100.22669768509644,
+          "degraded_ms": 149.91926973878532,
+          "degradation": 0.49580174944822203,
+          "recovery_ratio": 0.00017618061104642804,
+          "iteration": 45
+        }
+      ]
+    }
+  ]
+}

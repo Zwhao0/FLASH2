@@ -1,0 +1,1 @@
+{"event": "controller_started", "time": 1792318819.1102464, "parameters": {"window": 30, "probability": 0.8, "degradation": 0.2, "cv": 0.1, "percent": 0.2, "profile_min_seconds": 20}}

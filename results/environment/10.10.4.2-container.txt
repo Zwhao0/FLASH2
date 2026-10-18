@@ -1,0 +1,6 @@
+{"python": "3.10.12", "torch": "2.1.0a0+32f93b1", "cuda": "12.2", "nccl": [2, 19, 3], "packages": {"numpy": "1.26.4", "redis": "5.0.5", "Rbeast": "0.1.19"}}
+g++ (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+Build cuda_12.2.r12.2/compiler.33191640_0
+ad6625012c4db0ba2af519c852b52b513b442d4e784e194c711b196c23164254  probe/libflash_nccl_probe.so
+661a5edfc26b62701918f18e3e04fa75989d6b179f5aad8fb68d5d688272b18a  probe/libflash_stream_delay.so
+Redis server v=6.0.16 sha=00000000:0 malloc=jemalloc-5.2.1 bits=64 build=a3fdef44459b3ad6

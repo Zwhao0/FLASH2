@@ -1,0 +1,37 @@
+[
+  {
+    "time": 1792321854.829925,
+    "command": "nvidia-smi -i 0 --query-gpu=clocks.applications.memory,clocks.applications.graphics,clocks.current.sm --format=csv,noheader,nounits",
+    "returncode": 0,
+    "stdout": "2619, 1980, 1980\n",
+    "stderr": ""
+  },
+  {
+    "time": 1792321855.0434759,
+    "command": "sudo -n nvidia-smi -i 0 -ac 2619,1605",
+    "returncode": 0,
+    "stdout": "Applications clocks set to \"(MEM 2619, SM 1605)\" for GPU 00000000:10:00.0\n\nWarning: persistence mode is disabled on device 00000000:10:00.0. See the Known Issues section of the nvidia-smi(1) man page for more information. Run with [--help | -h] switch to get more information on how to enable persistence mode.\nAll done.\n",
+    "stderr": ""
+  },
+  {
+    "time": 1792321856.1817842,
+    "command": "nvidia-smi -i 0 --query-gpu=clocks.applications.graphics,clocks.current.sm --format=csv,noheader,nounits",
+    "returncode": 0,
+    "stdout": "1605, 1605\n",
+    "stderr": ""
+  },
+  {
+    "time": 1792321856.3983538,
+    "command": "sudo -n nvidia-smi -i 0 -ac 2619,1980",
+    "returncode": 0,
+    "stdout": "Applications clocks set to \"(MEM 2619, SM 1980)\" for GPU 00000000:10:00.0\n\nWarning: persistence mode is disabled on device 00000000:10:00.0. See the Known Issues section of the nvidia-smi(1) man page for more information. Run with [--help | -h] switch to get more information on how to enable persistence mode.\nAll done.\n",
+    "stderr": ""
+  },
+  {
+    "time": 1792321857.0388439,
+    "command": "nvidia-smi -i 0 --query-gpu=clocks.applications.memory,clocks.applications.graphics,clocks.current.sm --format=csv,noheader,nounits",
+    "returncode": 0,
+    "stdout": "2619, 1980, 1980\n",
+    "stderr": ""
+  }
+]

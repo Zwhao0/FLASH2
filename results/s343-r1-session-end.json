@@ -1,0 +1,31 @@
+{
+  "state": "ended_by_user",
+  "date_local": "2026-10-18",
+  "timezone": "Asia/Shanghai",
+  "completed": [
+    "s343-r1-smoke",
+    "s343-r1-monitor-0-base",
+    "s343-r1-monitor-1-flash",
+    "s343-r1-monitor-2-flash",
+    "s343-r1-monitor-3-base",
+    "s343-r1-healthy",
+    "s343-r1-collective-calibration",
+    "s343-r1-profile-0-base",
+    "s343-r2-profile-0-base"
+  ],
+  "contaminated_profile": "s343-r1-profile-1-flash",
+  "user_cancelled": "s343-r2-profile-1-flash",
+  "not_started": [
+    "s343-r2-profile-2-flash",
+    "s343-r2-profile-3-base",
+    "s343-r1-collective-0-base",
+    "s343-r1-collective-1-flash"
+  ],
+  "automatic_false_profile_triggers_observed": 1,
+  "final_state_file": "results/final-state.json",
+  "container_states": [
+    "exited",
+    "exited"
+  ],
+  "resume_requires_user_request": true
+}

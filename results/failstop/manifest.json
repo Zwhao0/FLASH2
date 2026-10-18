@@ -1,0 +1,57 @@
+{
+  "name": "failstop",
+  "seconds": 65.08381009101868,
+  "exit_codes": [
+    1,
+    1
+  ],
+  "arguments": {
+    "name": "failstop",
+    "probe": true,
+    "stream_delay": false,
+    "controller": true,
+    "force_profile_at": 0,
+    "gpus": 8,
+    "port": 29731,
+    "timeout": 100,
+    "program": "workload/train.py",
+    "args": "--ep 8 --steps 125 --min-step-ms 250 --fault-rank 0 --fault-start 45 --fault-kind stop --fault-ms 8000"
+  },
+  "source_sha256": {
+    "flash/detection.py": "40f726dae044ffcc8171eca632df6f9e2956f0ebfee15d339aa9689c0e923e6a",
+    "flash/local_controller.py": "b03fe3ea77f5f407094167b19c21a36fe2b466e08d7e2804d2ebd21546745d45",
+    "flash/analysis.py": "d769cfcd3289eeed5b3373db8e98387900e895a7b6cc7a6f9681d953a6fe73e5",
+    "flash/global_controller.py": "b60e0a87cd797f78cdaacbf34e0cd73cb504afc1e78a99cf240a212ee7456438",
+    "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+    "probe/stream_delay.cpp": "d803580b1bef35e109b755f76724718c0ecb2b1ece282d45b39017147d98df15",
+    "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+    "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+    "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+    "workload/collective_bench.py": "728a018da68b1b00df18274e18d9a55171939e876107c9c2beab0b361893754a",
+    "workload/train.py": "53fd3a19021478a1ad1ef6c5f98453bd27b3ade754dd51d0fb7a2d8c480f3ff5"
+  },
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NCCL_SOCKET_IFNAME": "bond0",
+    "GLOO_SOCKET_IFNAME": "bond0",
+    "NCCL_IB_DISABLE": "1",
+    "NCCL_NET": "Socket",
+    "NCCL_DEBUG": "WARN",
+    "NCCL_BUFFSIZE": "1048576",
+    "NCCL_MAX_NCHANNELS": "2",
+    "NCCL_NVLS_ENABLE": "0",
+    "NCCL_COLLNET_ENABLE": "0",
+    "NCCL_P2P_NET_CHUNKSIZE": "131072",
+    "NCCL_ALLOC_P2P_NET_LL_BUFFERS": "0",
+    "NCCL_NCHANNELS_PER_NET_PEER": "1",
+    "CUDA_MODULE_LOADING": "LAZY",
+    "CUBLAS_WORKSPACE_CONFIG": ":16:8",
+    "CUDA_DEVICE_MAX_CONNECTIONS": "1",
+    "FLASH_RUN_ID": "failstop",
+    "PYTHONPATH": "/workspace/flash2",
+    "PYTORCH_CUDA_ALLOC_CONF": "max_split_size_mb:64",
+    "LD_PRELOAD": "/workspace/flash2/probe/libflash_nccl_probe.so"
+  },
+  "network": "NCCL Socket/bond0; IB disabled for reproducibility; shared vLLM GPUs"
+}

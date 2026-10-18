@@ -1,0 +1,459 @@
+{
+  "generated_at": "2026-10-18T11:03:02.274156+00:00",
+  "steady_prior_abba": {
+    "per_run": [
+      {
+        "run_id": "perf-0-base",
+        "status": "completed",
+        "variant": "base",
+        "steps_after_warmup": 176,
+        "median_time_ms": 19.64879035949707,
+        "compute_slice_median_ms": 18.729015020653605,
+        "measurement_source": "rank0",
+        "measurement_field": "step_start_time_delta",
+        "implementation_variant": "initial_full_ring_decode",
+        "median_padding_ms": 0.0,
+        "configured_min_step_ms": 0.0,
+        "zero_padding": true,
+        "probe": false,
+        "controller": false,
+        "redis_disabled": true,
+        "valid_compare_configuration": true,
+        "included_in_primary_comparison": false
+      },
+      {
+        "run_id": "perf-1-monitor",
+        "status": "completed",
+        "variant": "monitor",
+        "steps_after_warmup": 176,
+        "median_time_ms": 52.50906944274902,
+        "compute_slice_median_ms": 42.79375553596765,
+        "measurement_source": "rank0",
+        "measurement_field": "step_start_time_delta",
+        "implementation_variant": "initial_full_ring_decode",
+        "median_padding_ms": 0.0,
+        "configured_min_step_ms": 0.0,
+        "zero_padding": true,
+        "probe": true,
+        "controller": true,
+        "redis_disabled": false,
+        "valid_compare_configuration": true,
+        "included_in_primary_comparison": false
+      },
+      {
+        "run_id": "perf-2-monitor",
+        "status": "completed",
+        "variant": "monitor",
+        "steps_after_warmup": 176,
+        "median_time_ms": 20.158052444458008,
+        "compute_slice_median_ms": 18.978404987137765,
+        "measurement_source": "rank0",
+        "measurement_field": "step_start_time_delta",
+        "implementation_variant": "initial_full_ring_decode",
+        "median_padding_ms": 0.0,
+        "configured_min_step_ms": 0.0,
+        "zero_padding": true,
+        "probe": true,
+        "controller": true,
+        "redis_disabled": false,
+        "valid_compare_configuration": true,
+        "included_in_primary_comparison": false
+      },
+      {
+        "run_id": "perf-3-base",
+        "status": "completed",
+        "variant": "base",
+        "steps_after_warmup": 176,
+        "median_time_ms": 20.659923553466797,
+        "compute_slice_median_ms": 19.781905924901366,
+        "measurement_source": "rank0",
+        "measurement_field": "step_start_time_delta",
+        "implementation_variant": "initial_full_ring_decode",
+        "median_padding_ms": 0.0,
+        "configured_min_step_ms": 0.0,
+        "zero_padding": true,
+        "probe": false,
+        "controller": false,
+        "redis_disabled": true,
+        "valid_compare_configuration": true,
+        "included_in_primary_comparison": false
+      },
+      {
+        "run_id": "perf-opt-perf-0-base",
+        "status": "completed",
+        "variant": "base",
+        "steps_after_warmup": 176,
+        "median_time_ms": 19.723892211914062,
+        "compute_slice_median_ms": 18.858787545468658,
+        "measurement_source": "rank0",
+        "measurement_field": "step_start_time_delta",
+        "implementation_variant": "header_only_monitor",
+        "median_padding_ms": 0.0,
+        "configured_min_step_ms": 0.0,
+        "zero_padding": true,
+        "probe": false,
+        "controller": false,
+        "redis_disabled": true,
+        "valid_compare_configuration": true,
+        "included_in_primary_comparison": true
+      },
+      {
+        "run_id": "perf-opt-perf-1-monitor",
+        "status": "completed",
+        "variant": "monitor",
+        "steps_after_warmup": 176,
+        "median_time_ms": 19.631624221801758,
+        "compute_slice_median_ms": 18.662802001927048,
+        "measurement_source": "rank0",
+        "measurement_field": "step_start_time_delta",
+        "implementation_variant": "header_only_monitor",
+        "median_padding_ms": 0.0,
+        "configured_min_step_ms": 0.0,
+        "zero_padding": true,
+        "probe": true,
+        "controller": true,
+        "redis_disabled": false,
+        "valid_compare_configuration": true,
+        "included_in_primary_comparison": true
+      },
+      {
+        "run_id": "perf-opt-perf-2-monitor",
+        "status": "completed",
+        "variant": "monitor",
+        "steps_after_warmup": 176,
+        "median_time_ms": 21.161794662475586,
+        "compute_slice_median_ms": 19.933496951125562,
+        "measurement_source": "rank0",
+        "measurement_field": "step_start_time_delta",
+        "implementation_variant": "header_only_monitor",
+        "median_padding_ms": 0.0,
+        "configured_min_step_ms": 0.0,
+        "zero_padding": true,
+        "probe": true,
+        "controller": true,
+        "redis_disabled": false,
+        "valid_compare_configuration": true,
+        "included_in_primary_comparison": true
+      },
+      {
+        "run_id": "perf-opt-perf-3-base",
+        "status": "completed",
+        "variant": "base",
+        "steps_after_warmup": 176,
+        "median_time_ms": 19.783973693847656,
+        "compute_slice_median_ms": 18.886425998061895,
+        "measurement_source": "rank0",
+        "measurement_field": "step_start_time_delta",
+        "implementation_variant": "header_only_monitor",
+        "median_padding_ms": 0.0,
+        "configured_min_step_ms": 0.0,
+        "zero_padding": true,
+        "probe": false,
+        "controller": false,
+        "redis_disabled": true,
+        "valid_compare_configuration": true,
+        "included_in_primary_comparison": true
+      }
+    ],
+    "baseline_median_ms": 19.75393295288086,
+    "monitor_median_ms": 20.396709442138672,
+    "monitoring_overhead_percent": 3.2539165278683058,
+    "eligible_base_runs": 2,
+    "eligible_monitor_runs": 2,
+    "base_run_median_range_ms": [
+      19.723892211914062,
+      19.783973693847656
+    ],
+    "monitor_run_median_range_ms": [
+      19.631624221801758,
+      21.161794662475586
+    ],
+    "interpretation": "min-step-ms=0 rank0 start-to-start cycle after step 3; includes preparation, synchronization, logging and callback. When available, header_only_monitor ABBA is the primary comparison; initial full-ring decoding runs remain listed."
+  },
+  "profile_runs": [
+    {
+      "run": "profile-cost-1-profile",
+      "profile_start": 1792321099.6219206,
+      "profile_end": 1792321129.26541,
+      "duration_s": 29.643489360809326,
+      "profile_steps": [
+        292,
+        1446
+      ],
+      "n_profile": 1155,
+      "n_normal": 246,
+      "profile_cycle_ms": 21.979808807373047,
+      "normal_cycle_ms": 20.77937126159668,
+      "normal_matched_no_flash_cycle_ms": 20.392894744873047,
+      "normal_overhead_percent": 1.895152804732625,
+      "matched_no_flash_cycle_ms": 19.481420516967773,
+      "matched_base_run_cycle_ms": [
+        19.248008728027344,
+        19.714832305908203
+      ],
+      "incremental_over_normal_percent": 5.777063851758357,
+      "total_over_no_flash_percent": 12.82446671806734,
+      "complete_phase_mean_cycle_ms": 22.09072056143787,
+      "complete_phase_matched_base_mean_ms": 20.007184332293598,
+      "complete_phase_mean_overhead_percent": 10.413940285346591,
+      "complete_phase_excess_seconds": 2.7940220832824694,
+      "diagnosis": [],
+      "candidates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "run": "profile-cost-2-profile",
+      "profile_start": 1792321198.9623244,
+      "profile_end": 1792321226.3454397,
+      "duration_s": 27.38311529159546,
+      "profile_steps": [
+        296,
+        1326
+      ],
+      "n_profile": 1031,
+      "n_normal": 379,
+      "profile_cycle_ms": 22.527456283569336,
+      "normal_cycle_ms": 20.66946029663086,
+      "normal_matched_no_flash_cycle_ms": 20.23792266845703,
+      "normal_overhead_percent": 2.1323217567503994,
+      "matched_no_flash_cycle_ms": 19.504785537719727,
+      "matched_base_run_cycle_ms": [
+        19.234180450439453,
+        19.775390625
+      ],
+      "incremental_over_normal_percent": 8.98908805684362,
+      "total_over_no_flash_percent": 15.497072449241521,
+      "complete_phase_mean_cycle_ms": 22.57305914812749,
+      "complete_phase_matched_base_mean_ms": 20.000317014089905,
+      "complete_phase_mean_overhead_percent": 12.863506774543264,
+      "complete_phase_excess_seconds": 3.1181634664535527,
+      "diagnosis": [],
+      "candidates": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "profile_cycle_ms": 22.25363254547119,
+  "matched_no_flash_cycle_ms": 19.49310302734375,
+  "normal_same_runs_cycle_ms": 20.72441577911377,
+  "fault_groups": {
+    "compute": {
+      "n": 10,
+      "unique_correct": 9,
+      "over_threshold_n": 9,
+      "over_threshold_unique_correct": 9,
+      "runs": [
+        {
+          "run": "compute-delay126",
+          "correct": true,
+          "latency_increase_percent": 45.483517167832545,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "compute-delay14",
+          "correct": false,
+          "latency_increase_percent": 4.976025693161712,
+          "predicted": []
+        },
+        {
+          "run": "compute-delay182",
+          "correct": true,
+          "latency_increase_percent": 67.00366186139732,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "compute-delay238",
+          "correct": true,
+          "latency_increase_percent": 89.90332192302282,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "compute-delay70",
+          "correct": true,
+          "latency_increase_percent": 23.037280662677627,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "compute-othernode",
+          "correct": true,
+          "latency_increase_percent": 72.40951704944013,
+          "predicted": [
+            9
+          ]
+        },
+        {
+          "run": "hybrid-ep4-tp1-pp2",
+          "correct": true,
+          "latency_increase_percent": 72.80137855392059,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "hybrid-ep4-tp2-pp1",
+          "correct": true,
+          "latency_increase_percent": 70.19071917068011,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "hybrid-ep4-tp2-pp2",
+          "correct": true,
+          "latency_increase_percent": 70.88339719829658,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "hybrid-ep8-tp1-pp1",
+          "correct": true,
+          "latency_increase_percent": 71.5642502450373,
+          "predicted": [
+            0
+          ]
+        }
+      ]
+    },
+    "communication_arrival": {
+      "n": 5,
+      "unique_correct": 4,
+      "over_threshold_n": 4,
+      "over_threshold_unique_correct": 4,
+      "runs": [
+        {
+          "run": "comm-delay126",
+          "correct": true,
+          "latency_increase_percent": 46.61752875304048,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "comm-delay14",
+          "correct": false,
+          "latency_increase_percent": 4.694869146148006,
+          "predicted": []
+        },
+        {
+          "run": "comm-delay182",
+          "correct": true,
+          "latency_increase_percent": 66.15107497746813,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "comm-delay238",
+          "correct": true,
+          "latency_increase_percent": 82.51087069697509,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "comm-delay70",
+          "correct": true,
+          "latency_increase_percent": 23.442484598578094,
+          "predicted": [
+            0
+          ]
+        }
+      ]
+    },
+    "communication_execution": {
+      "n": 1,
+      "unique_correct": 0,
+      "over_threshold_n": 1,
+      "over_threshold_unique_correct": 0,
+      "runs": [
+        {
+          "run": "comm-stream-audit-r2",
+          "correct": false,
+          "latency_increase_percent": 39.166529724327795,
+          "predicted": []
+        }
+      ]
+    },
+    "communication_all": {
+      "n": 6,
+      "unique_correct": 4,
+      "over_threshold_n": 5,
+      "over_threshold_unique_correct": 4,
+      "runs": [
+        {
+          "run": "comm-delay126",
+          "correct": true,
+          "latency_increase_percent": 46.61752875304048,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "comm-delay14",
+          "correct": false,
+          "latency_increase_percent": 4.694869146148006,
+          "predicted": []
+        },
+        {
+          "run": "comm-delay182",
+          "correct": true,
+          "latency_increase_percent": 66.15107497746813,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "comm-delay238",
+          "correct": true,
+          "latency_increase_percent": 82.51087069697509,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "comm-delay70",
+          "correct": true,
+          "latency_increase_percent": 23.442484598578094,
+          "predicted": [
+            0
+          ]
+        },
+        {
+          "run": "comm-stream-audit-r2",
+          "correct": false,
+          "latency_increase_percent": 39.166529724327795,
+          "predicted": []
+        }
+      ]
+    }
+  },
+  "excluded": "Fail-stop excluded per user; no change to its runtime method. All faults are process-scoped proxies.",
+  "profile_total_over_no_flash_percent": 14.161570450097848,
+  "profile_incremental_over_normal_percent": 7.378817249452108,
+  "normal_matched_no_flash_cycle_ms": 20.31540870666504,
+  "normal_new_abba_overhead_percent": 2.013284981633401
+}

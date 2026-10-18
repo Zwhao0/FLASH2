@@ -1,0 +1,1154 @@
+{
+  "schema_version": 2,
+  "run_id": "s343-r1-collective-calibration",
+  "created_unix_time": 1792324859.5319257,
+  "backend": "nccl",
+  "world_size": 16,
+  "dtype": "float32",
+  "in_place": true,
+  "initial_profile": false,
+  "sizes_mb": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "warmup": 8,
+  "iters": 100,
+  "batch_size": 100,
+  "timed_batches_per_size": 1,
+  "sample_semantics": "CUDA Event batch duration / batch_size, ms per AllReduce; wall batch means also saved",
+  "size_unit": "MiB (2**20 bytes); paper labels MB without defining bytes",
+  "measurements": [
+    {
+      "size_mb": 4,
+      "tensor_bytes": 4194304,
+      "per_rank": [
+        {
+          "rank": 0,
+          "latencies_ms": [
+            3.023873596191406
+          ],
+          "mean_ms": 3.023873596191406,
+          "median_ms": 3.023873596191406,
+          "wall_batch_mean_ms": [
+            3.024987899698317
+          ]
+        },
+        {
+          "rank": 1,
+          "latencies_ms": [
+            3.0215081787109375
+          ],
+          "mean_ms": 3.0215081787109375,
+          "median_ms": 3.0215081787109375,
+          "wall_batch_mean_ms": [
+            3.026586229680106
+          ]
+        },
+        {
+          "rank": 2,
+          "latencies_ms": [
+            3.021603698730469
+          ],
+          "mean_ms": 3.021603698730469,
+          "median_ms": 3.021603698730469,
+          "wall_batch_mean_ms": [
+            3.0264337197877467
+          ]
+        },
+        {
+          "rank": 3,
+          "latencies_ms": [
+            3.024583740234375
+          ],
+          "mean_ms": 3.024583740234375,
+          "median_ms": 3.024583740234375,
+          "wall_batch_mean_ms": [
+            3.0266754294279963
+          ]
+        },
+        {
+          "rank": 4,
+          "latencies_ms": [
+            3.019624938964844
+          ],
+          "mean_ms": 3.019624938964844,
+          "median_ms": 3.019624938964844,
+          "wall_batch_mean_ms": [
+            3.025143559789285
+          ]
+        },
+        {
+          "rank": 5,
+          "latencies_ms": [
+            3.0254647827148435
+          ],
+          "mean_ms": 3.0254647827148435,
+          "median_ms": 3.0254647827148435,
+          "wall_batch_mean_ms": [
+            3.026577018899843
+          ]
+        },
+        {
+          "rank": 6,
+          "latencies_ms": [
+            3.022848815917969
+          ],
+          "mean_ms": 3.022848815917969,
+          "median_ms": 3.022848815917969,
+          "wall_batch_mean_ms": [
+            3.0247968807816505
+          ]
+        },
+        {
+          "rank": 7,
+          "latencies_ms": [
+            3.0225839233398437
+          ],
+          "mean_ms": 3.0225839233398437,
+          "median_ms": 3.0225839233398437,
+          "wall_batch_mean_ms": [
+            3.0249612010084093
+          ]
+        },
+        {
+          "rank": 8,
+          "latencies_ms": [
+            3.016232604980469
+          ],
+          "mean_ms": 3.016232604980469,
+          "median_ms": 3.016232604980469,
+          "wall_batch_mean_ms": [
+            3.0207887198776007
+          ]
+        },
+        {
+          "rank": 9,
+          "latencies_ms": [
+            3.018790283203125
+          ],
+          "mean_ms": 3.018790283203125,
+          "median_ms": 3.018790283203125,
+          "wall_batch_mean_ms": [
+            3.0213778000324965
+          ]
+        },
+        {
+          "rank": 10,
+          "latencies_ms": [
+            3.0199359130859373
+          ],
+          "mean_ms": 3.0199359130859373,
+          "median_ms": 3.0199359130859373,
+          "wall_batch_mean_ms": [
+            3.021873841062188
+          ]
+        },
+        {
+          "rank": 11,
+          "latencies_ms": [
+            3.0149154663085938
+          ],
+          "mean_ms": 3.0149154663085938,
+          "median_ms": 3.0149154663085938,
+          "wall_batch_mean_ms": [
+            3.0198234994895756
+          ]
+        },
+        {
+          "rank": 12,
+          "latencies_ms": [
+            3.0163818359375
+          ],
+          "mean_ms": 3.0163818359375,
+          "median_ms": 3.0163818359375,
+          "wall_batch_mean_ms": [
+            3.020327847916633
+          ]
+        },
+        {
+          "rank": 13,
+          "latencies_ms": [
+            3.0157431030273436
+          ],
+          "mean_ms": 3.0157431030273436,
+          "median_ms": 3.0157431030273436,
+          "wall_batch_mean_ms": [
+            3.020783041138202
+          ]
+        },
+        {
+          "rank": 14,
+          "latencies_ms": [
+            3.0196038818359376
+          ],
+          "mean_ms": 3.0196038818359376,
+          "median_ms": 3.0196038818359376,
+          "wall_batch_mean_ms": [
+            3.0217138794250786
+          ]
+        },
+        {
+          "rank": 15,
+          "latencies_ms": [
+            3.01650634765625
+          ],
+          "mean_ms": 3.01650634765625,
+          "median_ms": 3.01650634765625,
+          "wall_batch_mean_ms": [
+            3.0211211694404483
+          ]
+        }
+      ],
+      "mean_of_rank_means_ms": 3.0200125694274904,
+      "median_of_rank_means_ms": 3.019780426025391,
+      "mean_of_rank_medians_ms": 3.0200125694274904,
+      "median_of_rank_medians_ms": 3.019780426025391,
+      "mean_all_samples_ms": 3.0200125694274904,
+      "median_all_samples_ms": 3.019780426025391
+    },
+    {
+      "size_mb": 8,
+      "tensor_bytes": 8388608,
+      "per_rank": [
+        {
+          "rank": 0,
+          "latencies_ms": [
+            5.839856567382813
+          ],
+          "mean_ms": 5.839856567382813,
+          "median_ms": 5.839856567382813,
+          "wall_batch_mean_ms": [
+            5.840263749705628
+          ]
+        },
+        {
+          "rank": 1,
+          "latencies_ms": [
+            5.839913330078125
+          ],
+          "mean_ms": 5.839913330078125,
+          "median_ms": 5.839913330078125,
+          "wall_batch_mean_ms": [
+            5.840294830268249
+          ]
+        },
+        {
+          "rank": 2,
+          "latencies_ms": [
+            5.8398675537109375
+          ],
+          "mean_ms": 5.8398675537109375,
+          "median_ms": 5.8398675537109375,
+          "wall_batch_mean_ms": [
+            5.841329399263486
+          ]
+        },
+        {
+          "rank": 3,
+          "latencies_ms": [
+            5.839932250976562
+          ],
+          "mean_ms": 5.839932250976562,
+          "median_ms": 5.839932250976562,
+          "wall_batch_mean_ms": [
+            5.841073230840266
+          ]
+        },
+        {
+          "rank": 4,
+          "latencies_ms": [
+            5.8398895263671875
+          ],
+          "mean_ms": 5.8398895263671875,
+          "median_ms": 5.8398895263671875,
+          "wall_batch_mean_ms": [
+            5.84025872987695
+          ]
+        },
+        {
+          "rank": 5,
+          "latencies_ms": [
+            5.83984130859375
+          ],
+          "mean_ms": 5.83984130859375,
+          "median_ms": 5.83984130859375,
+          "wall_batch_mean_ms": [
+            5.84031758015044
+          ]
+        },
+        {
+          "rank": 6,
+          "latencies_ms": [
+            5.839853515625
+          ],
+          "mean_ms": 5.839853515625,
+          "median_ms": 5.839853515625,
+          "wall_batch_mean_ms": [
+            5.8410940610338
+          ]
+        },
+        {
+          "rank": 7,
+          "latencies_ms": [
+            5.839901123046875
+          ],
+          "mean_ms": 5.839901123046875,
+          "median_ms": 5.839901123046875,
+          "wall_batch_mean_ms": [
+            5.840310220373794
+          ]
+        },
+        {
+          "rank": 8,
+          "latencies_ms": [
+            5.835880126953125
+          ],
+          "mean_ms": 5.835880126953125,
+          "median_ms": 5.835880126953125,
+          "wall_batch_mean_ms": [
+            5.836253040470183
+          ]
+        },
+        {
+          "rank": 9,
+          "latencies_ms": [
+            5.835797119140625
+          ],
+          "mean_ms": 5.835797119140625,
+          "median_ms": 5.835797119140625,
+          "wall_batch_mean_ms": [
+            5.836237489711493
+          ]
+        },
+        {
+          "rank": 10,
+          "latencies_ms": [
+            5.835828247070313
+          ],
+          "mean_ms": 5.835828247070313,
+          "median_ms": 5.835828247070313,
+          "wall_batch_mean_ms": [
+            5.836261319927871
+          ]
+        },
+        {
+          "rank": 11,
+          "latencies_ms": [
+            5.835892333984375
+          ],
+          "mean_ms": 5.835892333984375,
+          "median_ms": 5.835892333984375,
+          "wall_batch_mean_ms": [
+            5.836251250002533
+          ]
+        },
+        {
+          "rank": 12,
+          "latencies_ms": [
+            5.8356884765625
+          ],
+          "mean_ms": 5.8356884765625,
+          "median_ms": 5.8356884765625,
+          "wall_batch_mean_ms": [
+            5.836214500013739
+          ]
+        },
+        {
+          "rank": 13,
+          "latencies_ms": [
+            5.83587890625
+          ],
+          "mean_ms": 5.83587890625,
+          "median_ms": 5.83587890625,
+          "wall_batch_mean_ms": [
+            5.8363279001787305
+          ]
+        },
+        {
+          "rank": 14,
+          "latencies_ms": [
+            5.835866088867188
+          ],
+          "mean_ms": 5.835866088867188,
+          "median_ms": 5.835866088867188,
+          "wall_batch_mean_ms": [
+            5.83708198973909
+          ]
+        },
+        {
+          "rank": 15,
+          "latencies_ms": [
+            5.835872192382812
+          ],
+          "mean_ms": 5.835872192382812,
+          "median_ms": 5.835872192382812,
+          "wall_batch_mean_ms": [
+            5.836241410579532
+          ]
+        }
+      ],
+      "mean_of_rank_means_ms": 5.8378599166870115,
+      "median_of_rank_means_ms": 5.8378668212890625,
+      "mean_of_rank_medians_ms": 5.8378599166870115,
+      "median_of_rank_medians_ms": 5.8378668212890625,
+      "mean_all_samples_ms": 5.8378599166870115,
+      "median_all_samples_ms": 5.8378668212890625
+    },
+    {
+      "size_mb": 16,
+      "tensor_bytes": 16777216,
+      "per_rank": [
+        {
+          "rank": 0,
+          "latencies_ms": [
+            10.63818359375
+          ],
+          "mean_ms": 10.63818359375,
+          "median_ms": 10.63818359375,
+          "wall_batch_mean_ms": [
+            10.642832349985838
+          ]
+        },
+        {
+          "rank": 1,
+          "latencies_ms": [
+            10.638272705078125
+          ],
+          "mean_ms": 10.638272705078125,
+          "median_ms": 10.638272705078125,
+          "wall_batch_mean_ms": [
+            10.639548760373145
+          ]
+        },
+        {
+          "rank": 2,
+          "latencies_ms": [
+            10.6374365234375
+          ],
+          "mean_ms": 10.6374365234375,
+          "median_ms": 10.6374365234375,
+          "wall_batch_mean_ms": [
+            10.638424379285425
+          ]
+        },
+        {
+          "rank": 3,
+          "latencies_ms": [
+            10.637791748046874
+          ],
+          "mean_ms": 10.637791748046874,
+          "median_ms": 10.637791748046874,
+          "wall_batch_mean_ms": [
+            10.638468980323523
+          ]
+        },
+        {
+          "rank": 4,
+          "latencies_ms": [
+            10.638193359375
+          ],
+          "mean_ms": 10.638193359375,
+          "median_ms": 10.638193359375,
+          "wall_batch_mean_ms": [
+            10.639291009865701
+          ]
+        },
+        {
+          "rank": 5,
+          "latencies_ms": [
+            10.637994384765625
+          ],
+          "mean_ms": 10.637994384765625,
+          "median_ms": 10.637994384765625,
+          "wall_batch_mean_ms": [
+            10.639849450672045
+          ]
+        },
+        {
+          "rank": 6,
+          "latencies_ms": [
+            10.637794189453125
+          ],
+          "mean_ms": 10.637794189453125,
+          "median_ms": 10.637794189453125,
+          "wall_batch_mean_ms": [
+            10.63849022029899
+          ]
+        },
+        {
+          "rank": 7,
+          "latencies_ms": [
+            10.63815673828125
+          ],
+          "mean_ms": 10.63815673828125,
+          "median_ms": 10.63815673828125,
+          "wall_batch_mean_ms": [
+            10.63941481988877
+          ]
+        },
+        {
+          "rank": 8,
+          "latencies_ms": [
+            10.635399169921875
+          ],
+          "mean_ms": 10.635399169921875,
+          "median_ms": 10.635399169921875,
+          "wall_batch_mean_ms": [
+            10.636612931266427
+          ]
+        },
+        {
+          "rank": 9,
+          "latencies_ms": [
+            10.635299072265624
+          ],
+          "mean_ms": 10.635299072265624,
+          "median_ms": 10.635299072265624,
+          "wall_batch_mean_ms": [
+            10.635685280431062
+          ]
+        },
+        {
+          "rank": 10,
+          "latencies_ms": [
+            10.635330810546876
+          ],
+          "mean_ms": 10.635330810546876,
+          "median_ms": 10.635330810546876,
+          "wall_batch_mean_ms": [
+            10.636657120194286
+          ]
+        },
+        {
+          "rank": 11,
+          "latencies_ms": [
+            10.635458984375
+          ],
+          "mean_ms": 10.635458984375,
+          "median_ms": 10.635458984375,
+          "wall_batch_mean_ms": [
+            10.63655598089099
+          ]
+        },
+        {
+          "rank": 12,
+          "latencies_ms": [
+            10.63525146484375
+          ],
+          "mean_ms": 10.63525146484375,
+          "median_ms": 10.63525146484375,
+          "wall_batch_mean_ms": [
+            10.635686691384763
+          ]
+        },
+        {
+          "rank": 13,
+          "latencies_ms": [
+            10.635286865234375
+          ],
+          "mean_ms": 10.635286865234375,
+          "median_ms": 10.635286865234375,
+          "wall_batch_mean_ms": [
+            10.635705718304962
+          ]
+        },
+        {
+          "rank": 14,
+          "latencies_ms": [
+            10.6346728515625
+          ],
+          "mean_ms": 10.6346728515625,
+          "median_ms": 10.6346728515625,
+          "wall_batch_mean_ms": [
+            10.635624281130731
+          ]
+        },
+        {
+          "rank": 15,
+          "latencies_ms": [
+            10.628404541015625
+          ],
+          "mean_ms": 10.628404541015625,
+          "median_ms": 10.628404541015625,
+          "wall_batch_mean_ms": [
+            10.62964215874672
+          ]
+        }
+      ],
+      "mean_of_rank_means_ms": 10.63618293762207,
+      "median_of_rank_means_ms": 10.63644775390625,
+      "mean_of_rank_medians_ms": 10.63618293762207,
+      "median_of_rank_medians_ms": 10.63644775390625,
+      "mean_all_samples_ms": 10.63618293762207,
+      "median_all_samples_ms": 10.63644775390625
+    },
+    {
+      "size_mb": 32,
+      "tensor_bytes": 33554432,
+      "per_rank": [
+        {
+          "rank": 0,
+          "latencies_ms": [
+            21.06718017578125
+          ],
+          "mean_ms": 21.06718017578125,
+          "median_ms": 21.06718017578125,
+          "wall_batch_mean_ms": [
+            21.070667180465534
+          ]
+        },
+        {
+          "rank": 1,
+          "latencies_ms": [
+            21.08170654296875
+          ],
+          "mean_ms": 21.08170654296875,
+          "median_ms": 21.08170654296875,
+          "wall_batch_mean_ms": [
+            21.082784560276195
+          ]
+        },
+        {
+          "rank": 2,
+          "latencies_ms": [
+            21.0823583984375
+          ],
+          "mean_ms": 21.0823583984375,
+          "median_ms": 21.0823583984375,
+          "wall_batch_mean_ms": [
+            21.08335409895517
+          ]
+        },
+        {
+          "rank": 3,
+          "latencies_ms": [
+            21.08240234375
+          ],
+          "mean_ms": 21.08240234375,
+          "median_ms": 21.08240234375,
+          "wall_batch_mean_ms": [
+            21.08337452984415
+          ]
+        },
+        {
+          "rank": 4,
+          "latencies_ms": [
+            21.0817822265625
+          ],
+          "mean_ms": 21.0817822265625,
+          "median_ms": 21.0817822265625,
+          "wall_batch_mean_ms": [
+            21.08283587032929
+          ]
+        },
+        {
+          "rank": 5,
+          "latencies_ms": [
+            21.077802734375
+          ],
+          "mean_ms": 21.077802734375,
+          "median_ms": 21.077802734375,
+          "wall_batch_mean_ms": [
+            21.08144822064787
+          ]
+        },
+        {
+          "rank": 6,
+          "latencies_ms": [
+            21.08238037109375
+          ],
+          "mean_ms": 21.08238037109375,
+          "median_ms": 21.08238037109375,
+          "wall_batch_mean_ms": [
+            21.083391749998555
+          ]
+        },
+        {
+          "rank": 7,
+          "latencies_ms": [
+            21.08180908203125
+          ],
+          "mean_ms": 21.08180908203125,
+          "median_ms": 21.08180908203125,
+          "wall_batch_mean_ms": [
+            21.082864770432934
+          ]
+        },
+        {
+          "rank": 8,
+          "latencies_ms": [
+            21.07583251953125
+          ],
+          "mean_ms": 21.07583251953125,
+          "median_ms": 21.07583251953125,
+          "wall_batch_mean_ms": [
+            21.076862490735948
+          ]
+        },
+        {
+          "rank": 9,
+          "latencies_ms": [
+            21.07650390625
+          ],
+          "mean_ms": 21.07650390625,
+          "median_ms": 21.07650390625,
+          "wall_batch_mean_ms": [
+            21.077941418625414
+          ]
+        },
+        {
+          "rank": 10,
+          "latencies_ms": [
+            21.07569580078125
+          ],
+          "mean_ms": 21.07569580078125,
+          "median_ms": 21.07569580078125,
+          "wall_batch_mean_ms": [
+            21.07702957931906
+          ]
+        },
+        {
+          "rank": 11,
+          "latencies_ms": [
+            21.0759033203125
+          ],
+          "mean_ms": 21.0759033203125,
+          "median_ms": 21.0759033203125,
+          "wall_batch_mean_ms": [
+            21.07906518969685
+          ]
+        },
+        {
+          "rank": 12,
+          "latencies_ms": [
+            21.07419677734375
+          ],
+          "mean_ms": 21.07419677734375,
+          "median_ms": 21.07419677734375,
+          "wall_batch_mean_ms": [
+            21.07548773055896
+          ]
+        },
+        {
+          "rank": 13,
+          "latencies_ms": [
+            21.0735791015625
+          ],
+          "mean_ms": 21.0735791015625,
+          "median_ms": 21.0735791015625,
+          "wall_batch_mean_ms": [
+            21.074850361328572
+          ]
+        },
+        {
+          "rank": 14,
+          "latencies_ms": [
+            21.07650634765625
+          ],
+          "mean_ms": 21.07650634765625,
+          "median_ms": 21.07650634765625,
+          "wall_batch_mean_ms": [
+            21.07748206006363
+          ]
+        },
+        {
+          "rank": 15,
+          "latencies_ms": [
+            21.07658935546875
+          ],
+          "mean_ms": 21.07658935546875,
+          "median_ms": 21.07658935546875,
+          "wall_batch_mean_ms": [
+            21.07739996165037
+          ]
+        }
+      ],
+      "mean_of_rank_means_ms": 21.07763931274414,
+      "median_of_rank_means_ms": 21.076547851562502,
+      "mean_of_rank_medians_ms": 21.07763931274414,
+      "median_of_rank_medians_ms": 21.076547851562502,
+      "mean_all_samples_ms": 21.07763931274414,
+      "median_all_samples_ms": 21.076547851562502
+    },
+    {
+      "size_mb": 64,
+      "tensor_bytes": 67108864,
+      "per_rank": [
+        {
+          "rank": 0,
+          "latencies_ms": [
+            41.1479833984375
+          ],
+          "mean_ms": 41.1479833984375,
+          "median_ms": 41.1479833984375,
+          "wall_batch_mean_ms": [
+            41.15266891079955
+          ]
+        },
+        {
+          "rank": 1,
+          "latencies_ms": [
+            41.1491845703125
+          ],
+          "mean_ms": 41.1491845703125,
+          "median_ms": 41.1491845703125,
+          "wall_batch_mean_ms": [
+            41.15087682032026
+          ]
+        },
+        {
+          "rank": 2,
+          "latencies_ms": [
+            41.151630859375
+          ],
+          "mean_ms": 41.151630859375,
+          "median_ms": 41.151630859375,
+          "wall_batch_mean_ms": [
+            41.152877600397915
+          ]
+        },
+        {
+          "rank": 3,
+          "latencies_ms": [
+            41.151630859375
+          ],
+          "mean_ms": 41.151630859375,
+          "median_ms": 41.151630859375,
+          "wall_batch_mean_ms": [
+            41.152835430111736
+          ]
+        },
+        {
+          "rank": 4,
+          "latencies_ms": [
+            41.15185546875
+          ],
+          "mean_ms": 41.15185546875,
+          "median_ms": 41.15185546875,
+          "wall_batch_mean_ms": [
+            41.15275960997678
+          ]
+        },
+        {
+          "rank": 5,
+          "latencies_ms": [
+            41.1511474609375
+          ],
+          "mean_ms": 41.1511474609375,
+          "median_ms": 41.1511474609375,
+          "wall_batch_mean_ms": [
+            41.153499360661954
+          ]
+        },
+        {
+          "rank": 6,
+          "latencies_ms": [
+            41.151552734375
+          ],
+          "mean_ms": 41.151552734375,
+          "median_ms": 41.151552734375,
+          "wall_batch_mean_ms": [
+            41.15282966988161
+          ]
+        },
+        {
+          "rank": 7,
+          "latencies_ms": [
+            41.1517431640625
+          ],
+          "mean_ms": 41.1517431640625,
+          "median_ms": 41.1517431640625,
+          "wall_batch_mean_ms": [
+            41.153213650686666
+          ]
+        },
+        {
+          "rank": 8,
+          "latencies_ms": [
+            41.15033203125
+          ],
+          "mean_ms": 41.15033203125,
+          "median_ms": 41.15033203125,
+          "wall_batch_mean_ms": [
+            41.151677321176976
+          ]
+        },
+        {
+          "rank": 9,
+          "latencies_ms": [
+            41.149375
+          ],
+          "mean_ms": 41.149375,
+          "median_ms": 41.149375,
+          "wall_batch_mean_ms": [
+            41.15116239991039
+          ]
+        },
+        {
+          "rank": 10,
+          "latencies_ms": [
+            41.1499267578125
+          ],
+          "mean_ms": 41.1499267578125,
+          "median_ms": 41.1499267578125,
+          "wall_batch_mean_ms": [
+            41.151706208474934
+          ]
+        },
+        {
+          "rank": 11,
+          "latencies_ms": [
+            41.1496484375
+          ],
+          "mean_ms": 41.1496484375,
+          "median_ms": 41.1496484375,
+          "wall_batch_mean_ms": [
+            41.15119297988713
+          ]
+        },
+        {
+          "rank": 12,
+          "latencies_ms": [
+            41.1494921875
+          ],
+          "mean_ms": 41.1494921875,
+          "median_ms": 41.1494921875,
+          "wall_batch_mean_ms": [
+            41.151452970225364
+          ]
+        },
+        {
+          "rank": 13,
+          "latencies_ms": [
+            41.149482421875
+          ],
+          "mean_ms": 41.149482421875,
+          "median_ms": 41.149482421875,
+          "wall_batch_mean_ms": [
+            41.151278810575604
+          ]
+        },
+        {
+          "rank": 14,
+          "latencies_ms": [
+            41.1500634765625
+          ],
+          "mean_ms": 41.1500634765625,
+          "median_ms": 41.1500634765625,
+          "wall_batch_mean_ms": [
+            41.15125761833042
+          ]
+        },
+        {
+          "rank": 15,
+          "latencies_ms": [
+            41.1501953125
+          ],
+          "mean_ms": 41.1501953125,
+          "median_ms": 41.1501953125,
+          "wall_batch_mean_ms": [
+            41.151860661339015
+          ]
+        }
+      ],
+      "mean_of_rank_means_ms": 41.15032775878906,
+      "median_of_rank_means_ms": 41.15012939453125,
+      "mean_of_rank_medians_ms": 41.15032775878906,
+      "median_of_rank_medians_ms": 41.15012939453125,
+      "mean_all_samples_ms": 41.15032775878906,
+      "median_all_samples_ms": 41.15012939453125
+    },
+    {
+      "size_mb": 128,
+      "tensor_bytes": 134217728,
+      "per_rank": [
+        {
+          "rank": 0,
+          "latencies_ms": [
+            79.9524169921875
+          ],
+          "mean_ms": 79.9524169921875,
+          "median_ms": 79.9524169921875,
+          "wall_batch_mean_ms": [
+            79.95590707054362
+          ]
+        },
+        {
+          "rank": 1,
+          "latencies_ms": [
+            79.952822265625
+          ],
+          "mean_ms": 79.952822265625,
+          "median_ms": 79.952822265625,
+          "wall_batch_mean_ms": [
+            79.95497180963866
+          ]
+        },
+        {
+          "rank": 2,
+          "latencies_ms": [
+            79.950478515625
+          ],
+          "mean_ms": 79.950478515625,
+          "median_ms": 79.950478515625,
+          "wall_batch_mean_ms": [
+            79.95216503972188
+          ]
+        },
+        {
+          "rank": 3,
+          "latencies_ms": [
+            79.950517578125
+          ],
+          "mean_ms": 79.950517578125,
+          "median_ms": 79.950517578125,
+          "wall_batch_mean_ms": [
+            79.95281703071669
+          ]
+        },
+        {
+          "rank": 4,
+          "latencies_ms": [
+            79.951767578125
+          ],
+          "mean_ms": 79.951767578125,
+          "median_ms": 79.951767578125,
+          "wall_batch_mean_ms": [
+            79.95347179006785
+          ]
+        },
+        {
+          "rank": 5,
+          "latencies_ms": [
+            79.94587890625
+          ],
+          "mean_ms": 79.94587890625,
+          "median_ms": 79.94587890625,
+          "wall_batch_mean_ms": [
+            79.95209828019142
+          ]
+        },
+        {
+          "rank": 6,
+          "latencies_ms": [
+            79.9500927734375
+          ],
+          "mean_ms": 79.9500927734375,
+          "median_ms": 79.9500927734375,
+          "wall_batch_mean_ms": [
+            79.95260410942137
+          ]
+        },
+        {
+          "rank": 7,
+          "latencies_ms": [
+            79.9530712890625
+          ],
+          "mean_ms": 79.9530712890625,
+          "median_ms": 79.9530712890625,
+          "wall_batch_mean_ms": [
+            79.95497038937174
+          ]
+        },
+        {
+          "rank": 8,
+          "latencies_ms": [
+            79.96392578125
+          ],
+          "mean_ms": 79.96392578125,
+          "median_ms": 79.96392578125,
+          "wall_batch_mean_ms": [
+            79.96576133184135
+          ]
+        },
+        {
+          "rank": 9,
+          "latencies_ms": [
+            79.9640478515625
+          ],
+          "mean_ms": 79.9640478515625,
+          "median_ms": 79.9640478515625,
+          "wall_batch_mean_ms": [
+            79.9656608584337
+          ]
+        },
+        {
+          "rank": 10,
+          "latencies_ms": [
+            79.9635302734375
+          ],
+          "mean_ms": 79.9635302734375,
+          "median_ms": 79.9635302734375,
+          "wall_batch_mean_ms": [
+            79.96591759845614
+          ]
+        },
+        {
+          "rank": 11,
+          "latencies_ms": [
+            79.9615625
+          ],
+          "mean_ms": 79.9615625,
+          "median_ms": 79.9615625,
+          "wall_batch_mean_ms": [
+            79.96374021982774
+          ]
+        },
+        {
+          "rank": 12,
+          "latencies_ms": [
+            79.963486328125
+          ],
+          "mean_ms": 79.963486328125,
+          "median_ms": 79.963486328125,
+          "wall_batch_mean_ms": [
+            79.9656788003631
+          ]
+        },
+        {
+          "rank": 13,
+          "latencies_ms": [
+            79.9639892578125
+          ],
+          "mean_ms": 79.9639892578125,
+          "median_ms": 79.9639892578125,
+          "wall_batch_mean_ms": [
+            79.96586936991662
+          ]
+        },
+        {
+          "rank": 14,
+          "latencies_ms": [
+            79.96125
+          ],
+          "mean_ms": 79.96125,
+          "median_ms": 79.96125,
+          "wall_batch_mean_ms": [
+            79.96305439155549
+          ]
+        },
+        {
+          "rank": 15,
+          "latencies_ms": [
+            79.9628076171875
+          ],
+          "mean_ms": 79.9628076171875,
+          "median_ms": 79.9628076171875,
+          "wall_batch_mean_ms": [
+            79.96778919827193
+          ]
+        }
+      ],
+      "mean_of_rank_means_ms": 79.95697784423828,
+      "median_of_rank_means_ms": 79.95716064453126,
+      "mean_of_rank_medians_ms": 79.95697784423828,
+      "median_of_rank_medians_ms": 79.95716064453126,
+      "mean_all_samples_ms": 79.95697784423828,
+      "median_all_samples_ms": 79.95716064453126
+    }
+  ]
+}

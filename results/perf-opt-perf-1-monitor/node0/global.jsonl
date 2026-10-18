@@ -1,0 +1,3 @@
+{"event": "controller_started", "time": 1792319955.2217813, "parameters": {"window": 30, "probability": 0.8, "degradation": 0.2, "cv": 0.1, "percent": 0.2, "profile_min_seconds": 20}}
+{"event": "training_complete", "time": 1792319974.9133093}
+{"event": "controller_stopped", "time": 1792319974.9135828}

@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "GPU_work": false,
+  "redis_length": 500,
+  "new_after_rollover": 50,
+  "last_iteration": 549,
+  "missing_iterations": 0
+}

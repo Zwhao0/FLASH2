@@ -1,0 +1,12 @@
+{
+  "method": "physical_gpu_app_clock_cap",
+  "target_ranks": [
+    0
+  ],
+  "frequency_requested_mhz": 600,
+  "baseline_mhz": 1965,
+  "trigger_step_requested": 200,
+  "forced_profile_only": false,
+  "source": "FLASH3.4.4 GPU frequency restriction; H800 closest supported frequency recorded",
+  "shared_gpu_scope": true
+}

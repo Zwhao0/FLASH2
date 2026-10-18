@@ -1,0 +1,1257 @@
+[
+  {
+    "run": "allreduce-base-a",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {},
+    "verified_ranks": []
+  },
+  {
+    "run": "allreduce-monitor-a",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {},
+    "verified_ranks": []
+  },
+  {
+    "run": "allreduce-profile",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {},
+    "verified_ranks": []
+  },
+  {
+    "run": "collective-0-base",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {},
+    "verified_ranks": []
+  },
+  {
+    "run": "collective-1-monitor",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {},
+    "verified_ranks": []
+  },
+  {
+    "run": "collective-2-monitor",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {},
+    "verified_ranks": []
+  },
+  {
+    "run": "collective-3-base",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {},
+    "verified_ranks": []
+  },
+  {
+    "run": "comm-delay126",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "comm-delay14",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "comm-delay182",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "comm-delay238",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "comm-delay70",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "comm-stream-audit",
+    "exit_codes": [
+      1,
+      1
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 0,
+      "rank4": 0,
+      "rank0": 0,
+      "rank2": 0,
+      "rank5": 0,
+      "rank7": 0,
+      "rank3": 0,
+      "rank1": 0,
+      "rank9": 0,
+      "rank8": 0,
+      "rank14": 0,
+      "rank12": 0,
+      "rank10": 0,
+      "rank15": 0,
+      "rank11": 0,
+      "rank13": 0
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "comm-stream-audit-r2",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "compute-delay126",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "compute-delay14",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "compute-delay182",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "compute-delay238",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "compute-delay70",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "compute-othernode",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "connectivity16",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {},
+    "verified_ranks": []
+  },
+  {
+    "run": "ep8-compute-e2e",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 120,
+      "rank4": 120,
+      "rank0": 120,
+      "rank2": 120,
+      "rank5": 120,
+      "rank7": 120,
+      "rank3": 120,
+      "rank1": 120,
+      "rank9": 120,
+      "rank8": 120,
+      "rank14": 120,
+      "rank12": 120,
+      "rank10": 120,
+      "rank15": 120,
+      "rank11": 120,
+      "rank13": 120
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "failstop",
+    "exit_codes": [
+      1,
+      1
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 45,
+      "rank4": 45,
+      "rank0": 45,
+      "rank2": 45,
+      "rank5": 45,
+      "rank7": 45,
+      "rank3": 45,
+      "rank1": 45,
+      "rank9": 45,
+      "rank8": 45,
+      "rank14": 45,
+      "rank12": 45,
+      "rank10": 45,
+      "rank15": 45,
+      "rank11": 45,
+      "rank13": 45
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "hybrid-ep4-tp1-pp2",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "hybrid-ep4-tp2-pp1",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "hybrid-ep4-tp2-pp2",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "hybrid-ep8-tp1-pp1",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "normal",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "perf-0-base",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 180,
+      "rank4": 180,
+      "rank0": 180,
+      "rank2": 180,
+      "rank5": 180,
+      "rank7": 180,
+      "rank3": 180,
+      "rank1": 180,
+      "rank9": 180,
+      "rank8": 180,
+      "rank14": 180,
+      "rank12": 180,
+      "rank10": 180,
+      "rank15": 180,
+      "rank11": 180,
+      "rank13": 180
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "perf-1-monitor",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 180,
+      "rank4": 180,
+      "rank0": 180,
+      "rank2": 180,
+      "rank5": 180,
+      "rank7": 180,
+      "rank3": 180,
+      "rank1": 180,
+      "rank9": 180,
+      "rank8": 180,
+      "rank14": 180,
+      "rank12": 180,
+      "rank10": 180,
+      "rank15": 180,
+      "rank11": 180,
+      "rank13": 180
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "perf-2-monitor",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 180,
+      "rank4": 180,
+      "rank0": 180,
+      "rank2": 180,
+      "rank5": 180,
+      "rank7": 180,
+      "rank3": 180,
+      "rank1": 180,
+      "rank9": 180,
+      "rank8": 180,
+      "rank14": 180,
+      "rank12": 180,
+      "rank10": 180,
+      "rank15": 180,
+      "rank11": 180,
+      "rank13": 180
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "perf-3-base",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 180,
+      "rank4": 180,
+      "rank0": 180,
+      "rank2": 180,
+      "rank5": 180,
+      "rank7": 180,
+      "rank3": 180,
+      "rank1": 180,
+      "rank9": 180,
+      "rank8": 180,
+      "rank14": 180,
+      "rank12": 180,
+      "rank10": 180,
+      "rank15": 180,
+      "rank11": 180,
+      "rank13": 180
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "perf-opt-perf-0-base",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 180,
+      "rank4": 180,
+      "rank0": 180,
+      "rank2": 180,
+      "rank5": 180,
+      "rank7": 180,
+      "rank3": 180,
+      "rank1": 180,
+      "rank9": 180,
+      "rank8": 180,
+      "rank14": 180,
+      "rank12": 180,
+      "rank10": 180,
+      "rank15": 180,
+      "rank11": 180,
+      "rank13": 180
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "perf-opt-perf-1-monitor",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 180,
+      "rank4": 180,
+      "rank0": 180,
+      "rank2": 180,
+      "rank5": 180,
+      "rank7": 180,
+      "rank3": 180,
+      "rank1": 180,
+      "rank9": 180,
+      "rank8": 180,
+      "rank14": 180,
+      "rank12": 180,
+      "rank10": 180,
+      "rank15": 180,
+      "rank11": 180,
+      "rank13": 180
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "perf-opt-perf-2-monitor",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 180,
+      "rank4": 180,
+      "rank0": 180,
+      "rank2": 180,
+      "rank5": 180,
+      "rank7": 180,
+      "rank3": 180,
+      "rank1": 180,
+      "rank9": 180,
+      "rank8": 180,
+      "rank14": 180,
+      "rank12": 180,
+      "rank10": 180,
+      "rank15": 180,
+      "rank11": 180,
+      "rank13": 180
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "perf-opt-perf-3-base",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 180,
+      "rank4": 180,
+      "rank0": 180,
+      "rank2": 180,
+      "rank5": 180,
+      "rank7": 180,
+      "rank3": 180,
+      "rank1": 180,
+      "rank9": 180,
+      "rank8": 180,
+      "rank14": 180,
+      "rank12": 180,
+      "rank10": 180,
+      "rank15": 180,
+      "rank11": 180,
+      "rank13": 180
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "profile-baseline",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "profile-cost-0-base",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 1800,
+      "rank4": 1800,
+      "rank0": 1800,
+      "rank2": 1800,
+      "rank5": 1800,
+      "rank7": 1800,
+      "rank3": 1800,
+      "rank1": 1800,
+      "rank9": 1800,
+      "rank8": 1800,
+      "rank14": 1800,
+      "rank12": 1800,
+      "rank10": 1800,
+      "rank15": 1800,
+      "rank11": 1800,
+      "rank13": 1800
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "profile-cost-1-profile",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 1800,
+      "rank4": 1800,
+      "rank0": 1800,
+      "rank2": 1800,
+      "rank5": 1800,
+      "rank7": 1800,
+      "rank3": 1800,
+      "rank1": 1800,
+      "rank9": 1800,
+      "rank8": 1800,
+      "rank14": 1800,
+      "rank12": 1800,
+      "rank10": 1800,
+      "rank15": 1800,
+      "rank11": 1800,
+      "rank13": 1800
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "profile-cost-2-profile",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 1800,
+      "rank4": 1800,
+      "rank0": 1800,
+      "rank2": 1800,
+      "rank5": 1800,
+      "rank7": 1800,
+      "rank3": 1800,
+      "rank1": 1800,
+      "rank9": 1800,
+      "rank8": 1800,
+      "rank14": 1800,
+      "rank12": 1800,
+      "rank10": 1800,
+      "rank15": 1800,
+      "rank11": 1800,
+      "rank13": 1800
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "profile-cost-3-base",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 1800,
+      "rank4": 1800,
+      "rank0": 1800,
+      "rank2": 1800,
+      "rank5": 1800,
+      "rank7": 1800,
+      "rank3": 1800,
+      "rank1": 1800,
+      "rank9": 1800,
+      "rank8": 1800,
+      "rank14": 1800,
+      "rank12": 1800,
+      "rank10": 1800,
+      "rank15": 1800,
+      "rank11": 1800,
+      "rank13": 1800
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "transient",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 125,
+      "rank4": 125,
+      "rank0": 125,
+      "rank2": 125,
+      "rank5": 125,
+      "rank7": 125,
+      "rank3": 125,
+      "rank1": 125,
+      "rank9": 125,
+      "rank8": 125,
+      "rank14": 125,
+      "rank12": 125,
+      "rank10": 125,
+      "rank15": 125,
+      "rank11": 125,
+      "rank13": 125
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "verify-ep4-tp1-pp2",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 3,
+      "rank4": 3,
+      "rank0": 3,
+      "rank2": 3,
+      "rank5": 3,
+      "rank7": 3,
+      "rank3": 3,
+      "rank1": 3,
+      "rank9": 3,
+      "rank8": 3,
+      "rank14": 3,
+      "rank12": 3,
+      "rank10": 3,
+      "rank15": 3,
+      "rank11": 3,
+      "rank13": 3
+    },
+    "verified_ranks": [
+      6,
+      4,
+      0,
+      2,
+      5,
+      7,
+      3,
+      1,
+      9,
+      8,
+      14,
+      12,
+      10,
+      15,
+      11,
+      13
+    ]
+  },
+  {
+    "run": "verify-ep4-tp2-pp1",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 3,
+      "rank4": 3,
+      "rank0": 3,
+      "rank2": 3,
+      "rank5": 3,
+      "rank7": 3,
+      "rank3": 3,
+      "rank1": 3,
+      "rank9": 3,
+      "rank8": 3,
+      "rank14": 3,
+      "rank12": 3,
+      "rank10": 3,
+      "rank15": 3,
+      "rank11": 3,
+      "rank13": 3
+    },
+    "verified_ranks": [
+      6,
+      4,
+      0,
+      2,
+      5,
+      7,
+      3,
+      1,
+      9,
+      8,
+      14,
+      12,
+      10,
+      15,
+      11,
+      13
+    ]
+  },
+  {
+    "run": "verify-ep4-tp2-pp2",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 3,
+      "rank4": 3,
+      "rank0": 3,
+      "rank2": 3,
+      "rank5": 3,
+      "rank7": 3,
+      "rank3": 3,
+      "rank1": 3,
+      "rank9": 3,
+      "rank8": 3,
+      "rank14": 3,
+      "rank12": 3,
+      "rank10": 3,
+      "rank15": 3,
+      "rank11": 3,
+      "rank13": 3
+    },
+    "verified_ranks": [
+      6,
+      4,
+      0,
+      2,
+      5,
+      7,
+      3,
+      1,
+      9,
+      8,
+      14,
+      12,
+      10,
+      15,
+      11,
+      13
+    ]
+  },
+  {
+    "run": "verify-ep8",
+    "exit_codes": [
+      1,
+      1
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 0,
+      "rank4": 0,
+      "rank0": 0,
+      "rank2": 0,
+      "rank5": 0,
+      "rank7": 0,
+      "rank3": 0,
+      "rank1": 0,
+      "rank9": 0,
+      "rank8": 0,
+      "rank14": 0,
+      "rank12": 0,
+      "rank10": 0,
+      "rank15": 0,
+      "rank11": 0,
+      "rank13": 0
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "verify-ep8-fp32",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 3,
+      "rank4": 3,
+      "rank0": 3,
+      "rank2": 3,
+      "rank5": 3,
+      "rank7": 3,
+      "rank3": 3,
+      "rank1": 3,
+      "rank9": 3,
+      "rank8": 3,
+      "rank14": 3,
+      "rank12": 3,
+      "rank10": 3,
+      "rank15": 3,
+      "rank11": 3,
+      "rank13": 3
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "verify-ep8-lowmem",
+    "exit_codes": [
+      1,
+      1
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 0,
+      "rank4": 0,
+      "rank0": 0,
+      "rank2": 0,
+      "rank5": 0,
+      "rank7": 0,
+      "rank3": 0,
+      "rank1": 0,
+      "rank9": 0,
+      "rank8": 0,
+      "rank14": 0,
+      "rank12": 0,
+      "rank10": 0,
+      "rank15": 0,
+      "rank11": 0,
+      "rank13": 0
+    },
+    "verified_ranks": []
+  },
+  {
+    "run": "verify-ep8-tp1-pp1",
+    "exit_codes": [
+      0,
+      0
+    ],
+    "issues": [],
+    "iteration_counts": {
+      "rank6": 3,
+      "rank4": 3,
+      "rank0": 3,
+      "rank2": 3,
+      "rank5": 3,
+      "rank7": 3,
+      "rank3": 3,
+      "rank1": 3,
+      "rank9": 3,
+      "rank8": 3,
+      "rank14": 3,
+      "rank12": 3,
+      "rank10": 3,
+      "rank15": 3,
+      "rank11": 3,
+      "rank13": 3
+    },
+    "verified_ranks": [
+      6,
+      4,
+      0,
+      2,
+      5,
+      7,
+      3,
+      1,
+      9,
+      8,
+      14,
+      12,
+      10,
+      15,
+      11,
+      13
+    ]
+  }
+]

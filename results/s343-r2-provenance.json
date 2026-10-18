@@ -1,0 +1,1032 @@
+{
+  "experiment": "s343-r2",
+  "collected_at": "2026-10-18T20:01:25+08:00",
+  "collection_method": "Read-only SHA-256 via scripts/remote.py connect; container and host environment inherited from s343-r1.",
+  "source_scope": {
+    "directories": [
+      "flash",
+      "probe",
+      "workload",
+      "scripts",
+      "tests"
+    ],
+    "extensions": [
+      ".cpp",
+      ".py",
+      ".sh"
+    ],
+    "excluded": [
+      "**/__pycache__/**"
+    ],
+    "binary": [
+      "probe/libflash_nccl_probe.so"
+    ]
+  },
+  "focused_files": [
+    "flash/global_controller.py",
+    "scripts/run_cluster.py",
+    "scripts/run_overhead_343.py",
+    "workload/collective_bench.py"
+  ],
+  "focus_checks": {
+    "10.10.4.1": {
+      "flash/global_controller.py": {
+        "remote_sha256": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+        "local_sha256": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+        "status": "match",
+        "remote_changed_since_r1": true,
+        "local_changed_since_r1": true
+      },
+      "scripts/run_cluster.py": {
+        "remote_sha256": "ec9652d646ed1953d9b4edc57487bd28a4ea9751c35ab4be61ff6b94346fc3d6",
+        "local_sha256": "ec9652d646ed1953d9b4edc57487bd28a4ea9751c35ab4be61ff6b94346fc3d6",
+        "status": "match",
+        "remote_changed_since_r1": true,
+        "local_changed_since_r1": true
+      },
+      "scripts/run_overhead_343.py": {
+        "remote_sha256": "dfbe7ae9190caac807b2fc23cf5f08a71dec7e79552fd92e3b0ad0ab705d13df",
+        "local_sha256": "dfbe7ae9190caac807b2fc23cf5f08a71dec7e79552fd92e3b0ad0ab705d13df",
+        "status": "match",
+        "remote_changed_since_r1": true,
+        "local_changed_since_r1": true
+      },
+      "workload/collective_bench.py": {
+        "remote_sha256": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "local_sha256": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "status": "match",
+        "remote_changed_since_r1": false,
+        "local_changed_since_r1": false
+      }
+    },
+    "10.10.4.2": {
+      "flash/global_controller.py": {
+        "remote_sha256": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+        "local_sha256": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+        "status": "match",
+        "remote_changed_since_r1": true,
+        "local_changed_since_r1": true
+      },
+      "scripts/run_cluster.py": {
+        "remote_sha256": "ec9652d646ed1953d9b4edc57487bd28a4ea9751c35ab4be61ff6b94346fc3d6",
+        "local_sha256": "ec9652d646ed1953d9b4edc57487bd28a4ea9751c35ab4be61ff6b94346fc3d6",
+        "status": "match",
+        "remote_changed_since_r1": true,
+        "local_changed_since_r1": true
+      },
+      "scripts/run_overhead_343.py": {
+        "remote_sha256": "dfbe7ae9190caac807b2fc23cf5f08a71dec7e79552fd92e3b0ad0ab705d13df",
+        "local_sha256": "dfbe7ae9190caac807b2fc23cf5f08a71dec7e79552fd92e3b0ad0ab705d13df",
+        "status": "match",
+        "remote_changed_since_r1": true,
+        "local_changed_since_r1": true
+      },
+      "workload/collective_bench.py": {
+        "remote_sha256": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "local_sha256": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "status": "match",
+        "remote_changed_since_r1": false,
+        "local_changed_since_r1": false
+      }
+    }
+  },
+  "nodes": {
+    "10.10.4.1": {
+      "remote_project_path": "/home/campus/zhangweihao/FLASH1/flash2",
+      "container_environment": {
+        "python": "3.10.12",
+        "torch": "2.1.0a0+32f93b1",
+        "cuda": "12.2",
+        "nccl": "2.19.3"
+      },
+      "host_gpu": {
+        "models": [
+          "NVIDIA H800"
+        ],
+        "gpu_count": 8,
+        "driver": "580.178.04"
+      },
+      "environment_inherited_from": "results/s343-r1-provenance.json; no new nvidia-smi call was made",
+      "file_comparison_counts": {
+        "match": 49,
+        "different": 1,
+        "remote_only": 1,
+        "local_only": 0
+      },
+      "source_files_changed_since_r1": {
+        "remote": [
+          "flash/global_controller.py",
+          "scripts/run_cluster.py",
+          "scripts/run_overhead_343.py"
+        ],
+        "local": [
+          "flash/global_controller.py",
+          "scripts/run_cluster.py",
+          "scripts/run_overhead_343.py"
+        ]
+      },
+      "files": {
+        "flash/__init__.py": {
+          "remote_sha256": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+          "local_sha256": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "flash/analysis.py": {
+          "remote_sha256": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+          "local_sha256": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "flash/detection.py": {
+          "remote_sha256": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+          "local_sha256": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "flash/global_controller.py": {
+          "remote_sha256": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+          "local_sha256": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+          "status": "match",
+          "remote_changed_since_r1": true,
+          "local_changed_since_r1": true,
+          "training_execution_source": true
+        },
+        "flash/history.py": {
+          "remote_sha256": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+          "local_sha256": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "flash/local_controller.py": {
+          "remote_sha256": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+          "local_sha256": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "probe/build.sh": {
+          "remote_sha256": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+          "local_sha256": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "probe/build_stream_delay.sh": {
+          "remote_sha256": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+          "local_sha256": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "probe/libflash_nccl_probe.so": {
+          "remote_sha256": "ad6625012c4db0ba2af519c852b52b513b442d4e784e194c711b196c23164254",
+          "local_sha256": null,
+          "status": "remote_only",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "probe/nccl_probe.cpp": {
+          "remote_sha256": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+          "local_sha256": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "probe/stream_delay.cpp": {
+          "remote_sha256": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+          "local_sha256": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/archive_summary.py": {
+          "remote_sha256": "4fa533c66281d8ae634324b826392cefb088b4abf729787060b0a159be3df9ca",
+          "local_sha256": "4fa533c66281d8ae634324b826392cefb088b4abf729787060b0a159be3df9ca",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/background_traffic.py": {
+          "remote_sha256": "64558c797260d3e861206a0bba17d2088b948abc4dc898f740160e10d26dd0ff",
+          "local_sha256": "64558c797260d3e861206a0bba17d2088b948abc4dc898f740160e10d26dd0ff",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/capture_environment.py": {
+          "remote_sha256": "eb4c6b08c01639ff36d6c4bc13b0801ffcc634a8b25c6540b6fe99186b740ab9",
+          "local_sha256": "eb4c6b08c01639ff36d6c4bc13b0801ffcc634a8b25c6540b6fe99186b740ab9",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/capture_final_state.py": {
+          "remote_sha256": "270b78e7829ca2b8f2dc3db64fa430660169bc8c6cfb5fa8d564804e1be0b863",
+          "local_sha256": "270b78e7829ca2b8f2dc3db64fa430660169bc8c6cfb5fa8d564804e1be0b863",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/compress_raw.py": {
+          "remote_sha256": "09714fc983d8251f079fe0ffb82a887bdd098dd683685604bb11d0ef9e034958",
+          "local_sha256": "09714fc983d8251f079fe0ffb82a887bdd098dd683685604bb11d0ef9e034958",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/dump_probe.py": {
+          "remote_sha256": "d19086522334a28e163741dc04fdda5c3f6f3af008ce0bb65ad82b8d1ae398e1",
+          "local_sha256": "d19086522334a28e163741dc04fdda5c3f6f3af008ce0bb65ad82b8d1ae398e1",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/fetch_extras.py": {
+          "remote_sha256": "936546bf0a5c699be9a8fee5fb280b8d6cf7da0720ebc232a592fce6131ef97f",
+          "local_sha256": "936546bf0a5c699be9a8fee5fb280b8d6cf7da0720ebc232a592fce6131ef97f",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/hardware_clock_injector.py": {
+          "remote_sha256": "a3ce9ba0f5498513c5b85684bf7588fbcaeff09c2b7bcefcf65b98a66a469dff",
+          "local_sha256": "a3ce9ba0f5498513c5b85684bf7588fbcaeff09c2b7bcefcf65b98a66a469dff",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/paper_clock_check.py": {
+          "remote_sha256": "3020dced201a06591e30d8a60e7ce73800cd1ba74258883d31187728d7a195f4",
+          "local_sha256": "3020dced201a06591e30d8a60e7ce73800cd1ba74258883d31187728d7a195f4",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/plot_summary.py": {
+          "remote_sha256": "a5e3c827ea943f2b3b053d50a164e9cc94e612cd55c9e5b6cb78654e512c8d41",
+          "local_sha256": "a5e3c827ea943f2b3b053d50a164e9cc94e612cd55c9e5b6cb78654e512c8d41",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/prepare.py": {
+          "remote_sha256": "8c340b7431943dd3f9b7cfe1fedf4ebe942e67ebf5393706c10497312865c87e",
+          "local_sha256": "8c340b7431943dd3f9b7cfe1fedf4ebe942e67ebf5393706c10497312865c87e",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/remote.py": {
+          "remote_sha256": "5b87da3e088372f8f0e86c48c2ed199a679da9870d074ada4cf471d3a3f4cf5d",
+          "local_sha256": "5b87da3e088372f8f0e86c48c2ed199a679da9870d074ada4cf471d3a3f4cf5d",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/replay_profiles.py": {
+          "remote_sha256": "53b699a7cb3b5d145d26b499e810b21d69cdc56e592406e9f76114f511646af7",
+          "local_sha256": "53b699a7cb3b5d145d26b499e810b21d69cdc56e592406e9f76114f511646af7",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/report_focus.py": {
+          "remote_sha256": "d5e1c17778191aee3bb6983ebd9ac8d02ea3cb9b10aac1802b159be7b5b32ef0",
+          "local_sha256": "d5e1c17778191aee3bb6983ebd9ac8d02ea3cb9b10aac1802b159be7b5b32ef0",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/report_overhead_343.py": {
+          "remote_sha256": "87712bccf835fdd1e4ff9e8dd31b71f312cc53fc989149ad7d676c32f758f37c",
+          "local_sha256": "74666cb32600c1baa264a882b51fa5e347ee598ad50db7d28757f5a7cf1340f0",
+          "status": "different",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "classification": "local_summary_helper",
+          "training_execution_source": false
+        },
+        "scripts/report_scoped_faults.py": {
+          "remote_sha256": "45e3572ccf662d0c5eb1791c643b8a7ddf0660c4d0373feff0b4fda590bbe67c",
+          "local_sha256": "45e3572ccf662d0c5eb1791c643b8a7ddf0660c4d0373feff0b4fda590bbe67c",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/run_cluster.py": {
+          "remote_sha256": "ec9652d646ed1953d9b4edc57487bd28a4ea9751c35ab4be61ff6b94346fc3d6",
+          "local_sha256": "ec9652d646ed1953d9b4edc57487bd28a4ea9751c35ab4be61ff6b94346fc3d6",
+          "status": "match",
+          "remote_changed_since_r1": true,
+          "local_changed_since_r1": true,
+          "training_execution_source": true
+        },
+        "scripts/run_overhead_343.py": {
+          "remote_sha256": "dfbe7ae9190caac807b2fc23cf5f08a71dec7e79552fd92e3b0ad0ab705d13df",
+          "local_sha256": "dfbe7ae9190caac807b2fc23cf5f08a71dec7e79552fd92e3b0ad0ab705d13df",
+          "status": "match",
+          "remote_changed_since_r1": true,
+          "local_changed_since_r1": true,
+          "training_execution_source": true
+        },
+        "scripts/run_paper_clock.py": {
+          "remote_sha256": "6d940497ec1e96b03d74a28c4531924dd6c48a30be4984f9cd4ed9a7f81eebe0",
+          "local_sha256": "6d940497ec1e96b03d74a28c4531924dd6c48a30be4984f9cd4ed9a7f81eebe0",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/run_profile_overhead.py": {
+          "remote_sha256": "7a467cd55bc0a8b5a438dc66121a5f3848142b09cf1479c46200747a7fa86f2b",
+          "local_sha256": "7a467cd55bc0a8b5a438dc66121a5f3848142b09cf1479c46200747a7fa86f2b",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/run_scoped_comm_suite.py": {
+          "remote_sha256": "714ff226c3d683b91c0f660468b0defca9607e1a2bd9ce6d657fecef71fcc239",
+          "local_sha256": "714ff226c3d683b91c0f660468b0defca9607e1a2bd9ce6d657fecef71fcc239",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/run_scoped_fault_suite.py": {
+          "remote_sha256": "9ea1ca881b11cc1e3f2439f1bb1fac0f9271ed6875ffcbd9c195bc64f95e32eb",
+          "local_sha256": "9ea1ca881b11cc1e3f2439f1bb1fac0f9271ed6875ffcbd9c195bc64f95e32eb",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/run_suite.py": {
+          "remote_sha256": "c6ddabc354bdbc8b357734914478d031388697561f257110dd8845cec18bf37c",
+          "local_sha256": "c6ddabc354bdbc8b357734914478d031388697561f257110dd8845cec18bf37c",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/start_redis.sh": {
+          "remote_sha256": "a8faab5a8b65794044e646776a78be5e911e1f7b86cb9abc2d4e901e6687bfb5",
+          "local_sha256": "a8faab5a8b65794044e646776a78be5e911e1f7b86cb9abc2d4e901e6687bfb5",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/stop_run.py": {
+          "remote_sha256": "73374ebba0bb8713a964215af3560eb7ad6fd9a5aada16c848d54145dba0c20f",
+          "local_sha256": "73374ebba0bb8713a964215af3560eb7ad6fd9a5aada16c848d54145dba0c20f",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/summarize.py": {
+          "remote_sha256": "7d2e4b39a2e1f662a494f292cfebe4cae3cf3d6a71a0ea087ad4c946875f0fc6",
+          "local_sha256": "7d2e4b39a2e1f662a494f292cfebe4cae3cf3d6a71a0ea087ad4c946875f0fc6",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/sync.py": {
+          "remote_sha256": "2a3f6c6873e26edb3e55f83d201ae26557ec341b14c2e09e6d9cb7ef07744bdc",
+          "local_sha256": "2a3f6c6873e26edb3e55f83d201ae26557ec341b14c2e09e6d9cb7ef07744bdc",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/telemetry.py": {
+          "remote_sha256": "ddfc7ec6c5960caebee76b48385cd916be790d3a976cc332b5be9dd359fb2b13",
+          "local_sha256": "ddfc7ec6c5960caebee76b48385cd916be790d3a976cc332b5be9dd359fb2b13",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/validate_artifacts.py": {
+          "remote_sha256": "482eb16be0c0571f9dc76bb2243a8356e99032c582f3ea7bc8a98f0b3cf8b66c",
+          "local_sha256": "482eb16be0c0571f9dc76bb2243a8356e99032c582f3ea7bc8a98f0b3cf8b66c",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/write_readme_results.py": {
+          "remote_sha256": "aeb89e0cc2201caa3b55ee93bb81b91d6d1d55852c83571ecda0b54200cea5e8",
+          "local_sha256": "aeb89e0cc2201caa3b55ee93bb81b91d6d1d55852c83571ecda0b54200cea5e8",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/connectivity.py": {
+          "remote_sha256": "e050b44fca9e0bca7fae5b2fd5150d35223ce330aa97eeb2949c155da01bb975",
+          "local_sha256": "e050b44fca9e0bca7fae5b2fd5150d35223ce330aa97eeb2949c155da01bb975",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/history_integration.py": {
+          "remote_sha256": "d86a9ff40fc7201bb9e185a43069534203f0693013cdf96aa7eda04df5baa5bc",
+          "local_sha256": "d86a9ff40fc7201bb9e185a43069534203f0693013cdf96aa7eda04df5baa5bc",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/paper_rule_integration.py": {
+          "remote_sha256": "b967f858376a1229a032600aa5ede056120c93e84b01b851edb19a49e018e2f3",
+          "local_sha256": "b967f858376a1229a032600aa5ede056120c93e84b01b851edb19a49e018e2f3",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/rbeast_integration.py": {
+          "remote_sha256": "c3a999898e6a69510763fa13c3ce36b15235acfa557ce0f434bd900f11f74ff2",
+          "local_sha256": "c3a999898e6a69510763fa13c3ce36b15235acfa557ce0f434bd900f11f74ff2",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/test_analysis.py": {
+          "remote_sha256": "c11e2e4cc8e2ee3f7594862aee790d1ccb88fe7397c1287c9e4bddd23a5396b5",
+          "local_sha256": "c11e2e4cc8e2ee3f7594862aee790d1ccb88fe7397c1287c9e4bddd23a5396b5",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/test_detection.py": {
+          "remote_sha256": "b9a61c47bd663f15834373de3ce853962872a6bbbdc715e24a6f93c1306a3c2d",
+          "local_sha256": "b9a61c47bd663f15834373de3ce853962872a6bbbdc715e24a6f93c1306a3c2d",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/test_history.py": {
+          "remote_sha256": "33dd26482a6458e9d68a7b475f567a8f760cdbb37c5239c21def00f6139ae490",
+          "local_sha256": "33dd26482a6458e9d68a7b475f567a8f760cdbb37c5239c21def00f6139ae490",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/test_ring.py": {
+          "remote_sha256": "631a374073cb66cb7801cd9a390b0718fe84eaa2b332401b08bef90e42fb73be",
+          "local_sha256": "631a374073cb66cb7801cd9a390b0718fe84eaa2b332401b08bef90e42fb73be",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "workload/collective_bench.py": {
+          "remote_sha256": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+          "local_sha256": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "workload/train.py": {
+          "remote_sha256": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db",
+          "local_sha256": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        }
+      },
+      "training_execution_file_comparison_counts": {
+        "match": 49,
+        "different": 0,
+        "remote_only": 1,
+        "local_only": 0
+      }
+    },
+    "10.10.4.2": {
+      "remote_project_path": "/home/campus/zhangweihao/FLASH1/flash2",
+      "container_environment": {
+        "python": "3.10.12",
+        "torch": "2.1.0a0+32f93b1",
+        "cuda": "12.2",
+        "nccl": "2.19.3"
+      },
+      "host_gpu": {
+        "models": [
+          "NVIDIA H800"
+        ],
+        "gpu_count": 8,
+        "driver": "580.178.04"
+      },
+      "environment_inherited_from": "results/s343-r1-provenance.json; no new nvidia-smi call was made",
+      "file_comparison_counts": {
+        "match": 49,
+        "different": 1,
+        "remote_only": 1,
+        "local_only": 0
+      },
+      "source_files_changed_since_r1": {
+        "remote": [
+          "flash/global_controller.py",
+          "scripts/run_cluster.py",
+          "scripts/run_overhead_343.py"
+        ],
+        "local": [
+          "flash/global_controller.py",
+          "scripts/run_cluster.py",
+          "scripts/run_overhead_343.py"
+        ]
+      },
+      "files": {
+        "flash/__init__.py": {
+          "remote_sha256": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+          "local_sha256": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "flash/analysis.py": {
+          "remote_sha256": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+          "local_sha256": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "flash/detection.py": {
+          "remote_sha256": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+          "local_sha256": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "flash/global_controller.py": {
+          "remote_sha256": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+          "local_sha256": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+          "status": "match",
+          "remote_changed_since_r1": true,
+          "local_changed_since_r1": true,
+          "training_execution_source": true
+        },
+        "flash/history.py": {
+          "remote_sha256": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+          "local_sha256": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "flash/local_controller.py": {
+          "remote_sha256": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+          "local_sha256": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "probe/build.sh": {
+          "remote_sha256": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+          "local_sha256": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "probe/build_stream_delay.sh": {
+          "remote_sha256": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+          "local_sha256": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "probe/libflash_nccl_probe.so": {
+          "remote_sha256": "ad6625012c4db0ba2af519c852b52b513b442d4e784e194c711b196c23164254",
+          "local_sha256": null,
+          "status": "remote_only",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "probe/nccl_probe.cpp": {
+          "remote_sha256": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+          "local_sha256": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "probe/stream_delay.cpp": {
+          "remote_sha256": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+          "local_sha256": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/archive_summary.py": {
+          "remote_sha256": "4fa533c66281d8ae634324b826392cefb088b4abf729787060b0a159be3df9ca",
+          "local_sha256": "4fa533c66281d8ae634324b826392cefb088b4abf729787060b0a159be3df9ca",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/background_traffic.py": {
+          "remote_sha256": "64558c797260d3e861206a0bba17d2088b948abc4dc898f740160e10d26dd0ff",
+          "local_sha256": "64558c797260d3e861206a0bba17d2088b948abc4dc898f740160e10d26dd0ff",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/capture_environment.py": {
+          "remote_sha256": "eb4c6b08c01639ff36d6c4bc13b0801ffcc634a8b25c6540b6fe99186b740ab9",
+          "local_sha256": "eb4c6b08c01639ff36d6c4bc13b0801ffcc634a8b25c6540b6fe99186b740ab9",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/capture_final_state.py": {
+          "remote_sha256": "270b78e7829ca2b8f2dc3db64fa430660169bc8c6cfb5fa8d564804e1be0b863",
+          "local_sha256": "270b78e7829ca2b8f2dc3db64fa430660169bc8c6cfb5fa8d564804e1be0b863",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/compress_raw.py": {
+          "remote_sha256": "09714fc983d8251f079fe0ffb82a887bdd098dd683685604bb11d0ef9e034958",
+          "local_sha256": "09714fc983d8251f079fe0ffb82a887bdd098dd683685604bb11d0ef9e034958",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/dump_probe.py": {
+          "remote_sha256": "d19086522334a28e163741dc04fdda5c3f6f3af008ce0bb65ad82b8d1ae398e1",
+          "local_sha256": "d19086522334a28e163741dc04fdda5c3f6f3af008ce0bb65ad82b8d1ae398e1",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/fetch_extras.py": {
+          "remote_sha256": "936546bf0a5c699be9a8fee5fb280b8d6cf7da0720ebc232a592fce6131ef97f",
+          "local_sha256": "936546bf0a5c699be9a8fee5fb280b8d6cf7da0720ebc232a592fce6131ef97f",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/hardware_clock_injector.py": {
+          "remote_sha256": "a3ce9ba0f5498513c5b85684bf7588fbcaeff09c2b7bcefcf65b98a66a469dff",
+          "local_sha256": "a3ce9ba0f5498513c5b85684bf7588fbcaeff09c2b7bcefcf65b98a66a469dff",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/paper_clock_check.py": {
+          "remote_sha256": "3020dced201a06591e30d8a60e7ce73800cd1ba74258883d31187728d7a195f4",
+          "local_sha256": "3020dced201a06591e30d8a60e7ce73800cd1ba74258883d31187728d7a195f4",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/plot_summary.py": {
+          "remote_sha256": "a5e3c827ea943f2b3b053d50a164e9cc94e612cd55c9e5b6cb78654e512c8d41",
+          "local_sha256": "a5e3c827ea943f2b3b053d50a164e9cc94e612cd55c9e5b6cb78654e512c8d41",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/prepare.py": {
+          "remote_sha256": "8c340b7431943dd3f9b7cfe1fedf4ebe942e67ebf5393706c10497312865c87e",
+          "local_sha256": "8c340b7431943dd3f9b7cfe1fedf4ebe942e67ebf5393706c10497312865c87e",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/remote.py": {
+          "remote_sha256": "5b87da3e088372f8f0e86c48c2ed199a679da9870d074ada4cf471d3a3f4cf5d",
+          "local_sha256": "5b87da3e088372f8f0e86c48c2ed199a679da9870d074ada4cf471d3a3f4cf5d",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/replay_profiles.py": {
+          "remote_sha256": "53b699a7cb3b5d145d26b499e810b21d69cdc56e592406e9f76114f511646af7",
+          "local_sha256": "53b699a7cb3b5d145d26b499e810b21d69cdc56e592406e9f76114f511646af7",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/report_focus.py": {
+          "remote_sha256": "d5e1c17778191aee3bb6983ebd9ac8d02ea3cb9b10aac1802b159be7b5b32ef0",
+          "local_sha256": "d5e1c17778191aee3bb6983ebd9ac8d02ea3cb9b10aac1802b159be7b5b32ef0",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/report_overhead_343.py": {
+          "remote_sha256": "56d0e23745048104b3115f225eb577445e43dcf6a0862afdd0e4003f9fcee615",
+          "local_sha256": "74666cb32600c1baa264a882b51fa5e347ee598ad50db7d28757f5a7cf1340f0",
+          "status": "different",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "classification": "local_summary_helper",
+          "training_execution_source": false
+        },
+        "scripts/report_scoped_faults.py": {
+          "remote_sha256": "45e3572ccf662d0c5eb1791c643b8a7ddf0660c4d0373feff0b4fda590bbe67c",
+          "local_sha256": "45e3572ccf662d0c5eb1791c643b8a7ddf0660c4d0373feff0b4fda590bbe67c",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/run_cluster.py": {
+          "remote_sha256": "ec9652d646ed1953d9b4edc57487bd28a4ea9751c35ab4be61ff6b94346fc3d6",
+          "local_sha256": "ec9652d646ed1953d9b4edc57487bd28a4ea9751c35ab4be61ff6b94346fc3d6",
+          "status": "match",
+          "remote_changed_since_r1": true,
+          "local_changed_since_r1": true,
+          "training_execution_source": true
+        },
+        "scripts/run_overhead_343.py": {
+          "remote_sha256": "dfbe7ae9190caac807b2fc23cf5f08a71dec7e79552fd92e3b0ad0ab705d13df",
+          "local_sha256": "dfbe7ae9190caac807b2fc23cf5f08a71dec7e79552fd92e3b0ad0ab705d13df",
+          "status": "match",
+          "remote_changed_since_r1": true,
+          "local_changed_since_r1": true,
+          "training_execution_source": true
+        },
+        "scripts/run_paper_clock.py": {
+          "remote_sha256": "6d940497ec1e96b03d74a28c4531924dd6c48a30be4984f9cd4ed9a7f81eebe0",
+          "local_sha256": "6d940497ec1e96b03d74a28c4531924dd6c48a30be4984f9cd4ed9a7f81eebe0",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/run_profile_overhead.py": {
+          "remote_sha256": "7a467cd55bc0a8b5a438dc66121a5f3848142b09cf1479c46200747a7fa86f2b",
+          "local_sha256": "7a467cd55bc0a8b5a438dc66121a5f3848142b09cf1479c46200747a7fa86f2b",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/run_scoped_comm_suite.py": {
+          "remote_sha256": "714ff226c3d683b91c0f660468b0defca9607e1a2bd9ce6d657fecef71fcc239",
+          "local_sha256": "714ff226c3d683b91c0f660468b0defca9607e1a2bd9ce6d657fecef71fcc239",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/run_scoped_fault_suite.py": {
+          "remote_sha256": "9ea1ca881b11cc1e3f2439f1bb1fac0f9271ed6875ffcbd9c195bc64f95e32eb",
+          "local_sha256": "9ea1ca881b11cc1e3f2439f1bb1fac0f9271ed6875ffcbd9c195bc64f95e32eb",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/run_suite.py": {
+          "remote_sha256": "c6ddabc354bdbc8b357734914478d031388697561f257110dd8845cec18bf37c",
+          "local_sha256": "c6ddabc354bdbc8b357734914478d031388697561f257110dd8845cec18bf37c",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/start_redis.sh": {
+          "remote_sha256": "a8faab5a8b65794044e646776a78be5e911e1f7b86cb9abc2d4e901e6687bfb5",
+          "local_sha256": "a8faab5a8b65794044e646776a78be5e911e1f7b86cb9abc2d4e901e6687bfb5",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/stop_run.py": {
+          "remote_sha256": "73374ebba0bb8713a964215af3560eb7ad6fd9a5aada16c848d54145dba0c20f",
+          "local_sha256": "73374ebba0bb8713a964215af3560eb7ad6fd9a5aada16c848d54145dba0c20f",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/summarize.py": {
+          "remote_sha256": "7d2e4b39a2e1f662a494f292cfebe4cae3cf3d6a71a0ea087ad4c946875f0fc6",
+          "local_sha256": "7d2e4b39a2e1f662a494f292cfebe4cae3cf3d6a71a0ea087ad4c946875f0fc6",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/sync.py": {
+          "remote_sha256": "2a3f6c6873e26edb3e55f83d201ae26557ec341b14c2e09e6d9cb7ef07744bdc",
+          "local_sha256": "2a3f6c6873e26edb3e55f83d201ae26557ec341b14c2e09e6d9cb7ef07744bdc",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/telemetry.py": {
+          "remote_sha256": "ddfc7ec6c5960caebee76b48385cd916be790d3a976cc332b5be9dd359fb2b13",
+          "local_sha256": "ddfc7ec6c5960caebee76b48385cd916be790d3a976cc332b5be9dd359fb2b13",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/validate_artifacts.py": {
+          "remote_sha256": "482eb16be0c0571f9dc76bb2243a8356e99032c582f3ea7bc8a98f0b3cf8b66c",
+          "local_sha256": "482eb16be0c0571f9dc76bb2243a8356e99032c582f3ea7bc8a98f0b3cf8b66c",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "scripts/write_readme_results.py": {
+          "remote_sha256": "aeb89e0cc2201caa3b55ee93bb81b91d6d1d55852c83571ecda0b54200cea5e8",
+          "local_sha256": "aeb89e0cc2201caa3b55ee93bb81b91d6d1d55852c83571ecda0b54200cea5e8",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/connectivity.py": {
+          "remote_sha256": "e050b44fca9e0bca7fae5b2fd5150d35223ce330aa97eeb2949c155da01bb975",
+          "local_sha256": "e050b44fca9e0bca7fae5b2fd5150d35223ce330aa97eeb2949c155da01bb975",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/history_integration.py": {
+          "remote_sha256": "d86a9ff40fc7201bb9e185a43069534203f0693013cdf96aa7eda04df5baa5bc",
+          "local_sha256": "d86a9ff40fc7201bb9e185a43069534203f0693013cdf96aa7eda04df5baa5bc",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/paper_rule_integration.py": {
+          "remote_sha256": "b967f858376a1229a032600aa5ede056120c93e84b01b851edb19a49e018e2f3",
+          "local_sha256": "b967f858376a1229a032600aa5ede056120c93e84b01b851edb19a49e018e2f3",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/rbeast_integration.py": {
+          "remote_sha256": "c3a999898e6a69510763fa13c3ce36b15235acfa557ce0f434bd900f11f74ff2",
+          "local_sha256": "c3a999898e6a69510763fa13c3ce36b15235acfa557ce0f434bd900f11f74ff2",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/test_analysis.py": {
+          "remote_sha256": "c11e2e4cc8e2ee3f7594862aee790d1ccb88fe7397c1287c9e4bddd23a5396b5",
+          "local_sha256": "c11e2e4cc8e2ee3f7594862aee790d1ccb88fe7397c1287c9e4bddd23a5396b5",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/test_detection.py": {
+          "remote_sha256": "b9a61c47bd663f15834373de3ce853962872a6bbbdc715e24a6f93c1306a3c2d",
+          "local_sha256": "b9a61c47bd663f15834373de3ce853962872a6bbbdc715e24a6f93c1306a3c2d",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/test_history.py": {
+          "remote_sha256": "33dd26482a6458e9d68a7b475f567a8f760cdbb37c5239c21def00f6139ae490",
+          "local_sha256": "33dd26482a6458e9d68a7b475f567a8f760cdbb37c5239c21def00f6139ae490",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "tests/test_ring.py": {
+          "remote_sha256": "631a374073cb66cb7801cd9a390b0718fe84eaa2b332401b08bef90e42fb73be",
+          "local_sha256": "631a374073cb66cb7801cd9a390b0718fe84eaa2b332401b08bef90e42fb73be",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "workload/collective_bench.py": {
+          "remote_sha256": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+          "local_sha256": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        },
+        "workload/train.py": {
+          "remote_sha256": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db",
+          "local_sha256": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db",
+          "status": "match",
+          "remote_changed_since_r1": false,
+          "local_changed_since_r1": false,
+          "training_execution_source": true
+        }
+      },
+      "training_execution_file_comparison_counts": {
+        "match": 49,
+        "different": 0,
+        "remote_only": 1,
+        "local_only": 0
+      }
+    }
+  },
+  "cross_host_source_hashes_equal": false,
+  "profile_flag_scope": {
+    "flag": "--force-profile-only",
+    "requested_scope": "two r2-profile rounds only",
+    "source_review": {
+      "scripts/run_overhead_343.py": "profile suite enumerates [False, True, True, False], assigns force_profile_at=200 only to enabled rounds, and appends --force-profile-only only when force_profile_at is nonzero.",
+      "scripts/run_cluster.py": "forwards --force-profile-only only when the argument is set; requires controller and force-profile-at.",
+      "flash/global_controller.py": "automatic detect(history) branch remains enabled when force_profile_only is false; explicit force branch runs only when force_profile_at is nonzero."
+    },
+    "default_automatic_detection": "unchanged when flag is omitted",
+    "runtime_invocation_performed_during_provenance": false
+  },
+  "local_summary_helper": {
+    "path": "scripts/report_overhead_343.py",
+    "classification": "result aggregation helper",
+    "training_execution_source": false,
+    "present_in_local_filesystem_at_snapshot": true,
+    "sha256": "74666cb32600c1baa264a882b51fa5e347ee598ad50db7d28757f5a7cf1340f0",
+    "remote_sha256_by_host": {
+      "10.10.4.1": "87712bccf835fdd1e4ff9e8dd31b71f312cc53fc989149ad7d676c32f758f37c",
+      "10.10.4.2": "56d0e23745048104b3115f225eb577445e43dcf6a0862afdd0e4003f9fcee615"
+    },
+    "remote_hashes_match_each_other": false,
+    "note": "Treated as a result aggregation helper outside the training execution path. Its hashes are retained for provenance but excluded from training-source comparison counts."
+  },
+  "notes": [
+    "The 49 training-execution source files match local hashes on both remote hosts and match across the two hosts.",
+    "scripts/report_overhead_343.py is recorded as a local result-aggregation helper and excluded from training-execution comparison; its local and remote copies have different hashes, and the remote copies also differ between hosts.",
+    "probe/libflash_nccl_probe.so is present on both remote hosts with identical hashes and absent locally.",
+    "The running GPU experiment was left untouched; no remote files or processes were changed.",
+    "Container versions and host GPU details are inherited from r1; nvidia-smi was not run again."
+  ],
+  "training_execution_hashes_equal_across_hosts": true
+}

@@ -1,0 +1,24 @@
+{
+  "timestamp_utc": "2026-10-18T12:43:37.177526+00:00",
+  "states": [
+    {
+      "host": "10.10.4.1",
+      "output": "exited false\n0, 2468, 1980, 1980\n1, 2468, 1980, 1980\n2, 2300, 1980, 1980\n3, 2300, 1980, 1980\n4, 2300, 1980, 1980\n5, 2300, 1980, 1980\n6, 2468, 1980, 1980\n7, 2468, 1980, 1980\n",
+      "stderr": "",
+      "exit_code": 0
+    },
+    {
+      "host": "10.10.4.2",
+      "output": "exited false\n0, 5210, 1980, 1980\n1, 5210, 1980, 1980\n2, 5042, 1980, 1980\n3, 5042, 1980, 1980\n4, 5042, 1980, 1980\n5, 5042, 1980, 1980\n6, 5210, 1980, 1980\n7, 5210, 1980, 1980\n",
+      "stderr": "",
+      "exit_code": 0
+    }
+  ],
+  "gpu_fields": [
+    "index",
+    "memory.free_MiB",
+    "SM_MHz",
+    "application_graphics_MHz"
+  ],
+  "scope": "Only flash2-dev containers stopped; shared vLLM and original services untouched."
+}

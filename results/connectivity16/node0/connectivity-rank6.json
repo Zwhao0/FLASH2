@@ -1,0 +1,1 @@
+{"rank": 6, "world_size": 16, "allreduce": 136.0, "allocated_mb": 0.00048828125, "reserved_mb": 2.0, "torch": "2.1.0a0+32f93b1", "cuda": "12.2", "nccl": [2, 19, 3]}

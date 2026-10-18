@@ -1,0 +1,111 @@
+{
+  "prefix": "hyb346-r1-",
+  "method": "process-scoped compute arrival proxy; not physical 600MHz restriction",
+  "source_section": "3.4.6",
+  "physical_clocks": false,
+  "communication_faults": false,
+  "repeats_per_configuration": 1,
+  "runs": [
+    {
+      "name": "hyb346-r1-ep8-tp1-pp1",
+      "ep": 8,
+      "tp": 1,
+      "pp": 1,
+      "target_rank": 0,
+      "delay_ms": 200,
+      "steps": 150,
+      "fault_start": 45,
+      "padding_ms": 250,
+      "reused": false,
+      "workload_args": "--ep 8 --tp 1 --pp 1 --steps 150 --min-step-ms 250 --fault-rank 0 --fault-start 45 --fault-kind compute --fault-ms 200 --verify",
+      "command": [
+        "/Users/henry/Desktop/FLASH2/.venv/bin/python",
+        "/Users/henry/Desktop/FLASH2/scripts/run_cluster.py",
+        "hyb346-r1-ep8-tp1-pp1",
+        "--probe",
+        "--controller",
+        "--extended-cross-validation",
+        "--timeout",
+        "240",
+        "--args",
+        "--ep 8 --tp 1 --pp 1 --steps 150 --min-step-ms 250 --fault-rank 0 --fault-start 45 --fault-kind compute --fault-ms 200 --verify"
+      ]
+    },
+    {
+      "name": "hyb346-r1-ep4-tp2-pp1",
+      "ep": 4,
+      "tp": 2,
+      "pp": 1,
+      "target_rank": 0,
+      "delay_ms": 200,
+      "steps": 150,
+      "fault_start": 45,
+      "padding_ms": 250,
+      "reused": false,
+      "workload_args": "--ep 4 --tp 2 --pp 1 --steps 150 --min-step-ms 250 --fault-rank 0 --fault-start 45 --fault-kind compute --fault-ms 200 --verify",
+      "command": [
+        "/Users/henry/Desktop/FLASH2/.venv/bin/python",
+        "/Users/henry/Desktop/FLASH2/scripts/run_cluster.py",
+        "hyb346-r1-ep4-tp2-pp1",
+        "--probe",
+        "--controller",
+        "--extended-cross-validation",
+        "--timeout",
+        "240",
+        "--args",
+        "--ep 4 --tp 2 --pp 1 --steps 150 --min-step-ms 250 --fault-rank 0 --fault-start 45 --fault-kind compute --fault-ms 200 --verify"
+      ]
+    },
+    {
+      "name": "hyb346-r1-ep4-tp1-pp2",
+      "ep": 4,
+      "tp": 1,
+      "pp": 2,
+      "target_rank": 0,
+      "delay_ms": 200,
+      "steps": 150,
+      "fault_start": 45,
+      "padding_ms": 250,
+      "reused": false,
+      "workload_args": "--ep 4 --tp 1 --pp 2 --steps 150 --min-step-ms 250 --fault-rank 0 --fault-start 45 --fault-kind compute --fault-ms 200 --verify",
+      "command": [
+        "/Users/henry/Desktop/FLASH2/.venv/bin/python",
+        "/Users/henry/Desktop/FLASH2/scripts/run_cluster.py",
+        "hyb346-r1-ep4-tp1-pp2",
+        "--probe",
+        "--controller",
+        "--extended-cross-validation",
+        "--timeout",
+        "240",
+        "--args",
+        "--ep 4 --tp 1 --pp 2 --steps 150 --min-step-ms 250 --fault-rank 0 --fault-start 45 --fault-kind compute --fault-ms 200 --verify"
+      ]
+    },
+    {
+      "name": "loc-r1-hybrid-compute",
+      "ep": 4,
+      "tp": 2,
+      "pp": 2,
+      "target_rank": 0,
+      "delay_ms": 200,
+      "steps": 150,
+      "fault_start": 45,
+      "padding_ms": 250,
+      "reused": true,
+      "workload_args": "--ep 4 --tp 2 --pp 2 --steps 150 --min-step-ms 250 --fault-rank 0 --fault-start 45 --fault-kind compute --fault-ms 200",
+      "command": [
+        "/Users/henry/Desktop/FLASH2/.venv/bin/python",
+        "/Users/henry/Desktop/FLASH2/scripts/run_cluster.py",
+        "loc-r1-hybrid-compute",
+        "--probe",
+        "--controller",
+        "--extended-cross-validation",
+        "--timeout",
+        "240",
+        "--args",
+        "--ep 4 --tp 2 --pp 2 --steps 150 --min-step-ms 250 --fault-rank 0 --fault-start 45 --fault-kind compute --fault-ms 200"
+      ],
+      "verification_run": "hyb346-r1-verify-ep4-tp2-pp2"
+    }
+  ]
+}

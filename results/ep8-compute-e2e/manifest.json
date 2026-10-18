@@ -1,0 +1,43 @@
+{
+  "name": "ep8-compute-e2e",
+  "seconds": 72.17109990119934,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "arguments": {
+    "name": "ep8-compute-e2e",
+    "probe": true,
+    "controller": true,
+    "force_profile_at": 0,
+    "gpus": 8,
+    "port": 29731,
+    "timeout": 220,
+    "program": "workload/train.py",
+    "args": "--ep 8 --steps 120 --min-step-ms 250 --fault-rank 0 --fault-start 45 --fault-kind compute --fault-ms 200"
+  },
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "NCCL_SOCKET_IFNAME": "bond0",
+    "GLOO_SOCKET_IFNAME": "bond0",
+    "NCCL_IB_DISABLE": "1",
+    "NCCL_NET": "Socket",
+    "NCCL_DEBUG": "WARN",
+    "NCCL_BUFFSIZE": "1048576",
+    "NCCL_MAX_NCHANNELS": "2",
+    "NCCL_NVLS_ENABLE": "0",
+    "NCCL_COLLNET_ENABLE": "0",
+    "NCCL_P2P_NET_CHUNKSIZE": "131072",
+    "NCCL_ALLOC_P2P_NET_LL_BUFFERS": "0",
+    "NCCL_NCHANNELS_PER_NET_PEER": "1",
+    "CUDA_MODULE_LOADING": "LAZY",
+    "CUBLAS_WORKSPACE_CONFIG": ":16:8",
+    "CUDA_DEVICE_MAX_CONNECTIONS": "1",
+    "FLASH_RUN_ID": "ep8-compute-e2e",
+    "PYTHONPATH": "/workspace/flash2",
+    "PYTORCH_CUDA_ALLOC_CONF": "max_split_size_mb:64",
+    "LD_PRELOAD": "/workspace/flash2/probe/libflash_nccl_probe.so"
+  },
+  "network": "NCCL Socket/bond0; IB disabled for reproducibility; shared vLLM GPUs"
+}

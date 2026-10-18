@@ -1,0 +1,3 @@
+{"event": "controller_started", "time": 1792318728.4996827, "parameters": {"window": 30, "probability": 0.8, "degradation": 0.2, "cv": 0.1, "percent": 0.2, "profile_min_seconds": 20}}
+{"event": "failstop", "time": 1792318760.4149668, "report": {"node": 0, "stalled_ranks": [6, 2, 0, 1, 3, 5, 7, 4], "exited_process_ranks": [], "window_s": 2.0, "time": 1792318760.3276463, "interpretation": "No NCCL entry observed; collective blocking may propagate to healthy peers."}}
+{"event": "failstop", "time": 1792318760.5660093, "report": {"node": 1, "stalled_ranks": [11, 10, 14, 13, 15, 9, 12, 8], "exited_process_ranks": [], "window_s": 2.0, "time": 1792318760.4196284, "interpretation": "No NCCL entry observed; collective blocking may propagate to healthy peers."}}

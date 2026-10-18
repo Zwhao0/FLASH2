@@ -1,0 +1,88 @@
+{
+  "time": 1792322417.7672372,
+  "states": [
+    {
+      "host": "10.10.4.1",
+      "commands": [
+        {
+          "command": "ip -j route get 10.10.4.2",
+          "stdout": "[{\"dst\":\"10.10.4.2\",\"dev\":\"bond0\",\"prefsrc\":\"10.10.4.1\",\"flags\":[],\"uid\":1000,\"cache\":[]}]\n",
+          "stderr": "",
+          "returncode": 0
+        },
+        {
+          "command": "cat /sys/class/net/bond0/bonding/mode",
+          "stdout": "802.3ad 4\n",
+          "stderr": "",
+          "returncode": 0
+        },
+        {
+          "command": "cat /sys/class/net/bond0/bonding/slaves",
+          "stdout": "ens81f0np0 ens81f1np1\n",
+          "stderr": "",
+          "returncode": 0
+        },
+        {
+          "command": "cat /sys/class/net/ens81f0np0/speed",
+          "stdout": "25000\n",
+          "stderr": "",
+          "returncode": 0
+        },
+        {
+          "command": "cat /sys/class/net/ens81f1np1/speed",
+          "stdout": "25000\n",
+          "stderr": "",
+          "returncode": 0
+        },
+        {
+          "command": "iperf3 --version",
+          "stdout": "iperf 3.16 (cJSON 1.7.15)\nLinux gpu-01 6.8.0-146-generic #146-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep  3 16:12:30 UTC 2026 x86_64\nOptional features available: CPU affinity setting, IPv6 flow label, SCTP, TCP congestion algorithm setting, sendfile / zerocopy, socket pacing, authentication, bind to device, support IPv4 don't fragment, POSIX threads\n",
+          "stderr": "",
+          "returncode": 0
+        }
+      ]
+    },
+    {
+      "host": "10.10.4.2",
+      "commands": [
+        {
+          "command": "ip -j route get 10.10.4.1",
+          "stdout": "[{\"dst\":\"10.10.4.1\",\"dev\":\"bond0\",\"prefsrc\":\"10.10.4.2\",\"flags\":[],\"uid\":1000,\"cache\":[]}]\n",
+          "stderr": "",
+          "returncode": 0
+        },
+        {
+          "command": "cat /sys/class/net/bond0/bonding/mode",
+          "stdout": "802.3ad 4\n",
+          "stderr": "",
+          "returncode": 0
+        },
+        {
+          "command": "cat /sys/class/net/bond0/bonding/slaves",
+          "stdout": "ens81f0np0 ens81f1np1\n",
+          "stderr": "",
+          "returncode": 0
+        },
+        {
+          "command": "cat /sys/class/net/ens81f0np0/speed",
+          "stdout": "25000\n",
+          "stderr": "",
+          "returncode": 0
+        },
+        {
+          "command": "cat /sys/class/net/ens81f1np1/speed",
+          "stdout": "25000\n",
+          "stderr": "",
+          "returncode": 0
+        },
+        {
+          "command": "iperf3 --version",
+          "stdout": "iperf 3.16 (cJSON 1.7.15)\nLinux gpu-02 6.8.0-139-generic #139-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 03:52:05 UTC 2026 x86_64\nOptional features available: CPU affinity setting, IPv6 flow label, SCTP, TCP congestion algorithm setting, sendfile / zerocopy, socket pacing, authentication, bind to device, support IPv4 don't fragment, POSIX threads\n",
+          "stderr": "",
+          "returncode": 0
+        }
+      ]
+    }
+  ],
+  "traffic_started": false
+}

@@ -1,0 +1,20 @@
+{
+  "name": "verify-ep8",
+  "seconds": 30.63205623626709,
+  "exit_codes": [
+    1,
+    1
+  ],
+  "arguments": {
+    "name": "verify-ep8",
+    "probe": true,
+    "controller": false,
+    "force_profile_at": 0,
+    "gpus": 8,
+    "port": 29731,
+    "timeout": 160,
+    "program": "workload/train.py",
+    "args": "--ep 8 --tp 1 --pp 1 --verify --steps 3 --min-step-ms 0 --no-redis"
+  },
+  "network": "NCCL Socket/bond0; IB disabled for reproducibility; shared vLLM GPUs"
+}

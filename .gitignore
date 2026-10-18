@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+服务器.md
+tmp/
+*.so
+*.o
+third_party/
+
+# Local reference documents and OS files
+.DS_Store
+/*.pdf
+
+# Large per-event traces stay in the local/server experiment archive.
+results/**/probe-snapshot-*.json*
+results/**/profile-raw-*.json*
+results/**/*.log
+results/**/*.pid
+results/**/gpu-telemetry.jsonl
+results/**/stop-local
+results/**/stall-ms
+results/**/*.lock

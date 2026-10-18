@@ -1,0 +1,39 @@
+gpu-02
+Linux gpu-02 6.8.0-139-generic #139-Ubuntu SMP PREEMPT_DYNAMIC Sat Aug  1 03:52:05 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 24.04.4 LTS"
+NAME="Ubuntu"
+VERSION_ID="24.04"
+VERSION="24.04.4 LTS (Noble Numbat)"
+VERSION_CODENAME=noble
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=noble
+LOGO=ubuntu-logo
+index, name, uuid, memory.total [MiB], memory.used [MiB], driver_version, clocks.current.sm [MHz]
+0, NVIDIA H800, GPU-a17d04f4-3674-c1bc-c3f8-2189ea56fcb1, 81559 MiB, 75869 MiB, 580.178.04, 1980 MHz
+1, NVIDIA H800, GPU-53793bfd-0c74-13bd-2209-3afc070c2f10, 81559 MiB, 75869 MiB, 580.178.04, 1980 MHz
+2, NVIDIA H800, GPU-60b56423-d365-0851-1913-e07785e8b16a, 81559 MiB, 76037 MiB, 580.178.04, 1980 MHz
+3, NVIDIA H800, GPU-02d3ce23-a079-d334-eb97-62fe0c9ab3b8, 81559 MiB, 76037 MiB, 580.178.04, 1980 MHz
+4, NVIDIA H800, GPU-3e60a8e7-2982-6d8a-b34f-5e76ae173f45, 81559 MiB, 76037 MiB, 580.178.04, 1980 MHz
+5, NVIDIA H800, GPU-ed8170d0-b2c3-5c0b-714e-1befa83e432d, 81559 MiB, 76037 MiB, 580.178.04, 1980 MHz
+6, NVIDIA H800, GPU-6e7c62c2-354f-2cc7-da1d-a18f5b07de64, 81559 MiB, 75869 MiB, 580.178.04, 1980 MHz
+7, NVIDIA H800, GPU-6a51ce14-d531-d5fe-8fea-db29230410e5, 81559 MiB, 75869 MiB, 580.178.04, 1980 MHz
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+ens66np0         UP             10.10.2.2/24 fe80::a288:c2ff:fe78:ef74/64 
+ens69np0         UP             10.10.1.2/24 fe80::a288:c2ff:fe7d:3932/64 
+ens73np0         UP             10.10.3.2/24 fe80::a288:c2ff:fe79:e1c/64 
+ens76np0         UP             10.10.0.2/24 fe80::a288:c2ff:fe79:1524/64 
+ens81f0np0       UP             
+ens81f1np1       UP             
+bond0            UP             10.10.4.2/22 fe80::5c7f:afff:fe17:2b52/64 
+nodelocaldns     DOWN           169.254.25.10/32 
+kube-ipvs0       DOWN           10.233.0.3/32 10.233.0.1/32 10.233.4.107/32 10.233.25.228/32 
+vxlan.calico     UNKNOWN        10.233.110.0/32 fe80::649e:a6ff:fee4:6415/64 
+calic65258c9002@if2 UP             fe80::ecee:eeff:feee:eeee/64 
+cali662211ed0b1@if2 UP             fe80::ecee:eeff:feee:eeee/64 
+Filesystem                         Size  Used Avail Use% Mounted on
+/dev/mapper/ubuntu--vg-ubuntu--lv  787G  601G  147G  81% /

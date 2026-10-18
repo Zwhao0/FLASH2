@@ -1,0 +1,64 @@
+{
+  "profile_run": "allreduce-profile",
+  "scope": "CUDA event interval validation; external interval also includes wrapper overhead",
+  "nodes": [
+    {
+      "node": 0,
+      "records": 640,
+      "timed_records": 624,
+      "timing_errors": 0,
+      "unknown_communicators": 0
+    },
+    {
+      "node": 1,
+      "records": 640,
+      "timed_records": 624,
+      "timing_errors": 0,
+      "unknown_communicators": 0
+    }
+  ],
+  "rank0_by_size": [
+    {
+      "size_mib": 4,
+      "probe_mean_ms": 4.755108,
+      "external_mean_ms": 4.854919910430908,
+      "samples": 8
+    },
+    {
+      "size_mib": 8,
+      "probe_mean_ms": 6.16174,
+      "external_mean_ms": 6.210139989852905,
+      "samples": 8
+    },
+    {
+      "size_mib": 16,
+      "probe_mean_ms": 10.496292,
+      "external_mean_ms": 10.545220017433167,
+      "samples": 8
+    },
+    {
+      "size_mib": 32,
+      "probe_mean_ms": 20.489767999999998,
+      "external_mean_ms": 20.54281210899353,
+      "samples": 8
+    },
+    {
+      "size_mib": 64,
+      "probe_mean_ms": 40.102136,
+      "external_mean_ms": 40.15779638290405,
+      "samples": 8
+    },
+    {
+      "size_mib": 128,
+      "probe_mean_ms": 78.215084,
+      "external_mean_ms": 78.28088855743408,
+      "samples": 8
+    },
+    {
+      "size_mib": 256,
+      "probe_mean_ms": 155.34078,
+      "external_mean_ms": 155.4162197113037,
+      "samples": 8
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "all_passed": true,
+  "training_runs": 13,
+  "rank_iterations_checked": 31200,
+  "profiles_checked": 9,
+  "checks": [
+    {
+      "run": "loc-r1-normal",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-transient",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-compute-weak",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-compute-medium",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-compute-strong",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-comm-weak",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-comm-medium",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-comm-strong",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-hybrid-compute",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-comm-node1-final",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-compute-node0-rank3",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-compute-node1-rank10",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    },
+    {
+      "run": "loc-r1-compute-node1-rank15",
+      "exit_codes": [
+        0,
+        0
+      ],
+      "rank_count": 16,
+      "steps_per_rank": 150,
+      "source_matches_smoke": true,
+      "injection_scope_verified": true,
+      "formal_outputs_match_online_profile": true
+    }
+  ],
+  "report_sha256": "b208896b0d126a73436a00145689dc547e95efd137b4d8718a163abdd1d65600",
+  "scope": "Fresh 13-run proxy matrix only; physical clocks/background traffic/fail-stop excluded."
+}

@@ -1,0 +1,5 @@
+# Already present in the offline Greyhound image; do not upgrade the running image.
+numpy==1.26.4
+redis==5.0.5
+Rbeast==0.1.19
+# GPU runtime: torch==2.1.0a0+32f93b1, CUDA 12.2, NCCL 2.19.3 (image-provided)

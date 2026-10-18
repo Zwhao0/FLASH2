@@ -1,0 +1,14 @@
+{
+  "control_plane_replay_only": true,
+  "source_real_profile": "results/sim-dpcomm-65/profile-1.json",
+  "expected": [
+    7
+  ],
+  "actual": [
+    7
+  ],
+  "previous_20pct_interpretation": [],
+  "primary_rule": "paper_text_cv_minimum",
+  "status": "pass",
+  "run": "paper-rule-replay-1792323857023844033"
+}

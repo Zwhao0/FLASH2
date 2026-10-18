@@ -1,0 +1,20 @@
+{
+  "name": "allreduce-profile",
+  "seconds": 21.029109716415405,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "arguments": {
+    "name": "allreduce-profile",
+    "probe": true,
+    "controller": false,
+    "force_profile_at": 0,
+    "gpus": 8,
+    "port": 29731,
+    "timeout": 180,
+    "program": "workload/collective_bench.py",
+    "args": "--warmup 3 --iters 8 --initial-profile"
+  },
+  "network": "NCCL Socket/bond0; IB disabled for reproducibility; shared vLLM GPUs"
+}

@@ -1,0 +1,131 @@
+{
+  "run": "loc-r1-comm-medium",
+  "injection_control_rank": 0,
+  "target_expert_dp_group": [
+    0,
+    8
+  ],
+  "baseline_steps": [
+    10,
+    40
+  ],
+  "steady_steps": [
+    50,
+    149
+  ],
+  "per_rank_iteration_latency": [
+    {
+      "rank": 0,
+      "baseline_ms": 276.9671189598739,
+      "steady_ms": 393.73646647436544,
+      "latency_increase_percent": 42.160003668669674,
+      "source": "results/loc-r1-comm-medium/node0/rank0.jsonl"
+    },
+    {
+      "rank": 1,
+      "baseline_ms": 277.0181369269267,
+      "steady_ms": 393.7404519529082,
+      "latency_increase_percent": 42.1352610052284,
+      "source": "results/loc-r1-comm-medium/node0/rank1.jsonl"
+    },
+    {
+      "rank": 2,
+      "baseline_ms": 276.976477005519,
+      "steady_ms": 393.82469846168533,
+      "latency_increase_percent": 42.18705599820236,
+      "source": "results/loc-r1-comm-medium/node0/rank2.jsonl"
+    },
+    {
+      "rank": 3,
+      "baseline_ms": 277.0253779599443,
+      "steady_ms": 393.7780549749732,
+      "latency_increase_percent": 42.14511965467309,
+      "source": "results/loc-r1-comm-medium/node0/rank3.jsonl"
+    },
+    {
+      "rank": 4,
+      "baseline_ms": 277.44534297380596,
+      "steady_ms": 393.79782852483913,
+      "latency_increase_percent": 41.93708364462192,
+      "source": "results/loc-r1-comm-medium/node0/rank4.jsonl"
+    },
+    {
+      "rank": 5,
+      "baseline_ms": 277.17699494678527,
+      "steady_ms": 393.8553029438481,
+      "latency_increase_percent": 42.0952352194538,
+      "source": "results/loc-r1-comm-medium/node0/rank5.jsonl"
+    },
+    {
+      "rank": 6,
+      "baseline_ms": 277.1241209702566,
+      "steady_ms": 393.84261902887374,
+      "latency_increase_percent": 42.117769341032705,
+      "source": "results/loc-r1-comm-medium/node0/rank6.jsonl"
+    },
+    {
+      "rank": 7,
+      "baseline_ms": 277.1366819506511,
+      "steady_ms": 393.86764442315325,
+      "latency_increase_percent": 42.12035795870865,
+      "source": "results/loc-r1-comm-medium/node0/rank7.jsonl"
+    },
+    {
+      "rank": 8,
+      "baseline_ms": 276.87360998243093,
+      "steady_ms": 393.71698489412665,
+      "latency_increase_percent": 42.200979327394194,
+      "source": "results/loc-r1-comm-medium/node1/rank8.jsonl"
+    },
+    {
+      "rank": 9,
+      "baseline_ms": 276.8668010830879,
+      "steady_ms": 393.7389604980126,
+      "latency_increase_percent": 42.212413679692595,
+      "source": "results/loc-r1-comm-medium/node1/rank9.jsonl"
+    },
+    {
+      "rank": 10,
+      "baseline_ms": 276.9753350876272,
+      "steady_ms": 393.83404003456235,
+      "latency_increase_percent": 42.19101491833719,
+      "source": "results/loc-r1-comm-medium/node1/rank10.jsonl"
+    },
+    {
+      "rank": 11,
+      "baseline_ms": 276.97251085191965,
+      "steady_ms": 393.85775302071124,
+      "latency_increase_percent": 42.201026307366305,
+      "source": "results/loc-r1-comm-medium/node1/rank11.jsonl"
+    },
+    {
+      "rank": 12,
+      "baseline_ms": 277.0208918955177,
+      "steady_ms": 393.914510961622,
+      "latency_increase_percent": 42.19667992051386,
+      "source": "results/loc-r1-comm-medium/node1/rank12.jsonl"
+    },
+    {
+      "rank": 13,
+      "baseline_ms": 277.02497388236225,
+      "steady_ms": 393.99457711260766,
+      "latency_increase_percent": 42.223486782067596,
+      "source": "results/loc-r1-comm-medium/node1/rank13.jsonl"
+    },
+    {
+      "rank": 14,
+      "baseline_ms": 277.0343320444226,
+      "steady_ms": 394.01588903274387,
+      "latency_increase_percent": 42.226375382803894,
+      "source": "results/loc-r1-comm-medium/node1/rank14.jsonl"
+    },
+    {
+      "rank": 15,
+      "baseline_ms": 277.1271700039506,
+      "steady_ms": 394.11753544118255,
+      "latency_increase_percent": 42.21540797878613,
+      "source": "results/loc-r1-comm-medium/node1/rank15.jsonl"
+    }
+  ],
+  "interpretation": "All 16 ranks show iteration slowdown via synchronization; this is an affected set, not 16 injected root causes. NCCL group pair and single injection point are separate granularities."
+}

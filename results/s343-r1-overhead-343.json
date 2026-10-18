@@ -1,0 +1,1952 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-18T12:06:14.086466+00:00",
+  "prefix": "s343-r1-",
+  "profile_prefix": "s343-r2-",
+  "status": "ended_incomplete",
+  "ended": true,
+  "collective_calibration": {
+    "status": "calibration_only",
+    "run_id": "s343-r1-collective-calibration",
+    "warmup": 8,
+    "iters": 100,
+    "timed_batches_per_size": 1,
+    "overhead_available": false,
+    "per_size": [
+      {
+        "size_mib": 4,
+        "baseline_rank_mean_ms": 3.0200125694274904
+      },
+      {
+        "size_mib": 8,
+        "baseline_rank_mean_ms": 5.8378599166870115
+      },
+      {
+        "size_mib": 16,
+        "baseline_rank_mean_ms": 10.63618293762207
+      },
+      {
+        "size_mib": 32,
+        "baseline_rank_mean_ms": 21.07763931274414
+      },
+      {
+        "size_mib": 64,
+        "baseline_rank_mean_ms": 41.15032775878906
+      },
+      {
+        "size_mib": 128,
+        "baseline_rank_mean_ms": 79.95697784423828
+      }
+    ]
+  },
+  "reporter_sha256": "f75f05811e014b993fa96a6b138455cc95926983c2a903541c3614c5b4305897",
+  "method": {
+    "train_primary": "rank-0 adjacent step_start_time differences; cycle labels 0..4 excluded",
+    "train_supplementary": "rank-0 time_ms across all 250 or 1,800 steps",
+    "profile_stable_window": "intersection of two local profile intervals, trim 0.5 seconds from each boundary, match identical cycle step numbers in both baseline runs",
+    "profile_transaction": "cycles fully inside global trigger-to-finish interval; report means to retain long-tail effects",
+    "collective_unit": "one run is independent; per-rank 100-batch means are summarized within a run"
+  },
+  "suites": {
+    "monitor": {
+      "status": "complete",
+      "measurement": "rank-0 adjacent step_start_time cycle; cycle labels 0..4 excluded",
+      "base_runs": [
+        "s343-r1-monitor-0-base",
+        "s343-r1-monitor-3-base"
+      ],
+      "monitor_runs": [
+        "s343-r1-monitor-1-flash",
+        "s343-r1-monitor-2-flash"
+      ],
+      "baseline_mean_cycle_ms": 21.06930926197865,
+      "monitor_mean_cycle_ms": 21.310531702197967,
+      "baseline_median_cycle_ms": 19.98370885848999,
+      "monitor_median_cycle_ms": 20.383596420288086,
+      "baseline_all_step_time_mean_ms": 31.565231604035944,
+      "monitor_all_step_time_mean_ms": 32.22681466629729,
+      "baseline_all_step_time_median_ms": 18.9861252438277,
+      "monitor_all_step_time_median_ms": 19.324828492244706,
+      "mean_cycle_latency_overhead_percent": 1.144899613081396,
+      "median_cycle_latency_overhead_percent": 2.001067792919753,
+      "mean_cycle_throughput_change_percent": -1.1319400359890541,
+      "median_cycle_throughput_change_percent": -1.9618106322007112,
+      "per_run": [
+        {
+          "run_id": "s343-r1-monitor-0-base",
+          "variant": "base",
+          "primary_cycle_steps": {
+            "excluded_zero_based": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "first": 5,
+            "last": 248
+          },
+          "primary_cycle_count": 244,
+          "cycle_mean_ms": 20.995786932648205,
+          "cycle_median_ms": 19.912123680114746,
+          "all_step_time_ms_count": 250,
+          "all_step_time_ms_mean": 31.59747636737302,
+          "all_step_time_ms_median": 18.863101489841938,
+          "observed_training_seconds": 8.138991355895996,
+          "training_last_wall_time": 1792324350.0296104
+        },
+        {
+          "run_id": "s343-r1-monitor-1-flash",
+          "variant": "monitor",
+          "primary_cycle_steps": {
+            "excluded_zero_based": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "first": 5,
+            "last": 248
+          },
+          "primary_cycle_count": 244,
+          "cycle_mean_ms": 21.053494000044026,
+          "cycle_median_ms": 19.981026649475098,
+          "all_step_time_ms_count": 250,
+          "all_step_time_ms_mean": 32.12416571890935,
+          "all_step_time_ms_median": 18.948725482914597,
+          "observed_training_seconds": 8.279687643051147,
+          "training_last_wall_time": 1792324390.4100335
+        },
+        {
+          "run_id": "s343-r1-monitor-2-flash",
+          "variant": "monitor",
+          "primary_cycle_steps": {
+            "excluded_zero_based": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "first": 5,
+            "last": 248
+          },
+          "primary_cycle_count": 244,
+          "cycle_mean_ms": 21.567569404351907,
+          "cycle_median_ms": 20.786166191101074,
+          "all_step_time_ms_count": 250,
+          "all_step_time_ms_mean": 32.32946361368522,
+          "all_step_time_ms_median": 19.700931501574814,
+          "observed_training_seconds": 8.35049557685852,
+          "training_last_wall_time": 1792324433.9408538
+        },
+        {
+          "run_id": "s343-r1-monitor-3-base",
+          "variant": "base",
+          "primary_cycle_steps": {
+            "excluded_zero_based": [
+              0,
+              1,
+              2,
+              3,
+              4
+            ],
+            "first": 5,
+            "last": 248
+          },
+          "primary_cycle_count": 244,
+          "cycle_mean_ms": 21.142831591309093,
+          "cycle_median_ms": 20.055294036865234,
+          "all_step_time_ms_count": 250,
+          "all_step_time_ms_mean": 31.532986840698868,
+          "all_step_time_ms_median": 19.109148997813463,
+          "observed_training_seconds": 8.130623817443848,
+          "training_last_wall_time": 1792324476.5386524
+        }
+      ]
+    },
+    "profile": {
+      "status": "ended_incomplete",
+      "forced_and_automatic_are_separate": true,
+      "forced_runs": [
+        {
+          "run_id": "s343-r2-profile-1-flash",
+          "status": "cancelled",
+          "trigger_counts": null,
+          "triggered_profiles": null,
+          "forced_profile": null
+        },
+        {
+          "run_id": "s343-r2-profile-2-flash",
+          "status": "not_started",
+          "trigger_counts": null,
+          "triggered_profiles": null,
+          "forced_profile": null
+        }
+      ],
+      "profile_baseline_runs": [
+        "s343-r2-profile-0-base",
+        "s343-r2-profile-3-base"
+      ]
+    },
+    "healthy": {
+      "status": "complete",
+      "observation": {
+        "status": "complete",
+        "run_id": "s343-r1-healthy",
+        "trigger_counts": {
+          "total": 0,
+          "automatic": 0,
+          "forced": 0
+        },
+        "observed_seconds": 39.38498497009277,
+        "controller_observed_seconds": 53.2572979927063,
+        "training_observed_seconds": 39.38498497009277,
+        "runner_elapsed_seconds": 65.18049192428589,
+        "scope_note": "This is the observed duration of this 1,800-step run; it is not evidence about weeks-long false-trigger rates."
+      }
+    },
+    "collective": {
+      "status": "ended_incomplete",
+      "design": "off/on pair (one independent run per variant)",
+      "is_abba": false,
+      "independent_runs_per_variant": 1,
+      "noise_suppression_note": "The off/on pair is a single independent comparison and does not provide ABBA order balancing or ABBA noise suppression.",
+      "per_size": [
+        {
+          "size_mib": 4,
+          "baseline_run_means_ms": [],
+          "monitor_run_means_ms": [],
+          "baseline_rank_mean_ms": null,
+          "monitor_rank_mean_ms": null,
+          "baseline_rank_cv_percent": null,
+          "monitor_rank_cv_percent": null,
+          "latency_overhead_percent": null,
+          "baseline_wall_batch_mean_ms": null,
+          "monitor_wall_batch_mean_ms": null,
+          "baseline_wall_rank_cv_percent": null,
+          "monitor_wall_rank_cv_percent": null,
+          "wall_batch_overhead_percent": null,
+          "per_run_differences": [],
+          "negative_overhead_interpretation": "A negative measured overhead is reported as observed and treated as measurement noise, not a speedup claim."
+        },
+        {
+          "size_mib": 8,
+          "baseline_run_means_ms": [],
+          "monitor_run_means_ms": [],
+          "baseline_rank_mean_ms": null,
+          "monitor_rank_mean_ms": null,
+          "baseline_rank_cv_percent": null,
+          "monitor_rank_cv_percent": null,
+          "latency_overhead_percent": null,
+          "baseline_wall_batch_mean_ms": null,
+          "monitor_wall_batch_mean_ms": null,
+          "baseline_wall_rank_cv_percent": null,
+          "monitor_wall_rank_cv_percent": null,
+          "wall_batch_overhead_percent": null,
+          "per_run_differences": [],
+          "negative_overhead_interpretation": "A negative measured overhead is reported as observed and treated as measurement noise, not a speedup claim."
+        },
+        {
+          "size_mib": 16,
+          "baseline_run_means_ms": [],
+          "monitor_run_means_ms": [],
+          "baseline_rank_mean_ms": null,
+          "monitor_rank_mean_ms": null,
+          "baseline_rank_cv_percent": null,
+          "monitor_rank_cv_percent": null,
+          "latency_overhead_percent": null,
+          "baseline_wall_batch_mean_ms": null,
+          "monitor_wall_batch_mean_ms": null,
+          "baseline_wall_rank_cv_percent": null,
+          "monitor_wall_rank_cv_percent": null,
+          "wall_batch_overhead_percent": null,
+          "per_run_differences": [],
+          "negative_overhead_interpretation": "A negative measured overhead is reported as observed and treated as measurement noise, not a speedup claim."
+        },
+        {
+          "size_mib": 32,
+          "baseline_run_means_ms": [],
+          "monitor_run_means_ms": [],
+          "baseline_rank_mean_ms": null,
+          "monitor_rank_mean_ms": null,
+          "baseline_rank_cv_percent": null,
+          "monitor_rank_cv_percent": null,
+          "latency_overhead_percent": null,
+          "baseline_wall_batch_mean_ms": null,
+          "monitor_wall_batch_mean_ms": null,
+          "baseline_wall_rank_cv_percent": null,
+          "monitor_wall_rank_cv_percent": null,
+          "wall_batch_overhead_percent": null,
+          "per_run_differences": [],
+          "negative_overhead_interpretation": "A negative measured overhead is reported as observed and treated as measurement noise, not a speedup claim."
+        },
+        {
+          "size_mib": 64,
+          "baseline_run_means_ms": [],
+          "monitor_run_means_ms": [],
+          "baseline_rank_mean_ms": null,
+          "monitor_rank_mean_ms": null,
+          "baseline_rank_cv_percent": null,
+          "monitor_rank_cv_percent": null,
+          "latency_overhead_percent": null,
+          "baseline_wall_batch_mean_ms": null,
+          "monitor_wall_batch_mean_ms": null,
+          "baseline_wall_rank_cv_percent": null,
+          "monitor_wall_rank_cv_percent": null,
+          "wall_batch_overhead_percent": null,
+          "per_run_differences": [],
+          "negative_overhead_interpretation": "A negative measured overhead is reported as observed and treated as measurement noise, not a speedup claim."
+        },
+        {
+          "size_mib": 128,
+          "baseline_run_means_ms": [],
+          "monitor_run_means_ms": [],
+          "baseline_rank_mean_ms": null,
+          "monitor_rank_mean_ms": null,
+          "baseline_rank_cv_percent": null,
+          "monitor_rank_cv_percent": null,
+          "latency_overhead_percent": null,
+          "baseline_wall_batch_mean_ms": null,
+          "monitor_wall_batch_mean_ms": null,
+          "baseline_wall_rank_cv_percent": null,
+          "monitor_wall_rank_cv_percent": null,
+          "wall_batch_overhead_percent": null,
+          "per_run_differences": [],
+          "negative_overhead_interpretation": "A negative measured overhead is reported as observed and treated as measurement noise, not a speedup claim."
+        }
+      ]
+    }
+  },
+  "false_triggers": {
+    "definition": "observed automatic profile_trigger events in runs without injected faults, counted as false triggers by the negative-control protocol; forced events are excluded; shared-GPU resource fluctuations are not ruled out",
+    "scanned_prefixes": [
+      "s343-r1-",
+      "s343-r2-"
+    ],
+    "automatic_false_trigger_count_observed": 1,
+    "observed_run_count": 5,
+    "pending_run_count": 0,
+    "not_started_run_count": 5,
+    "per_run": [
+      {
+        "run_id": "s343-r1-healthy",
+        "status": "observed",
+        "log_complete": true,
+        "log_errors": [],
+        "forced_trigger_count": 0,
+        "automatic_trigger_count": 0,
+        "automatic_events": [],
+        "triggered_epochs": [],
+        "manifest_exit_codes": [
+          0,
+          0
+        ],
+        "manifest_sha256": "5edb0fbead727e3002824bdcdcd10c77334a74bdc77b6ba8f4a4db0bef585bd4",
+        "source_sha256": {
+          "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+          "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+          "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+          "flash/global_controller.py": "4427b4583803412b3d317eb0d62982495e544aef6fd9763d797c260041fb9e79",
+          "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+          "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+          "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+          "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+          "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+          "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+          "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+          "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+        },
+        "recovery_note": null,
+        "termination_reason": null,
+        "historical_recovered_run": false,
+        "eligible_for_controlled_profile_comparison": true
+      },
+      {
+        "run_id": "s343-r1-monitor-1-flash",
+        "status": "observed",
+        "log_complete": true,
+        "log_errors": [],
+        "forced_trigger_count": 0,
+        "automatic_trigger_count": 0,
+        "automatic_events": [],
+        "triggered_epochs": [],
+        "manifest_exit_codes": [
+          0,
+          0
+        ],
+        "manifest_sha256": "135413f09e8d1b1a2e95053d562b05db0abc9ff1f466ca8282fdc13355af02d6",
+        "source_sha256": {
+          "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+          "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+          "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+          "flash/global_controller.py": "4427b4583803412b3d317eb0d62982495e544aef6fd9763d797c260041fb9e79",
+          "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+          "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+          "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+          "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+          "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+          "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+          "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+          "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+        },
+        "recovery_note": null,
+        "termination_reason": null,
+        "historical_recovered_run": false,
+        "eligible_for_controlled_profile_comparison": true
+      },
+      {
+        "run_id": "s343-r1-monitor-2-flash",
+        "status": "observed",
+        "log_complete": true,
+        "log_errors": [],
+        "forced_trigger_count": 0,
+        "automatic_trigger_count": 0,
+        "automatic_events": [],
+        "triggered_epochs": [],
+        "manifest_exit_codes": [
+          0,
+          0
+        ],
+        "manifest_sha256": "6902a07125db8bb1ca6cc65d9b137f27ad59dfdd93d5710799be4c96a73c1f2d",
+        "source_sha256": {
+          "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+          "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+          "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+          "flash/global_controller.py": "4427b4583803412b3d317eb0d62982495e544aef6fd9763d797c260041fb9e79",
+          "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+          "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+          "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+          "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+          "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+          "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+          "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+          "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+        },
+        "recovery_note": null,
+        "termination_reason": null,
+        "historical_recovered_run": false,
+        "eligible_for_controlled_profile_comparison": true
+      },
+      {
+        "run_id": "s343-r1-profile-1-flash",
+        "status": "observed",
+        "log_complete": false,
+        "log_errors": [],
+        "forced_trigger_count": 1,
+        "automatic_trigger_count": 1,
+        "automatic_events": [
+          {
+            "epoch": 1,
+            "time": 1792324663.001174,
+            "change": {
+              "position": 9,
+              "probability": 0.9976251125335693,
+              "baseline_ms": 14.78113201705532,
+              "degraded_ms": 18.737730714270757,
+              "degradation": 0.2676790040607232,
+              "recovery_ratio": 0.0269619115183027,
+              "iteration": 12
+            },
+            "latest_completed_rank0_step_before_trigger": 50
+          }
+        ],
+        "triggered_epochs": [
+          1
+        ],
+        "manifest_exit_codes": [
+          0,
+          0
+        ],
+        "manifest_sha256": "f66a7cc1fe8fa0ad5e5247e3449b99c597b797914b80230ad3749e7b00e8841b",
+        "source_sha256": {
+          "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+          "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+          "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+          "flash/global_controller.py": "4427b4583803412b3d317eb0d62982495e544aef6fd9763d797c260041fb9e79",
+          "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+          "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+          "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+          "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+          "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+          "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+          "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+          "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+        },
+        "recovery_note": "Local suite orchestration terminated to prevent further contaminated profiles. Training completed both nodes exit0. Raw files recovered explicitly; source hashes inherited from immediately preceding baseline (same source at launch). Excluded from controlled profile comparison due to automatic trigger before forced trigger and late second trigger.",
+        "termination_reason": null,
+        "historical_recovered_run": true,
+        "eligible_for_controlled_profile_comparison": false
+      },
+      {
+        "run_id": "s343-r1-profile-2-flash",
+        "status": "not_started",
+        "automatic_trigger_count": null,
+        "triggered_epochs": []
+      },
+      {
+        "run_id": "s343-r2-healthy",
+        "status": "not_started",
+        "automatic_trigger_count": null,
+        "triggered_epochs": []
+      },
+      {
+        "run_id": "s343-r2-monitor-1-flash",
+        "status": "not_started",
+        "automatic_trigger_count": null,
+        "triggered_epochs": []
+      },
+      {
+        "run_id": "s343-r2-monitor-2-flash",
+        "status": "not_started",
+        "automatic_trigger_count": null,
+        "triggered_epochs": []
+      },
+      {
+        "run_id": "s343-r2-profile-1-flash",
+        "status": "observed",
+        "log_complete": false,
+        "log_errors": [],
+        "forced_trigger_count": 1,
+        "automatic_trigger_count": 0,
+        "automatic_events": [],
+        "triggered_epochs": [],
+        "manifest_exit_codes": [
+          1,
+          1
+        ],
+        "manifest_sha256": "8135402ffa1061507ea1a6f02a70f760b1cfdc57863a7f79b67b7fd51795930a",
+        "source_sha256": {
+          "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+          "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+          "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+          "flash/global_controller.py": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+          "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+          "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+          "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+          "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+          "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+          "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+          "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+          "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+        },
+        "recovery_note": null,
+        "termination_reason": "User requested ending all tests; current run stopped deliberately, excluded from completed performance comparisons.",
+        "historical_recovered_run": false,
+        "eligible_for_controlled_profile_comparison": false
+      },
+      {
+        "run_id": "s343-r2-profile-2-flash",
+        "status": "not_started",
+        "automatic_trigger_count": null,
+        "triggered_epochs": []
+      }
+    ]
+  },
+  "runs": [
+    {
+      "run_id": "s343-r1-monitor-0-base",
+      "suite": "monitor",
+      "status": "complete",
+      "issues": [],
+      "path": "results/s343-r1-monitor-0-base",
+      "manifest_sha256": "0a35bf993eb0ae5a1bf0d34b2382040b8df8e5ec50cf66aee24f4706624cf51b",
+      "source_sha256": {
+        "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+        "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+        "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+        "flash/global_controller.py": "4427b4583803412b3d317eb0d62982495e544aef6fd9763d797c260041fb9e79",
+        "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+        "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+        "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+        "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+        "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+        "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+        "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+      },
+      "manifest_exit_codes": [
+        0,
+        0
+      ],
+      "manifest_seconds": 31.691982984542847,
+      "manifest_arguments": {
+        "name": "s343-r1-monitor-0-base",
+        "probe": false,
+        "stream_delay": false,
+        "stream_delay_kind": "p2p",
+        "stream_delay_comm_size": 0,
+        "controller": false,
+        "literal_minimum": false,
+        "paper_text_only": false,
+        "extended_cross_validation": false,
+        "enable_failstop_detection": false,
+        "reprofile_cooldown": 30,
+        "force_profile_at": 0,
+        "gpus": 8,
+        "port": 29731,
+        "timeout": 300,
+        "program": "workload/train.py",
+        "args": "--ep 8 --steps 250 --min-step-ms 0 --no-redis"
+      },
+      "recovery_note": null,
+      "termination_reason": null,
+      "metrics": {
+        "primary_cycle_steps": {
+          "excluded_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "first": 5,
+          "last": 248
+        },
+        "primary_cycle_count": 244,
+        "cycle_mean_ms": 20.995786932648205,
+        "cycle_median_ms": 19.912123680114746,
+        "all_step_time_ms_count": 250,
+        "all_step_time_ms_mean": 31.59747636737302,
+        "all_step_time_ms_median": 18.863101489841938,
+        "observed_training_seconds": 8.138991355895996,
+        "training_last_wall_time": 1792324350.0296104
+      },
+      "training_validation": {
+        "status": "passed",
+        "expected_ranks": 16,
+        "expected_steps_per_rank": 250,
+        "rank_iteration_counts": {
+          "0": 250,
+          "1": 250,
+          "2": 250,
+          "3": 250,
+          "4": 250,
+          "5": 250,
+          "6": 250,
+          "7": 250,
+          "8": 250,
+          "9": 250,
+          "10": 250,
+          "11": 250,
+          "12": 250,
+          "13": 250,
+          "14": 250,
+          "15": 250
+        },
+        "rank_step_coverage": {
+          "0": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "1": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "2": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "3": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "4": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "5": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "6": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "7": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "8": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "9": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "10": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "11": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "12": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "13": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "14": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "15": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          }
+        },
+        "padding_zero": true,
+        "fault_free": true,
+        "issues": [],
+        "step_counts_exact": true
+      }
+    },
+    {
+      "run_id": "s343-r1-monitor-1-flash",
+      "suite": "monitor",
+      "status": "complete",
+      "issues": [],
+      "path": "results/s343-r1-monitor-1-flash",
+      "manifest_sha256": "135413f09e8d1b1a2e95053d562b05db0abc9ff1f466ca8282fdc13355af02d6",
+      "source_sha256": {
+        "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+        "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+        "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+        "flash/global_controller.py": "4427b4583803412b3d317eb0d62982495e544aef6fd9763d797c260041fb9e79",
+        "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+        "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+        "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+        "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+        "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+        "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+        "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+      },
+      "manifest_exit_codes": [
+        0,
+        0
+      ],
+      "manifest_seconds": 35.128047704696655,
+      "manifest_arguments": {
+        "name": "s343-r1-monitor-1-flash",
+        "probe": true,
+        "stream_delay": false,
+        "stream_delay_kind": "p2p",
+        "stream_delay_comm_size": 0,
+        "controller": true,
+        "literal_minimum": false,
+        "paper_text_only": false,
+        "extended_cross_validation": true,
+        "enable_failstop_detection": false,
+        "reprofile_cooldown": 30,
+        "force_profile_at": 0,
+        "gpus": 8,
+        "port": 29731,
+        "timeout": 300,
+        "program": "workload/train.py",
+        "args": "--ep 8 --steps 250 --min-step-ms 0"
+      },
+      "recovery_note": null,
+      "termination_reason": null,
+      "metrics": {
+        "primary_cycle_steps": {
+          "excluded_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "first": 5,
+          "last": 248
+        },
+        "primary_cycle_count": 244,
+        "cycle_mean_ms": 21.053494000044026,
+        "cycle_median_ms": 19.981026649475098,
+        "all_step_time_ms_count": 250,
+        "all_step_time_ms_mean": 32.12416571890935,
+        "all_step_time_ms_median": 18.948725482914597,
+        "observed_training_seconds": 8.279687643051147,
+        "training_last_wall_time": 1792324390.4100335
+      },
+      "training_validation": {
+        "status": "passed",
+        "expected_ranks": 16,
+        "expected_steps_per_rank": 250,
+        "rank_iteration_counts": {
+          "0": 250,
+          "1": 250,
+          "2": 250,
+          "3": 250,
+          "4": 250,
+          "5": 250,
+          "6": 250,
+          "7": 250,
+          "8": 250,
+          "9": 250,
+          "10": 250,
+          "11": 250,
+          "12": 250,
+          "13": 250,
+          "14": 250,
+          "15": 250
+        },
+        "rank_step_coverage": {
+          "0": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "1": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "2": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "3": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "4": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "5": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "6": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "7": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "8": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "9": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "10": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "11": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "12": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "13": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "14": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "15": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          }
+        },
+        "padding_zero": true,
+        "fault_free": true,
+        "issues": [],
+        "step_counts_exact": true
+      },
+      "controller_validation": {
+        "status": "passed",
+        "global": {
+          "exists": true,
+          "event_counts": {
+            "controller_started": 1,
+            "training_complete": 1,
+            "controller_stopped": 1
+          },
+          "profile_trigger_count": 0
+        },
+        "local_nodes": {
+          "0": {
+            "exists": true,
+            "attached_ranks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "expected_ranks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "attachment_complete": true,
+            "event_counts": {
+              "local_started": 1,
+              "probe_attached": 8,
+              "local_stopped": 1
+            }
+          },
+          "1": {
+            "exists": true,
+            "attached_ranks": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "expected_ranks": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "attachment_complete": true,
+            "event_counts": {
+              "local_started": 1,
+              "probe_attached": 8,
+              "local_stopped": 1
+            }
+          }
+        },
+        "issues": []
+      }
+    },
+    {
+      "run_id": "s343-r1-monitor-2-flash",
+      "suite": "monitor",
+      "status": "complete",
+      "issues": [],
+      "path": "results/s343-r1-monitor-2-flash",
+      "manifest_sha256": "6902a07125db8bb1ca6cc65d9b137f27ad59dfdd93d5710799be4c96a73c1f2d",
+      "source_sha256": {
+        "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+        "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+        "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+        "flash/global_controller.py": "4427b4583803412b3d317eb0d62982495e544aef6fd9763d797c260041fb9e79",
+        "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+        "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+        "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+        "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+        "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+        "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+        "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+      },
+      "manifest_exit_codes": [
+        0,
+        0
+      ],
+      "manifest_seconds": 33.476484298706055,
+      "manifest_arguments": {
+        "name": "s343-r1-monitor-2-flash",
+        "probe": true,
+        "stream_delay": false,
+        "stream_delay_kind": "p2p",
+        "stream_delay_comm_size": 0,
+        "controller": true,
+        "literal_minimum": false,
+        "paper_text_only": false,
+        "extended_cross_validation": true,
+        "enable_failstop_detection": false,
+        "reprofile_cooldown": 30,
+        "force_profile_at": 0,
+        "gpus": 8,
+        "port": 29731,
+        "timeout": 300,
+        "program": "workload/train.py",
+        "args": "--ep 8 --steps 250 --min-step-ms 0"
+      },
+      "recovery_note": null,
+      "termination_reason": null,
+      "metrics": {
+        "primary_cycle_steps": {
+          "excluded_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "first": 5,
+          "last": 248
+        },
+        "primary_cycle_count": 244,
+        "cycle_mean_ms": 21.567569404351907,
+        "cycle_median_ms": 20.786166191101074,
+        "all_step_time_ms_count": 250,
+        "all_step_time_ms_mean": 32.32946361368522,
+        "all_step_time_ms_median": 19.700931501574814,
+        "observed_training_seconds": 8.35049557685852,
+        "training_last_wall_time": 1792324433.9408538
+      },
+      "training_validation": {
+        "status": "passed",
+        "expected_ranks": 16,
+        "expected_steps_per_rank": 250,
+        "rank_iteration_counts": {
+          "0": 250,
+          "1": 250,
+          "2": 250,
+          "3": 250,
+          "4": 250,
+          "5": 250,
+          "6": 250,
+          "7": 250,
+          "8": 250,
+          "9": 250,
+          "10": 250,
+          "11": 250,
+          "12": 250,
+          "13": 250,
+          "14": 250,
+          "15": 250
+        },
+        "rank_step_coverage": {
+          "0": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "1": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "2": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "3": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "4": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "5": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "6": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "7": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "8": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "9": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "10": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "11": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "12": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "13": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "14": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "15": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          }
+        },
+        "padding_zero": true,
+        "fault_free": true,
+        "issues": [],
+        "step_counts_exact": true
+      },
+      "controller_validation": {
+        "status": "passed",
+        "global": {
+          "exists": true,
+          "event_counts": {
+            "controller_started": 1,
+            "training_complete": 1,
+            "controller_stopped": 1
+          },
+          "profile_trigger_count": 0
+        },
+        "local_nodes": {
+          "0": {
+            "exists": true,
+            "attached_ranks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "expected_ranks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "attachment_complete": true,
+            "event_counts": {
+              "local_started": 1,
+              "probe_attached": 8,
+              "local_stopped": 1
+            }
+          },
+          "1": {
+            "exists": true,
+            "attached_ranks": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "expected_ranks": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "attachment_complete": true,
+            "event_counts": {
+              "local_started": 1,
+              "probe_attached": 8,
+              "local_stopped": 1
+            }
+          }
+        },
+        "issues": []
+      }
+    },
+    {
+      "run_id": "s343-r1-monitor-3-base",
+      "suite": "monitor",
+      "status": "complete",
+      "issues": [],
+      "path": "results/s343-r1-monitor-3-base",
+      "manifest_sha256": "d288c3248ff753186b9ff91d469d0f499b2111469a7d6f54ef05f2a63be47ed6",
+      "source_sha256": {
+        "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+        "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+        "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+        "flash/global_controller.py": "4427b4583803412b3d317eb0d62982495e544aef6fd9763d797c260041fb9e79",
+        "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+        "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+        "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+        "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+        "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+        "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+        "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+      },
+      "manifest_exit_codes": [
+        0,
+        0
+      ],
+      "manifest_seconds": 32.27399778366089,
+      "manifest_arguments": {
+        "name": "s343-r1-monitor-3-base",
+        "probe": false,
+        "stream_delay": false,
+        "stream_delay_kind": "p2p",
+        "stream_delay_comm_size": 0,
+        "controller": false,
+        "literal_minimum": false,
+        "paper_text_only": false,
+        "extended_cross_validation": false,
+        "enable_failstop_detection": false,
+        "reprofile_cooldown": 30,
+        "force_profile_at": 0,
+        "gpus": 8,
+        "port": 29731,
+        "timeout": 300,
+        "program": "workload/train.py",
+        "args": "--ep 8 --steps 250 --min-step-ms 0 --no-redis"
+      },
+      "recovery_note": null,
+      "termination_reason": null,
+      "metrics": {
+        "primary_cycle_steps": {
+          "excluded_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "first": 5,
+          "last": 248
+        },
+        "primary_cycle_count": 244,
+        "cycle_mean_ms": 21.142831591309093,
+        "cycle_median_ms": 20.055294036865234,
+        "all_step_time_ms_count": 250,
+        "all_step_time_ms_mean": 31.532986840698868,
+        "all_step_time_ms_median": 19.109148997813463,
+        "observed_training_seconds": 8.130623817443848,
+        "training_last_wall_time": 1792324476.5386524
+      },
+      "training_validation": {
+        "status": "passed",
+        "expected_ranks": 16,
+        "expected_steps_per_rank": 250,
+        "rank_iteration_counts": {
+          "0": 250,
+          "1": 250,
+          "2": 250,
+          "3": 250,
+          "4": 250,
+          "5": 250,
+          "6": 250,
+          "7": 250,
+          "8": 250,
+          "9": 250,
+          "10": 250,
+          "11": 250,
+          "12": 250,
+          "13": 250,
+          "14": 250,
+          "15": 250
+        },
+        "rank_step_coverage": {
+          "0": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "1": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "2": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "3": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "4": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "5": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "6": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "7": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "8": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "9": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "10": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "11": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "12": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "13": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "14": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          },
+          "15": {
+            "min": 0,
+            "max": 249,
+            "unique": 250
+          }
+        },
+        "padding_zero": true,
+        "fault_free": true,
+        "issues": [],
+        "step_counts_exact": true
+      }
+    },
+    {
+      "run_id": "s343-r2-profile-0-base",
+      "suite": "profile",
+      "status": "complete",
+      "issues": [],
+      "path": "results/s343-r2-profile-0-base",
+      "manifest_sha256": "2667fe9658a3bbe700fb187cd5b743bfeba0fa5171b88ad9ac2b121e14fd330d",
+      "source_sha256": {
+        "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+        "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+        "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+        "flash/global_controller.py": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+        "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+        "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+        "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+        "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+        "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+        "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+        "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+      },
+      "manifest_exit_codes": [
+        0,
+        0
+      ],
+      "manifest_seconds": 62.85240983963013,
+      "manifest_arguments": {
+        "name": "s343-r2-profile-0-base",
+        "probe": false,
+        "stream_delay": false,
+        "stream_delay_kind": "p2p",
+        "stream_delay_comm_size": 0,
+        "controller": false,
+        "literal_minimum": false,
+        "paper_text_only": false,
+        "extended_cross_validation": false,
+        "enable_failstop_detection": false,
+        "reprofile_cooldown": 30,
+        "force_profile_at": 0,
+        "force_profile_only": false,
+        "gpus": 8,
+        "port": 29731,
+        "timeout": 300,
+        "program": "workload/train.py",
+        "args": "--ep 8 --steps 1800 --min-step-ms 0 --no-redis"
+      },
+      "recovery_note": null,
+      "termination_reason": null,
+      "metrics": {
+        "primary_cycle_steps": {
+          "excluded_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "first": 5,
+          "last": 1798
+        },
+        "primary_cycle_count": 1794,
+        "cycle_mean_ms": 19.841743286370964,
+        "cycle_median_ms": 19.424080848693848,
+        "all_step_time_ms_count": 1800,
+        "all_step_time_ms_mean": 20.534085775725543,
+        "all_step_time_ms_median": 18.493307987228036,
+        "observed_training_seconds": 38.64926815032959,
+        "training_last_wall_time": 1792324922.7214339
+      },
+      "training_validation": {
+        "status": "passed",
+        "expected_ranks": 16,
+        "expected_steps_per_rank": 1800,
+        "rank_iteration_counts": {
+          "0": 1800,
+          "1": 1800,
+          "2": 1800,
+          "3": 1800,
+          "4": 1800,
+          "5": 1800,
+          "6": 1800,
+          "7": 1800,
+          "8": 1800,
+          "9": 1800,
+          "10": 1800,
+          "11": 1800,
+          "12": 1800,
+          "13": 1800,
+          "14": 1800,
+          "15": 1800
+        },
+        "rank_step_coverage": {
+          "0": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "1": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "2": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "3": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "4": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "5": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "6": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "7": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "8": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "9": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "10": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "11": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "12": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "13": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "14": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "15": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          }
+        },
+        "padding_zero": true,
+        "fault_free": true,
+        "issues": [],
+        "step_counts_exact": true
+      }
+    },
+    {
+      "run_id": "s343-r2-profile-1-flash",
+      "suite": "profile",
+      "status": "cancelled",
+      "issues": [
+        "User requested ending all tests; current run stopped deliberately, excluded from completed performance comparisons."
+      ],
+      "path": "results/s343-r2-profile-1-flash",
+      "manifest_sha256": "8135402ffa1061507ea1a6f02a70f760b1cfdc57863a7f79b67b7fd51795930a",
+      "source_sha256": {
+        "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+        "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+        "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+        "flash/global_controller.py": "77c1bcbd8ab44b16fef6d48e3e2f277b28c13b6addce4c39f400fd614ebb27ec",
+        "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+        "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+        "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+        "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+        "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+        "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+        "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+      },
+      "manifest_exit_codes": [
+        1,
+        1
+      ],
+      "manifest_seconds": 30.794428825378418,
+      "manifest_arguments": {
+        "name": "s343-r2-profile-1-flash",
+        "probe": true,
+        "stream_delay": false,
+        "stream_delay_kind": "p2p",
+        "stream_delay_comm_size": 0,
+        "controller": true,
+        "literal_minimum": false,
+        "paper_text_only": false,
+        "extended_cross_validation": true,
+        "enable_failstop_detection": false,
+        "reprofile_cooldown": 30,
+        "force_profile_at": 200,
+        "force_profile_only": true,
+        "gpus": 8,
+        "port": 29731,
+        "timeout": 300,
+        "program": "workload/train.py",
+        "args": "--ep 8 --steps 1800 --min-step-ms 0"
+      },
+      "recovery_note": null,
+      "termination_reason": "User requested ending all tests; current run stopped deliberately, excluded from completed performance comparisons."
+    },
+    {
+      "run_id": "s343-r2-profile-2-flash",
+      "suite": "profile",
+      "status": "not_started",
+      "issues": [
+        "用户已结束全部测试；未开展"
+      ],
+      "path": "results/s343-r2-profile-2-flash",
+      "manifest_sha256": null,
+      "source_sha256": {},
+      "manifest_exit_codes": null,
+      "manifest_seconds": null,
+      "manifest_arguments": null,
+      "recovery_note": null,
+      "termination_reason": null
+    },
+    {
+      "run_id": "s343-r2-profile-3-base",
+      "suite": "profile",
+      "status": "not_started",
+      "issues": [
+        "用户已结束全部测试；未开展"
+      ],
+      "path": "results/s343-r2-profile-3-base",
+      "manifest_sha256": null,
+      "source_sha256": {},
+      "manifest_exit_codes": null,
+      "manifest_seconds": null,
+      "manifest_arguments": null,
+      "recovery_note": null,
+      "termination_reason": null
+    },
+    {
+      "run_id": "s343-r1-healthy",
+      "suite": "healthy",
+      "status": "complete",
+      "issues": [],
+      "path": "results/s343-r1-healthy",
+      "manifest_sha256": "5edb0fbead727e3002824bdcdcd10c77334a74bdc77b6ba8f4a4db0bef585bd4",
+      "source_sha256": {
+        "flash/detection.py": "8fff30f429af985e2345d5326619841139ed9db8fce163231c21fec31549e3ab",
+        "flash/local_controller.py": "c613449a20dbf9446f1af36e41d9b712f999653c008e8cd6f5c5fcfaa1371bd5",
+        "flash/analysis.py": "c98fe20ae59bdf984969292aea12ecfaf1b0f88cab4509ae5f1db0de47af6a82",
+        "flash/global_controller.py": "4427b4583803412b3d317eb0d62982495e544aef6fd9763d797c260041fb9e79",
+        "flash/__init__.py": "b6ad7af416044e71d928afad30f25bb14a8f4b06451005388972b77dc7bf3cc3",
+        "flash/history.py": "f481019f573d57f2e079a080ad159af3ba609e5543622804118048dfd3b8e2da",
+        "probe/stream_delay.cpp": "6fdc97db828afa1d85343d04bd200fef322a59c2d8a0dedf1ff48394ecd16276",
+        "probe/build.sh": "d7175f0aa0e83b3ae1ffe80263b98f926c3daa2361e6252186389f3c00f99bde",
+        "probe/nccl_probe.cpp": "e08a71bf19b27e8c99c08b1a222b95d6b23559f9d23a992176c66b08b27185bf",
+        "probe/build_stream_delay.sh": "03c70b8588b6698617b26a38d745315a00ad8f9a8437207900a9ead9e8643951",
+        "workload/collective_bench.py": "67fe2b8f67e9e92c0557ac232952caa15912b309edbb32be6fcad5522df606f6",
+        "workload/train.py": "c03ef70237297833592c6d72eaef64dd9ed3730126a79e28c4c652e5afcfd9db"
+      },
+      "manifest_exit_codes": [
+        0,
+        0
+      ],
+      "manifest_seconds": 65.18049192428589,
+      "manifest_arguments": {
+        "name": "s343-r1-healthy",
+        "probe": true,
+        "stream_delay": false,
+        "stream_delay_kind": "p2p",
+        "stream_delay_comm_size": 0,
+        "controller": true,
+        "literal_minimum": false,
+        "paper_text_only": false,
+        "extended_cross_validation": true,
+        "enable_failstop_detection": false,
+        "reprofile_cooldown": 30,
+        "force_profile_at": 0,
+        "gpus": 8,
+        "port": 29731,
+        "timeout": 300,
+        "program": "workload/train.py",
+        "args": "--ep 8 --steps 1800 --min-step-ms 0"
+      },
+      "recovery_note": null,
+      "termination_reason": null,
+      "metrics": {
+        "primary_cycle_steps": {
+          "excluded_zero_based": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "first": 5,
+          "last": 1798
+        },
+        "primary_cycle_count": 1794,
+        "cycle_mean_ms": 20.276263804738736,
+        "cycle_median_ms": 19.841551780700684,
+        "all_step_time_ms_count": 1800,
+        "all_step_time_ms_mean": 20.890793347045676,
+        "all_step_time_ms_median": 18.850243010092527,
+        "observed_training_seconds": 39.38498497009277,
+        "training_last_wall_time": 1792324548.1706991
+      },
+      "training_validation": {
+        "status": "passed",
+        "expected_ranks": 16,
+        "expected_steps_per_rank": 1800,
+        "rank_iteration_counts": {
+          "0": 1800,
+          "1": 1800,
+          "2": 1800,
+          "3": 1800,
+          "4": 1800,
+          "5": 1800,
+          "6": 1800,
+          "7": 1800,
+          "8": 1800,
+          "9": 1800,
+          "10": 1800,
+          "11": 1800,
+          "12": 1800,
+          "13": 1800,
+          "14": 1800,
+          "15": 1800
+        },
+        "rank_step_coverage": {
+          "0": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "1": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "2": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "3": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "4": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "5": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "6": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "7": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "8": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "9": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "10": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "11": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "12": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "13": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "14": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          },
+          "15": {
+            "min": 0,
+            "max": 1799,
+            "unique": 1800
+          }
+        },
+        "padding_zero": true,
+        "fault_free": true,
+        "issues": [],
+        "step_counts_exact": true
+      },
+      "controller_validation": {
+        "status": "passed",
+        "global": {
+          "exists": true,
+          "event_counts": {
+            "controller_started": 1,
+            "training_complete": 1,
+            "controller_stopped": 1
+          },
+          "profile_trigger_count": 0
+        },
+        "local_nodes": {
+          "0": {
+            "exists": true,
+            "attached_ranks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "expected_ranks": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7
+            ],
+            "attachment_complete": true,
+            "event_counts": {
+              "local_started": 1,
+              "probe_attached": 8,
+              "local_stopped": 1
+            }
+          },
+          "1": {
+            "exists": true,
+            "attached_ranks": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "expected_ranks": [
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "attachment_complete": true,
+            "event_counts": {
+              "local_started": 1,
+              "probe_attached": 8,
+              "local_stopped": 1
+            }
+          }
+        },
+        "issues": []
+      }
+    },
+    {
+      "run_id": "s343-r1-collective-0-base",
+      "suite": "collective",
+      "status": "not_started",
+      "issues": [
+        "用户已结束全部测试；未开展"
+      ],
+      "path": "results/s343-r1-collective-0-base",
+      "manifest_sha256": null,
+      "source_sha256": {},
+      "manifest_exit_codes": null,
+      "manifest_seconds": null,
+      "manifest_arguments": null,
+      "recovery_note": null,
+      "termination_reason": null
+    },
+    {
+      "run_id": "s343-r1-collective-1-flash",
+      "suite": "collective",
+      "status": "not_started",
+      "issues": [
+        "用户已结束全部测试；未开展"
+      ],
+      "path": "results/s343-r1-collective-1-flash",
+      "manifest_sha256": null,
+      "source_sha256": {},
+      "manifest_exit_codes": null,
+      "manifest_seconds": null,
+      "manifest_arguments": null,
+      "recovery_note": null,
+      "termination_reason": null
+    }
+  ]
+}

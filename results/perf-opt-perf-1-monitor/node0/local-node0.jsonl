@@ -1,0 +1,10 @@
+{"event": "local_started", "time": 1792319955.170314, "node": 0}
+{"event": "probe_attached", "time": 1792319966.0677066, "rank": 1, "pid": 23359}
+{"event": "probe_attached", "time": 1792319966.0679355, "rank": 6, "pid": 23364}
+{"event": "probe_attached", "time": 1792319966.0680394, "rank": 4, "pid": 23362}
+{"event": "probe_attached", "time": 1792319966.068125, "rank": 5, "pid": 23363}
+{"event": "probe_attached", "time": 1792319966.0682113, "rank": 7, "pid": 23365}
+{"event": "probe_attached", "time": 1792319966.06829, "rank": 2, "pid": 23360}
+{"event": "probe_attached", "time": 1792319966.0683687, "rank": 3, "pid": 23361}
+{"event": "probe_attached", "time": 1792319966.068438, "rank": 0, "pid": 23358}
+{"event": "local_stopped", "time": 1792319981.628373, "ring_count": 8, "lost": {"1": 0, "6": 0, "4": 0, "5": 0, "7": 0, "2": 0, "3": 0, "0": 0}}

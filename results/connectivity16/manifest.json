@@ -1,0 +1,20 @@
+{
+  "name": "connectivity16",
+  "seconds": 18.79291796684265,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "arguments": {
+    "name": "connectivity16",
+    "probe": false,
+    "controller": false,
+    "force_profile_at": 0,
+    "gpus": 8,
+    "port": 29731,
+    "timeout": 100,
+    "program": "tests/connectivity.py",
+    "args": ""
+  },
+  "network": "NCCL Socket/bond0; IB disabled for reproducibility; shared vLLM GPUs"
+}

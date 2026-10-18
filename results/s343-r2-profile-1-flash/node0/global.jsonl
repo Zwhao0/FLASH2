@@ -1,0 +1,2 @@
+{"event": "controller_started", "time": 1792324945.0965855, "parameters": {"window": 30, "probability": 0.8, "degradation": 0.2, "cv": 0.1, "percent": 0.2, "profile_min_seconds": 20, "history_limit": 500, "warmup_zero_based": [0, 1, 2], "primary_rule": "cross_validated", "failstop_enabled": false, "reprofile_cooldown": 30, "force_profile_only": true}}
+{"event": "profile_trigger", "time": 1792324966.5059605, "epoch": 1, "period": 20.0, "change": {"iteration": 206, "reason": "explicit_profile_only_validation"}}

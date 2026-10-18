@@ -1,0 +1,11 @@
+{"event": "local_started", "time": 1792318728.449681, "node": 0}
+{"event": "probe_attached", "time": 1792318740.0435102, "rank": 6, "pid": 16128}
+{"event": "probe_attached", "time": 1792318740.0437155, "rank": 2, "pid": 16124}
+{"event": "probe_attached", "time": 1792318740.0438898, "rank": 0, "pid": 16122}
+{"event": "probe_attached", "time": 1792318740.3473196, "rank": 1, "pid": 16123}
+{"event": "probe_attached", "time": 1792318740.4484844, "rank": 3, "pid": 16125}
+{"event": "probe_attached", "time": 1792318740.4485674, "rank": 5, "pid": 16127}
+{"event": "probe_attached", "time": 1792318740.5492578, "rank": 7, "pid": 16129}
+{"event": "probe_attached", "time": 1792318740.549384, "rank": 4, "pid": 16126}
+{"event": "failstop_observed", "time": 1792318760.3276463, "node": 0, "stalled_ranks": [6, 2, 0, 1, 3, 5, 7, 4], "exited_process_ranks": [], "window_s": 2.0, "interpretation": "No NCCL entry observed; collective blocking may propagate to healthy peers."}
+{"event": "local_stopped", "time": 1792318791.2074144, "ring_count": 8, "lost": {"6": 0, "2": 0, "0": 0, "1": 0, "3": 0, "5": 0, "7": 0, "4": 0}}
