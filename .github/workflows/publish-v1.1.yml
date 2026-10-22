@@ -1,0 +1,48 @@
+name: Publish FLASH v1.1
+on:
+  push:
+    branches: [codex/publish-v1.1]
+permissions:
+  contents: write
+concurrency:
+  group: publish-flash-v1.1
+  cancel-in-progress: false
+jobs:
+  release:
+    if: github.repository == 'Zwhao0/FLASH2' && github.ref == 'refs/heads/codex/publish-v1.1'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: Zwhao0/FLASH2
+      TARGET_SHA: dac9f31fd6cbfece2ccb45a32e2270e8c8c49a40
+    steps:
+      - name: Verify target and publish exact tested version
+        shell: bash
+        run: |
+          set -euo pipefail
+          actual="$(gh api repos/$GH_REPO/commits/codex/v1.1 --jq .sha)"
+          test "$actual" = "$TARGET_SHA"
+          if gh api repos/$GH_REPO/git/ref/tags/v1.1 > /tmp/tag.json 2>/dev/null; then
+            tag_target="$(python3 -c 'import json; print(json.load(open("/tmp/tag.json"))["object"]["sha"])')"
+            test "$tag_target" = "$TARGET_SHA"
+          fi
+          cat > /tmp/notes.md <<'NOTES'
+          FLASH v1.1: latest tested independent-ETP dual-view workload.
+
+          - Based on v1 (daf2ac047e67cab4b8fd85f67f68c1babdfe8fb9). All 58 original core source/test files remain byte-identical; localization algorithms and NCCL probe are unchanged.
+          - Adds independent ETP=1 / dense TP and two DP views, dense TP computation, fixed global batch, full reference gradient/AdamW checks, warm launcher and fixed 36-case execution/scoring/review tools.
+          - Tested commit: dac9f31fd6cbfece2ccb45a32e2270e8c8c49a40.
+          - 36 planned cases: 35 engineering completions, 1 failure; 28 qualified cases. Qualified TP/FP/FN=19/1/2, precision=95.00%, recall=90.48%. Conservative recall over all 28 planned positives=19/28=67.86%.
+          - Fault injection is a rank-local host compute-arrival delay proxy, not GPU clock reduction. These results do not establish parity with the paper's hardware-fault accuracy.
+          - Code, protocols, attempts and reports are included. Full raw traces remain in the local FLASHv1 evidence package and are not release assets.
+          - See docs/releases/v1.1.md and experiments/flash-v1-20261021/dual-view-matrix/screening-summary.md.
+
+          This release points to the tested version branch commit, not the publication-helper workflow commit. Original v1 and main remain unchanged.
+          NOTES
+          if gh release view v1.1 > /dev/null 2>&1; then
+            echo "Release v1.1 already exists; preserving it."
+          else
+            gh release create v1.1 --target "$TARGET_SHA" --title "FLASH v1.1 — independent ETP dual-view tested version" --notes-file /tmp/notes.md --latest
+          fi
+          gh api repos/$GH_REPO/git/ref/tags/v1.1 --jq .object.sha | grep -Fx "$TARGET_SHA"
+          gh release view v1.1 --json url,tagName,targetCommitish,isDraft,isPrerelease
