@@ -1,0 +1,35 @@
+{
+  "name": "fdmf-1021-gpu16-e4t1p2",
+  "started": 1792591648.225544,
+  "status": "completed",
+  "kind": "verification",
+  "exit_codes": [
+    0,
+    0
+  ],
+  "endpoint_errors": [
+    "",
+    ""
+  ],
+  "accepted": true,
+  "world": 16,
+  "ep": 4,
+  "tp": 1,
+  "pp": 2,
+  "reference": {
+    "0": {
+      "reference_parameter_count": 559104,
+      "reference_batch_sha256": "6b2294c3f1394f49a7413f63691fddd1ef41bfa38f0d1b987c1e011bdcfc565e",
+      "reference_state_sha256": "7fd316872d0ee4d5937654ae23af1ad15842f9260c55539bfe15487cffe9160b"
+    },
+    "1": {
+      "reference_parameter_count": 559104,
+      "reference_batch_sha256": "0782f5424498902bb06aa51f6ae15b98cd04f61b0f692567cf2f5f27367439fe",
+      "reference_state_sha256": "526563b409461f809bf628de36a1fa09bd1268e5f870bf34ace591fc7fa8d342"
+    }
+  },
+  "worker_guards_passed": 16,
+  "worker_ledgers_passed": 2,
+  "program_sha256": "d2c38bd4f2e91cac9a974debe6abc863d1400a8fa34a84cf33b505c039d219e0",
+  "ended": 1792591665.328125
+}

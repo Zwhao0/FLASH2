@@ -1,0 +1,137 @@
+{
+  "actual_steps": 146,
+  "numerical_passes": 32,
+  "rank_summaries": [
+    {
+      "event": "run_summary",
+      "rank": 0,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.18495622195769
+    },
+    {
+      "event": "run_summary",
+      "rank": 1,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.185085951001383
+    },
+    {
+      "event": "run_summary",
+      "rank": 2,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.185045941034332
+    },
+    {
+      "event": "run_summary",
+      "rank": 3,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.18508526799269
+    },
+    {
+      "event": "run_summary",
+      "rank": 4,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.18499148194678
+    },
+    {
+      "event": "run_summary",
+      "rank": 5,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.185044366982765
+    },
+    {
+      "event": "run_summary",
+      "rank": 6,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.185053270077333
+    },
+    {
+      "event": "run_summary",
+      "rank": 7,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.185135075007565
+    },
+    {
+      "event": "run_summary",
+      "rank": 8,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.18495636503212
+    },
+    {
+      "event": "run_summary",
+      "rank": 9,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.185081839794293
+    },
+    {
+      "event": "run_summary",
+      "rank": 10,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.185040697921067
+    },
+    {
+      "event": "run_summary",
+      "rank": 11,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.18513762089424
+    },
+    {
+      "event": "run_summary",
+      "rank": 12,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.18502614297904
+    },
+    {
+      "event": "run_summary",
+      "rank": 13,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.185063479002565
+    },
+    {
+      "event": "run_summary",
+      "rank": 14,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.185069628059864
+    },
+    {
+      "event": "run_summary",
+      "rank": 15,
+      "actual_steps": 146,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.185152407037094
+    }
+  ],
+  "worker_guards_passed": 16,
+  "worker_ledgers_passed": 2,
+  "program_sha256": "d2c38bd4f2e91cac9a974debe6abc863d1400a8fa34a84cf33b505c039d219e0"
+}

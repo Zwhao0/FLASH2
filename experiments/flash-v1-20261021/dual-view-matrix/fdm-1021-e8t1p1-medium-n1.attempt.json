@@ -1,0 +1,12 @@
+{
+  "name": "fdm-1021-e8t1p1-medium-n1",
+  "started": 1792592155.104361,
+  "status": "completed",
+  "kind": "attempt",
+  "exit_code": 0,
+  "actual_steps": 216,
+  "numerical_passes": 32,
+  "runtime_steps_cap": 10000,
+  "phase_seconds": 25,
+  "ended": 1792592222.870284
+}

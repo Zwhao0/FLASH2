@@ -1,0 +1,15 @@
+{
+  "name": "fdmf-1021-cpu8",
+  "started": 1792591574.3887281,
+  "status": "completed",
+  "kind": "verification",
+  "exit_code": 0,
+  "accepted": true,
+  "negative": false,
+  "world": 8,
+  "ep": 2,
+  "tp": 2,
+  "pp": 2,
+  "stderr": "",
+  "ended": 1792591589.6965299
+}

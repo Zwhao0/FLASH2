@@ -1,0 +1,147 @@
+{
+  "name": "fdmf-1021-repair-e4t2p1-wall-smoke",
+  "started": 1792593073.996755,
+  "status": "completed",
+  "kind": "verification",
+  "accepted": true,
+  "exit_codes": [
+    0,
+    0
+  ],
+  "actual_steps": 71,
+  "numerical_passes": 32,
+  "rank_summaries": [
+    {
+      "event": "run_summary",
+      "rank": 0,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0118519499665126
+    },
+    {
+      "event": "run_summary",
+      "rank": 1,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0120388159994036
+    },
+    {
+      "event": "run_summary",
+      "rank": 2,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.011856890982017
+    },
+    {
+      "event": "run_summary",
+      "rank": 3,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0120865929638967
+    },
+    {
+      "event": "run_summary",
+      "rank": 4,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0118685009656474
+    },
+    {
+      "event": "run_summary",
+      "rank": 5,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0120784640312195
+    },
+    {
+      "event": "run_summary",
+      "rank": 6,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.011961713898927
+    },
+    {
+      "event": "run_summary",
+      "rank": 7,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.012138933991082
+    },
+    {
+      "event": "run_summary",
+      "rank": 8,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0119296978227794
+    },
+    {
+      "event": "run_summary",
+      "rank": 9,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.012046538060531
+    },
+    {
+      "event": "run_summary",
+      "rank": 10,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0119138399604708
+    },
+    {
+      "event": "run_summary",
+      "rank": 11,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.012157232966274
+    },
+    {
+      "event": "run_summary",
+      "rank": 12,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0118901119567454
+    },
+    {
+      "event": "run_summary",
+      "rank": 13,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0121212548110634
+    },
+    {
+      "event": "run_summary",
+      "rank": 14,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0119831659831107
+    },
+    {
+      "event": "run_summary",
+      "rank": 15,
+      "actual_steps": 71,
+      "stopped_by_wall": true,
+      "phase_seconds": 1.0,
+      "phase_elapsed": 1.0121552399359643
+    }
+  ],
+  "worker_guards_passed": 16,
+  "worker_ledgers_passed": 2,
+  "program_sha256": "d2c38bd4f2e91cac9a974debe6abc863d1400a8fa34a84cf33b505c039d219e0",
+  "ended": 1792593094.183563
+}

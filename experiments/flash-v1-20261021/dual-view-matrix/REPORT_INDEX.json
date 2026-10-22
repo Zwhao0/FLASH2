@@ -1,0 +1,10 @@
+{
+  "primary_report": "screening-summary.md",
+  "strict_score": "accuracy.json",
+  "independent_complete36_review": "complete36-review.json",
+  "independent_complete36_audit": "independent-audit-complete36.json",
+  "closure": "closure-status.json",
+  "post_resource_protection": "post-complete36-protection.json",
+  "historical_partial_snapshot": "../closed-45m",
+  "note": "independent-review.json and independent-audit-final.json retain the earlier27-row phase; use complete36 files for the completed cohort."
+}

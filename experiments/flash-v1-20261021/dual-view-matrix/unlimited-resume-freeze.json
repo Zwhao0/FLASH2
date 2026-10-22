@@ -1,0 +1,10 @@
+{
+  "frozen_at": 1792595779.605122,
+  "files": {
+    "resume_unlimited.py": "b0889b18d5b163a48d709e3bf89f82926f9c8e2f36da6e0deea99bebdd986527",
+    "user-unlimited-approval.json": "c80be5e278cb4548481bbfa74e63fe5c9fd89f16f842e26d3b8f0bbb20eda707",
+    "repair_isolated_run_cluster.py": "146a16a447751888bf32928374c7c39aed98fdb89134dec64a4f9920f71dcfdb"
+  },
+  "preserve": "closed-45m snapshot + original27 results unchanged",
+  "scope": "Only original nine unstarted rows; no suite deadline; existing per-run180s watchdog and resource isolation unchanged"
+}

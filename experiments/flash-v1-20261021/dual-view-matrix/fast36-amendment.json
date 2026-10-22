@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-21T14:01:00.925136+00:00",
+  "supersedes": "time-limit-amendment.json (12-run proposal superseded by user restoring36)",
+  "effective_runs": 36,
+  "positive_denominator": 28,
+  "control_denominator": 8,
+  "unchanged": "protocol.json run names/order/topology/target ranks/fault delays14,100,200ms; FLASH v1 core thresholds/minimum20s profile",
+  "measurement": {
+    "phase_seconds": 25,
+    "fault_start": 45,
+    "steps_safety_cap": 10000,
+    "padding_ms": 0,
+    "termination": "rank0 fixed25s elapsed after synchronized step45 start; Gloo stop broadcast every completed step; independent of predictions",
+    "run_summary_fields": [
+      "actual_steps",
+      "stopped_by_wall",
+      "phase_seconds",
+      "phase_elapsed"
+    ]
+  },
+  "scope": "Shorter wall-clock observation replaces150steps; fresh workers eachcase from CPU-only torch-preloaded forkserver. Different observation length and padding from previous cohorts; no pooled accuracy or improvement claim. Fixed host delays are proxies, not DVFS or paper percentage labels.",
+  "budget": {
+    "suite_limit_seconds": 2400,
+    "measurement_timeout_seconds": 120,
+    "statistical_retries": 0,
+    "engineering_fixes_max": 1,
+    "target": "30–40min including qualification, not guaranteed30min"
+  }
+}

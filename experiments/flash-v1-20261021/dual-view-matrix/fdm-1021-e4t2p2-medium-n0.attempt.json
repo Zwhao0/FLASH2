@@ -1,0 +1,12 @@
+{
+  "name": "fdm-1021-e4t2p2-medium-n0",
+  "started": 1792595986.01861,
+  "status": "completed",
+  "kind": "attempt",
+  "exit_code": 0,
+  "actual_steps": 225,
+  "numerical_passes": 32,
+  "runtime_steps_cap": 10000,
+  "phase_seconds": 25,
+  "ended": 1792596043.253942
+}

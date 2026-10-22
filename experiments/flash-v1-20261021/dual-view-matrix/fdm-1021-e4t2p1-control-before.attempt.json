@@ -1,0 +1,12 @@
+{
+  "name": "fdm-1021-e4t2p1-control-before",
+  "started": 1792592293.039637,
+  "status": "completed",
+  "kind": "attempt",
+  "exit_code": 0,
+  "actual_steps": 275,
+  "numerical_passes": 32,
+  "runtime_steps_cap": 10000,
+  "phase_seconds": 25,
+  "ended": 1792592362.833057
+}

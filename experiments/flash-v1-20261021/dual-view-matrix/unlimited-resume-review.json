@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "reviewer": "independent offline static review",
+  "reviewed_file": "resume_unlimited.py",
+  "reviewed_sha256": "b0889b18d5b163a48d709e3bf89f82926f9c8e2f36da6e0deea99bebdd986527",
+  "decision": "accepted_with_watchdog_scope_note",
+  "scope": "Review of the unlimited-time suffix-resume harness only. The harness was not run; no remote access or source edits were performed.",
+  "input_hashes": {
+    "user-unlimited-approval.json": "c80be5e278cb4548481bbfa74e63fe5c9fd89f16f842e26d3b8f0bbb20eda707",
+    "optional_schedule_resume.py": "9ad0db0755b0d62cc4434010675e510bb0102a5840e6343c0c207084405c36cc",
+    "repair_isolated_run_cluster.py": "146a16a447751888bf32928374c7c39aed98fdb89134dec64a4f9920f71dcfdb",
+    "execute.py": "5ce14e1a32e76015b470897ca1c226470034cd674284014b19ca8acae9fa9aff"
+  },
+  "approval_gate": {
+    "requires_exact_user_instruction": "继续，不设置时间限制",
+    "requires_suite_time_limit_seconds_null": true,
+    "requires_original_started_match": true,
+    "approval_record_matches_gate": true,
+    "resume_session_must_not_already_exist": true
+  },
+  "checks": {
+    "overall_suite_deadline_removed": true,
+    "deadline_recorded_as_null": true,
+    "budget_guard_replaced_only_after_preconditions": true,
+    "original_45min_budget_exception_retained_as_gate": true,
+    "repair_measurement_log_not_written_by_harness": true,
+    "exact_repair_runner_hash_required": true,
+    "frozen_source_hashes_checked_before_restart": true,
+    "restart_uses_exact_owned_container_ids": true,
+    "cpu_limit_remains_16": true,
+    "shared_process_identity_checked_before_and_after": true,
+    "only_missing_suffix_rows_passed_to_measure": true,
+    "failed_row_is_retained_and_never_retried": true,
+    "completed_prefix_and_failure_manifests_checked": true,
+    "cleanup_is_in_finally_after_owned_start_scope": true,
+    "smoke_and_cpu_qualification_are_read_as_existing_prerequisites": true
+  },
+  "observed_local_state": {
+    "planned_rows": 36,
+    "settled_prefix_rows": 27,
+    "completed_rows": 26,
+    "retained_failure": {
+      "index_zero_based": 10,
+      "name": "fdm-1021-e4t2p1-high-n1",
+      "status": "engineering_failure",
+      "exit_code": 124,
+      "manifest_exit_codes": [124, 124]
+    },
+    "unstarted_suffix_rows": 9,
+    "unstarted_suffix_names": [
+      "fdm-1021-e4t2p2-low-n0",
+      "fdm-1021-e4t2p2-high-n1",
+      "fdm-1021-e4t2p2-medium-n0",
+      "fdm-1021-e4t2p2-low-n1",
+      "fdm-1021-e4t2p2-high-n0",
+      "fdm-1021-e4t2p2-medium-n1",
+      "fdm-1021-e4t2p2-high-n0-stage1",
+      "fdm-1021-e4t2p2-high-n1-stage1",
+      "fdm-1021-e4t2p2-control-after"
+    ],
+    "unmarked_rows_with_existing_manifests": [],
+    "resume_code_requires_exact_counts": "len(settled)==27 and len(remaining)==9"
+  },
+  "watchdog_scope": {
+    "training_worker_timeout_seconds": 180,
+    "termination": "TERM, then KILL after 15 seconds",
+    "global_controller_timeout_seconds": 180,
+    "whole_launcher_wallclock_cap": false,
+    "note": "The 180-second guard covers each rank's training command and the global controller. Probe extraction, sidecar shutdown, compression, and downloads have no enclosing 180-second total-run timeout. The explicit approval removes the suite deadline; this review records the remaining guard's actual scope."
+  },
+  "preserved_history": {
+    "prior_27_prefix_and_failed_row": true,
+    "closed_45min_budget_exception_count": 1,
+    "failed_row_retry_authorized": false,
+    "closed_45min_records_modified": false
+  },
+  "created_outputs_if_resumed": [
+    "unlimited-schedule-session.json",
+    "unlimited-schedule-container-starts.json",
+    "unlimited-schedule-matrix.json"
+  ],
+  "blocking_findings": []
+}

@@ -1,0 +1,12 @@
+{
+  "name": "fdm-1021-e4t2p1-control-after",
+  "started": 1792593339.816355,
+  "status": "completed",
+  "kind": "attempt",
+  "exit_code": 0,
+  "actual_steps": 641,
+  "numerical_passes": 32,
+  "runtime_steps_cap": 10000,
+  "phase_seconds": 25,
+  "ended": 1792593402.474255
+}

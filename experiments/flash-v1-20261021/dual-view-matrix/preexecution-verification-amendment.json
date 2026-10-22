@@ -1,0 +1,7 @@
+{
+  "reason": "Inherited strengthened verification from independently reviewed pilot, unchanged for new comparable model. Time-limit amendment is effective matrix.",
+  "gradient_atol": 1e-08,
+  "other_atol": 5e-06,
+  "rtol": 0.002,
+  "relative_l2_max": 0.002
+}

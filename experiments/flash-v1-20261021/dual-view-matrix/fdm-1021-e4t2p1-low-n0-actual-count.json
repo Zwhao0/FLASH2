@@ -1,0 +1,137 @@
+{
+  "actual_steps": 296,
+  "numerical_passes": 32,
+  "rank_summaries": [
+    {
+      "event": "run_summary",
+      "rank": 0,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097047421964817
+    },
+    {
+      "event": "run_summary",
+      "rank": 1,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097035540966317
+    },
+    {
+      "event": "run_summary",
+      "rank": 2,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097019281005487
+    },
+    {
+      "event": "run_summary",
+      "rank": 3,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.09713232598733
+    },
+    {
+      "event": "run_summary",
+      "rank": 4,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097086146939546
+    },
+    {
+      "event": "run_summary",
+      "rank": 5,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097090755938552
+    },
+    {
+      "event": "run_summary",
+      "rank": 6,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097130669048056
+    },
+    {
+      "event": "run_summary",
+      "rank": 7,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097181152086705
+    },
+    {
+      "event": "run_summary",
+      "rank": 8,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.096998924855143
+    },
+    {
+      "event": "run_summary",
+      "rank": 9,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097008450888097
+    },
+    {
+      "event": "run_summary",
+      "rank": 10,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097083506872877
+    },
+    {
+      "event": "run_summary",
+      "rank": 11,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.09711564099416
+    },
+    {
+      "event": "run_summary",
+      "rank": 12,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097130419919267
+    },
+    {
+      "event": "run_summary",
+      "rank": 13,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097123416140676
+    },
+    {
+      "event": "run_summary",
+      "rank": 14,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097092151874676
+    },
+    {
+      "event": "run_summary",
+      "rank": 15,
+      "actual_steps": 296,
+      "stopped_by_wall": true,
+      "phase_seconds": 25.0,
+      "phase_elapsed": 25.097151783993468
+    }
+  ],
+  "worker_guards_passed": 16,
+  "worker_ledgers_passed": 2,
+  "program_sha256": "d2c38bd4f2e91cac9a974debe6abc863d1400a8fa34a84cf33b505c039d219e0"
+}

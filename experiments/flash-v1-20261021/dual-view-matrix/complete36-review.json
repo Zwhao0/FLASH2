@@ -1,0 +1,291 @@
+{
+  "schema_version": 1,
+  "review_status": "complete36_audited_with_retained_engineering_failure",
+  "scope": {
+    "cohort": "Only the current fixed 36-row matrix.",
+    "pooling": "Do not pool the earlier 22-run matrix or three-run pilot; no improvement claim.",
+    "model": "559,104 parameters; global batch 256; ETP=1; the matrix contains Attention-DP and Expert-DP views; no attention computation workload.",
+    "fault": "Host-delay proxy only; no DVFS or GPU clock manipulation.",
+    "interpretation": "Online rank hits describe terminal predictions. They are not paper-level acceptance or strict accuracy; report complete acceptance separately."
+  },
+  "execution": {
+    "resume_process_exit_code": 0,
+    "attempt_counts": {
+      "completed": 35,
+      "failed": 1,
+      "terminal": 36,
+      "pending": 0
+    },
+    "retained_failed_row": {
+      "name": "fdm-1021-e4t2p1-high-n1",
+      "attempt_state": "failed",
+      "target_rank": 9,
+      "predictions": []
+    },
+    "first_score_invocation": {
+      "command": ".venv/bin/python score.py",
+      "exit_code": 127,
+      "reason": "Relative virtualenv path was unavailable from the matrix subdirectory; no scoring script ran.",
+      "log": "score-live.log"
+    },
+    "successful_scripts": [
+      {
+        "script": "score.py",
+        "interpreter": "/Users/henry/Desktop/FLASH2/.venv/bin/python",
+        "exit_code": 0,
+        "stdout_log": "score-live-retry.log"
+      },
+      {
+        "script": "screening_summary.py",
+        "interpreter": "/Users/henry/Desktop/FLASH2/.venv/bin/python",
+        "exit_code": 0,
+        "stdout_log": "screening-summary-live-final.log"
+      },
+      {
+        "script": "independent_audit.py",
+        "interpreter": "python3 -B",
+        "arguments": "--final --output independent-audit-complete36.json",
+        "exit_code": 0,
+        "stdout_log": "independent-audit-complete36.log"
+      }
+    ],
+    "script_sha256": {
+      "score.py": "45a1ca358172457e1294b96bfe32ea8e2d1104882a401039e82baaeadacb270a",
+      "screening_summary.py": "f6e95fe13d09fb52ceac2b14708cea4df4d5bce4c4c339a1077c446a6bb1c168",
+      "independent_audit.py": "af1c1408d0f19d0c35412af58a48933d51ba002876be36a3cfb5baedd9d39fcb"
+    },
+    "output_sha256": {
+      "accuracy.json": "e09c1196d3cfd2b8d2a681eb96838f87c5fa7d45707a9c422ab57822d3372a78",
+      "screening-summary.json": "971a9b2667fca0fd5a1a5e638b3c058c3186057f5b498c457580042bc0bd3062",
+      "screening-summary.md": "f8bc97c01f95c6dadd6e5380d502b7b8ad99627db6ef0fff88f110520fe2259a",
+      "independent-audit-complete36.json": "3ef2ea56e93bf6ae17c14fc6d97774d1b0ef9e35fe2c3b23b5a6bc3e00153216"
+    }
+  },
+  "audit_gates": {
+    "planned_rows": 36,
+    "planned_positives": 28,
+    "planned_controls": 8,
+    "all36_settled": true,
+    "audit_consistent": true,
+    "audit_errors": [],
+    "all36_experimental_success": false,
+    "interpretation": "The full 36-row inventory and independent audit are complete and consistent. The cohort did not have universal experimental success: 35 rows completed and original row 11 remains an engineering failure."
+  },
+  "descriptive_online_terminal_union": {
+    "tp": 25,
+    "fp": 1,
+    "fn": 3,
+    "singleton_correct": 25,
+    "singleton_denominator": 28,
+    "prediction_clean_controls": 7,
+    "controls_denominator": 8,
+    "precision": 0.9615384615384616,
+    "recall": 0.8928571428571429,
+    "interpretation": "Descriptive terminal-prediction metrics across all 36 rows, including invalid profiles. Online hits do not constitute paper-level acceptance or strict accuracy."
+  },
+  "qualified_conditional_metrics": {
+    "valid_runs": 28,
+    "valid_positives": 21,
+    "valid_controls": 7,
+    "tp": 19,
+    "fp": 1,
+    "fn": 2,
+    "precision": 0.95,
+    "recall": 0.9047619047619048,
+    "false_positive_cases": [
+      {
+        "name": "fdm-1021-e4t1p2-control-after",
+        "predicted": [
+          10
+        ]
+      }
+    ],
+    "qualified_miss_cases": [
+      {
+        "name": "fdm-1021-e8t1p1-low-n1",
+        "target_rank": 9
+      },
+      {
+        "name": "fdm-1021-e4t1p2-high-n0-stage1",
+        "target_rank": 5
+      }
+    ]
+  },
+  "fixed_denominator_metrics": {
+    "tp": 19,
+    "fp": 1,
+    "fn": 9,
+    "precision": 0.95,
+    "recall": 0.6785714285714286,
+    "exact_rate": 0.6785714285714286,
+    "clean_controls": 3,
+    "planned_controls": 8
+  },
+  "full_acceptance": {
+    "valid_runs": 28,
+    "valid_positives": 21,
+    "exact_correct": 19,
+    "exact_denominator": 28,
+    "clean_controls": 3,
+    "controls_denominator": 8,
+    "unqualified_profiles": 7,
+    "unknown_qualification_profiles": 0,
+    "profile_validation_missing_rows": 0
+  },
+  "per_topology": {
+    "EP4/TP1/PP2": {
+      "planned_runs": 10,
+      "planned_positives": 8,
+      "planned_controls": 2,
+      "online_descriptive": {
+        "tp": 7,
+        "fp": 1,
+        "fn": 1,
+        "singleton_correct": 7,
+        "singleton_denominator": 8,
+        "prediction_clean_controls": 1,
+        "controls_denominator": 2
+      },
+      "full_acceptance": {
+        "valid_runs": 10,
+        "valid_positives": 8,
+        "tp": 7,
+        "fp": 1,
+        "fn": 1,
+        "precision": 0.875,
+        "recall": 0.875,
+        "exact_correct": 7,
+        "exact_denominator": 8,
+        "clean_controls": 0,
+        "controls_denominator": 2,
+        "unqualified_profiles": 0
+      }
+    },
+    "EP4/TP2/PP1": {
+      "planned_runs": 8,
+      "planned_positives": 6,
+      "planned_controls": 2,
+      "online_descriptive": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 1,
+        "singleton_correct": 5,
+        "singleton_denominator": 6,
+        "prediction_clean_controls": 2,
+        "controls_denominator": 2
+      },
+      "full_acceptance": {
+        "valid_runs": 5,
+        "valid_positives": 4,
+        "tp": 4,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "exact_correct": 4,
+        "exact_denominator": 6,
+        "clean_controls": 0,
+        "controls_denominator": 2,
+        "unqualified_profiles": 2
+      }
+    },
+    "EP4/TP2/PP2": {
+      "planned_runs": 10,
+      "planned_positives": 8,
+      "planned_controls": 2,
+      "online_descriptive": {
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "singleton_correct": 8,
+        "singleton_denominator": 8,
+        "prediction_clean_controls": 2,
+        "controls_denominator": 2
+      },
+      "full_acceptance": {
+        "valid_runs": 10,
+        "valid_positives": 8,
+        "tp": 8,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "exact_correct": 8,
+        "exact_denominator": 8,
+        "clean_controls": 1,
+        "controls_denominator": 2,
+        "unqualified_profiles": 0
+      }
+    },
+    "EP8/TP1/PP1": {
+      "planned_runs": 8,
+      "planned_positives": 6,
+      "planned_controls": 2,
+      "online_descriptive": {
+        "tp": 5,
+        "fp": 0,
+        "fn": 1,
+        "singleton_correct": 5,
+        "singleton_denominator": 6,
+        "prediction_clean_controls": 2,
+        "controls_denominator": 2
+      },
+      "full_acceptance": {
+        "valid_runs": 3,
+        "valid_positives": 1,
+        "tp": 0,
+        "fp": 0,
+        "fn": 1,
+        "precision": null,
+        "recall": 0.0,
+        "exact_correct": 0,
+        "exact_denominator": 6,
+        "clean_controls": 2,
+        "controls_denominator": 2,
+        "unqualified_profiles": 5
+      }
+    }
+  },
+  "iterations_and_elapsed": {
+    "training_rank_iterations_completed": 200816,
+    "failed_attempt_partial_rank_iterations": 720,
+    "accepted_numerical_rank_steps_on_completed_attempts": 1120,
+    "suite_elapsed": {
+      "session_start_epoch": 1792591527.173667,
+      "session_error": null,
+      "latest_ended_epoch": 1792596404.203852,
+      "latest_ended_run": "fdm-1021-e4t2p2-control-after",
+      "elapsed_seconds": 4877.030184984207
+    }
+  },
+  "comparisons": {
+    "all_36_screening_prediction_unions_match_score": true,
+    "overall_qualified_metrics_match_score_and_audit": true,
+    "fixed_denominator_metrics_match_audit": true,
+    "qualified_misses_match_score_fn": true,
+    "per_topology_full_acceptance_rows_match_score": true,
+    "markdown_displays_conditional_and_fixed_recall_separately": true
+  },
+  "artifact_protection": {
+    "no_remote_or_gpu_actions": true,
+    "closed_45m_snapshot_modified": false,
+    "original_27_snapshot_review_modified": false,
+    "experiment_or_workload_source_modified": false,
+    "summary_renderer_modified_as_requested": true
+  },
+  "footer_binding_update": {
+    "time": 1792596778.896176,
+    "by": "root",
+    "reason": "Luna appended links to the final complete36 review and audit; renderer and Markdown only changed. Metrics/accuracy/audit JSON unchanged. Original review preserved.",
+    "hash_updates": {
+      "screening_summary.py": {
+        "previous": "20d4faee96ede18f60c75996ca358514d5dd99fd469a00f930a6b2c96f85bcbc",
+        "current": "f6e95fe13d09fb52ceac2b14708cea4df4d5bce4c4c339a1077c446a6bb1c168"
+      },
+      "screening-summary.md": {
+        "previous": "e65a6566e8f90957856574e154acca2d928f516f2270b78e7ed73552227d81ba",
+        "current": "f8bc97c01f95c6dadd6e5380d502b7b8ad99627db6ef0fff88f110520fe2259a"
+      }
+    }
+  }
+}

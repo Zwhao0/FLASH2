@@ -1,0 +1,12 @@
+[
+  {
+    "host": "10.10.4.1",
+    "container_id": "7604b422add9479d1a4db7b77d79dc2e23a53bd0730570486c600f7ba9747f66",
+    "output": "7604b422add9479d1a4db7b77d79dc2e23a53bd0730570486c600f7ba9747f66\n"
+  },
+  {
+    "host": "10.10.4.2",
+    "container_id": "e93bb55789a759f874b988086a7d431ce5712edbea3634a5f9ef7de9cfa3f6a9",
+    "output": "e93bb55789a759f874b988086a7d431ce5712edbea3634a5f9ef7de9cfa3f6a9\n"
+  }
+]

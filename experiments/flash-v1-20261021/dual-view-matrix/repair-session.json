@@ -1,0 +1,56 @@
+{
+  "original_started": 1792591527.173667,
+  "absolute_deadline": 1792594227.173667,
+  "repair_started": 1792593070.5050461,
+  "failed_run_retained": "fdm-1021-e4t2p1-high-n1",
+  "completed_prefix": [
+    "fdm-1021-e8t1p1-control-before",
+    "fdm-1021-e8t1p1-low-n0",
+    "fdm-1021-e8t1p1-high-n1",
+    "fdm-1021-e8t1p1-medium-n0",
+    "fdm-1021-e8t1p1-low-n1",
+    "fdm-1021-e8t1p1-high-n0",
+    "fdm-1021-e8t1p1-medium-n1",
+    "fdm-1021-e8t1p1-control-after",
+    "fdm-1021-e4t2p1-control-before",
+    "fdm-1021-e4t2p1-low-n0"
+  ],
+  "remaining_names": [
+    "fdm-1021-e4t2p1-medium-n0",
+    "fdm-1021-e4t2p1-low-n1",
+    "fdm-1021-e4t2p1-high-n0",
+    "fdm-1021-e4t2p1-medium-n1",
+    "fdm-1021-e4t2p1-control-after",
+    "fdm-1021-e4t1p2-control-before",
+    "fdm-1021-e4t1p2-low-n0",
+    "fdm-1021-e4t1p2-high-n1",
+    "fdm-1021-e4t1p2-medium-n0",
+    "fdm-1021-e4t1p2-low-n1",
+    "fdm-1021-e4t1p2-high-n0",
+    "fdm-1021-e4t1p2-medium-n1",
+    "fdm-1021-e4t1p2-high-n0-stage1",
+    "fdm-1021-e4t1p2-high-n1-stage1",
+    "fdm-1021-e4t1p2-control-after",
+    "fdm-1021-e4t2p2-control-before",
+    "fdm-1021-e4t2p2-low-n0",
+    "fdm-1021-e4t2p2-high-n1",
+    "fdm-1021-e4t2p2-medium-n0",
+    "fdm-1021-e4t2p2-low-n1",
+    "fdm-1021-e4t2p2-high-n0",
+    "fdm-1021-e4t2p2-medium-n1",
+    "fdm-1021-e4t2p2-high-n0-stage1",
+    "fdm-1021-e4t2p2-high-n1-stage1",
+    "fdm-1021-e4t2p2-control-after"
+  ],
+  "changes": {
+    "container_cpus": 16,
+    "engineering_timeout_seconds": 180,
+    "parallel_postrun": [
+      "dump_probe",
+      "compress_raw",
+      "download"
+    ]
+  },
+  "invariant": "Original36 planned denominator; row11 failed and never retried; unchanged workload/fault/25s phase/core/rules",
+  "harness_sha256": "31f887b5fe580cb9b776d74d17c37c73254307abb46e8a5f3b55f9238fcc09e9"
+}

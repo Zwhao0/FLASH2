@@ -1,3 +1,20 @@
+# FLASH v1.1 — 独立 ETP 双视图实测版
+
+基于正式 `v1`（`daf2ac047e67cab4b8fd85f67f68c1babdfe8fb9`）。`flash/`、`probe/`、原 `workload/`、`scripts/`、`tests/` 的58个源码/测试文件保持逐字节一致。新增双视图训练负载与36项固定测试资料；没有将后续定位改进工作树合入本版。
+
+- [版本说明与复核方法](docs/releases/v1.1.md)
+- [已实测双视图负载](experiments/flash-v1-20261021/dual-view-matrix/workload_dual_view.py)
+- [36项完整报告](experiments/flash-v1-20261021/dual-view-matrix/screening-summary.md)
+- [独立复核](experiments/flash-v1-20261021/dual-view-matrix/independent-audit-complete36.json)
+
+Git中保存已实测代码、协议、36项attempt及报告。完整raw、逐rank资格验证、日志和包级SHA256清单保留在本地桌面`FLASHv1`资料包；这些大体积证据不包含在本分支，故克隆仓库后不能直接重跑全raw离线验收。
+
+限定结果：36项计划，35项工程完成、1项失败，28项通过完整资格验收；合格子集 TP/FP/FN=19/1/2，精确率95.00%、召回率90.48%；全部28个计划正例的保守召回19/28=67.86%。故障为rank本地host计算到达延迟代理，不是GPU降频；未据此声称达到论文硬件故障定位水平。
+
+以下保留v1使用文档；其默认训练入口仍是原负载。双视图入口见版本说明。
+
+---
+
 # FLASH 第三章小规模复现
 
 当前版本：**v1 — 第一版本 FLASH 复现**。冻结范围及结果见[版本说明](docs/releases/v1.md)。

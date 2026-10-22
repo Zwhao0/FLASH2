@@ -1,0 +1,9 @@
+{
+  "name": "fdm-1021-e4t2p1-high-n1",
+  "started": 1792592435.211123,
+  "status": "engineering_failure",
+  "kind": "attempt",
+  "exit_code": 124,
+  "error": "AssertionError('Launcher engineering failure')",
+  "ended": 1792592576.181699
+}

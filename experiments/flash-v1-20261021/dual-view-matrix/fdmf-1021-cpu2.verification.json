@@ -1,0 +1,15 @@
+{
+  "name": "fdmf-1021-cpu2",
+  "started": 1792591544.198137,
+  "status": "completed",
+  "kind": "verification",
+  "exit_code": 0,
+  "accepted": true,
+  "negative": false,
+  "world": 2,
+  "ep": 1,
+  "tp": 2,
+  "pp": 1,
+  "stderr": "",
+  "ended": 1792591553.619877
+}

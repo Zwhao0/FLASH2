@@ -1,0 +1,9 @@
+{
+  "workload_dual_view.py": "d2c38bd4f2e91cac9a974debe6abc863d1400a8fa34a84cf33b505c039d219e0",
+  "workload_wrong_adjoint.py": "2a6e451cac2c52eb5fce77494a39017e2ee054b0209cfda594f1ee25c9716c0b",
+  "protocol.json": "b56d312ca3cbbadd38ca7e3f02b12320c8fbeff867ff036d35eafb9c63928daf",
+  "preexecution-verification-amendment.json": "299c1b3c1160f0af2040026cbe1c2d69a26c93d5067905bafac17383741d12cc",
+  "fast36-amendment.json": "b5a9da67d02bfd3bb08dc87308bd9f80716d3aeb3f53bb609ec0bc698bec0ac0",
+  "warm_launcher.py": "aa1d6e8574fd9198e4225891b20e2ad33f933b3a35fb9c0c49bed25ce5a871c3",
+  "execute.py": "5ce14e1a32e76015b470897ca1c226470034cd674284014b19ca8acae9fa9aff"
+}

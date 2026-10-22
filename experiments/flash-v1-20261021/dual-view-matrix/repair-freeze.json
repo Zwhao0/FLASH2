@@ -1,0 +1,11 @@
+{
+  "frozen_at": 1792593004.364588,
+  "files": {
+    "repair_continue.py": "31f887b5fe580cb9b776d74d17c37c73254307abb46e8a5f3b55f9238fcc09e9",
+    "repair-assessment.json": "1cccb05c15a377d7e6011b2759f19a6fe46193c58808252b1f83fa92de6e195f",
+    "schedule-allowance-amendment.json": "2a7834799930df2cabb2624dc84e50c81afdea1f14dad41d5d4a5dab260f27eb"
+  },
+  "source_identity": "All seven original frozen-source files unchanged",
+  "statistical_scope": "Original36 attempts: first10 completed, row11 failed retained,25 unstarted; no rerun or substitute; all cases stay denominator",
+  "resource_cohorts": "First11 CPU8/120s bound; remaining CPU16/180s bound with parallel independent exports. Tables must disclose allocation change; not causal accuracy improvement comparison."
+}

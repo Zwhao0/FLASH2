@@ -1,0 +1,86 @@
+{
+  "status": "bounded_engineering_repair_ready_not_executed",
+  "failed_row": "fdm-1021-e4t2p1-high-n1",
+  "evidence": {
+    "exit_codes": [
+      124,
+      124
+    ],
+    "rank_iteration_counts": [
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45,
+      45
+    ],
+    "numerical_passes": 32,
+    "rank0_steps3_44_ms": {
+      "min": 2395.3124639810994,
+      "median": 2597.9933834751137,
+      "max": 2598.5323819331825
+    },
+    "raw_records": 94256,
+    "raw_flags": "all1(mode0/noCUDAmeasurement)",
+    "raw_api_results": "all0(enqueue success does not prove device completion)",
+    "snapshot_lost": 0,
+    "fault_events": [
+      {
+        "event": "fault_injected",
+        "step": 45,
+        "wall_time": 1792592558.2754645,
+        "fault_kind": "compute",
+        "injection_type": "cpu_pre_expert_compute_enqueue_delay",
+        "requested_ms": 200.0
+      }
+    ],
+    "gpu_utilization": {
+      "min": 0.0,
+      "median": 100.0,
+      "max": 100.0
+    },
+    "sm_clock_mhz": [
+      1980.0
+    ]
+  },
+  "cause_assessment": "Unresolved. Natural pre-injection slowdown begins at step3, well before target9 compute delay at step45. GPU100percent may include NCCL busy-wait. Host API enqueue records and GPU telemetry cannot distinguish CPU quota/scheduling, NCCL/device synchronization or other runtime causes. No CPU cgroup throttling counters, per-thread CPU samples or CUDA timing were recorded; do not assert CPUquota or hardware downclock as established cause.",
+  "repair_plan": {
+    "sole_failed_row_preserved": true,
+    "completed_prefix": 10,
+    "unstarted_suffix": 25,
+    "original_total_denominator": 36,
+    "positive_denominator": 28,
+    "control_denominator": 8,
+    "absolute_deadline": "original session.started+2700, never reset",
+    "resources": "Owned containers cpus8->16; launcher/controller engineering timeout120->180; independent postrun dump/compress/download parallelized across two hosts",
+    "unchanged": "FLASH/probe/workload,25s phase,zero padding,all36 names/order/targets/fixed14/100/200ms delays/profile and decision thresholds; no forced profiling",
+    "smoke": "Exactly one nonstatistical EP4 denseTP2 PP1 ETP1 nofault qualification,phase1 afterstep45;32numerical passes,16wallstop/actualn agreement,16warmguards+2workerledgers,wholecase<=180s; failure means cleanup without suffix; real measurement LD_PRELOAD forced and repair-smoke-launch-options.json retained",
+    "host_resources": "Existing root observation:192CPU each,load1 approximately1.08/1.56; permits bounded16CPU resource allowance, not causal proof",
+    "supervision_limit": "190s new-run reserve does not hard-bound SSH/fetch/reset; root outer supervisor must enforce original started+2700 absolute45min and cleanup, no extension"
+  },
+  "harness": {
+    "path": "repair_continue.py",
+    "sha256": "31f887b5fe580cb9b776d74d17c37c73254307abb46e8a5f3b55f9238fcc09e9",
+    "checks": [
+      "AST compile",
+      "all frozen runner transformation anchors checked in memory",
+      "generated runner compile without execution"
+    ],
+    "review_required_before_execution": true
+  },
+  "remote_operations": false,
+  "modified_files": [
+    "repair_continue.py",
+    "repair-assessment.json"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "fdmf-1021-wrong-adjoint",
+  "started": 1792591592.676759,
+  "status": "completed",
+  "kind": "verification",
+  "exit_code": 1,
+  "accepted": true,
+  "negative": true,
+  "world": 4,
+  "ep": 2,
+  "tp": 2,
+  "pp": 1,
+  "stderr": "",
+  "ended": 1792591607.588373
+}

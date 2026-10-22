@@ -1,0 +1,166 @@
+{
+  "time": 1792596434.092899,
+  "historical_seals": {
+    "original-final-seal.json": {
+      "files": 1023,
+      "unchanged": true,
+      "bad": []
+    },
+    "supplement/final-seal.json": {
+      "files": 208,
+      "unchanged": true,
+      "bad": []
+    },
+    "partial-45m-seal.json": {
+      "files": 2085,
+      "unchanged": true,
+      "bad": []
+    }
+  },
+  "remote": {
+    "10.10.4.1": {
+      "frozen_source_and_binary_unchanged": true,
+      "container_id": "7604b422add9479d1a4db7b77d79dc2e23a53bd0730570486c600f7ba9747f66",
+      "running": false,
+      "shared_identity_equal": true
+    },
+    "10.10.4.2": {
+      "frozen_source_and_binary_unchanged": true,
+      "container_id": "e93bb55789a759f874b988086a7d431ce5712edbea3634a5f9ef7de9cfa3f6a9",
+      "running": false,
+      "shared_identity_equal": true
+    }
+  },
+  "resources": {
+    "10.10.4.1": {
+      "stop_exit": 0,
+      "container_id": "7604b422add9479d1a4db7b77d79dc2e23a53bd0730570486c600f7ba9747f66",
+      "expected_container_id": "7604b422add9479d1a4db7b77d79dc2e23a53bd0730570486c600f7ba9747f66",
+      "running": false,
+      "shared_identity_equal": true,
+      "after": [
+        {
+          "gpu": "GPU-514342e8-d7fc-3a89-91fe-50c5289967ca",
+          "pid": 3417395,
+          "starttime": "51730879",
+          "cmdline": "VLLM::Worker_PP0_TP0_EP0                                                                                                               ",
+          "memory": "78612 MiB"
+        },
+        {
+          "gpu": "GPU-a1e51276-ec8f-0f55-687c-a27c8ac3a14b",
+          "pid": 3417396,
+          "starttime": "51730882",
+          "cmdline": "VLLM::Worker_PP0_TP1_EP1                                                                                                               ",
+          "memory": "78612 MiB"
+        },
+        {
+          "gpu": "GPU-6d230dde-62b7-e3bf-8673-903fae938ead",
+          "pid": 3417397,
+          "starttime": "51730885",
+          "cmdline": "VLLM::Worker_PP0_TP2_EP2                                                                                                               ",
+          "memory": "78780 MiB"
+        },
+        {
+          "gpu": "GPU-b66ba04d-1c64-bea1-e881-2182804607f3",
+          "pid": 3417398,
+          "starttime": "51730888",
+          "cmdline": "VLLM::Worker_PP0_TP3_EP3                                                                                                               ",
+          "memory": "78780 MiB"
+        },
+        {
+          "gpu": "GPU-e457c3f5-32d8-1444-7af0-24f7db939712",
+          "pid": 3417399,
+          "starttime": "51730891",
+          "cmdline": "VLLM::Worker_PP0_TP4_EP4                                                                                                               ",
+          "memory": "78780 MiB"
+        },
+        {
+          "gpu": "GPU-3d359ec0-4de6-9360-8faf-eb1d70685d4b",
+          "pid": 3417400,
+          "starttime": "51730893",
+          "cmdline": "VLLM::Worker_PP0_TP5_EP5                                                                                                               ",
+          "memory": "78780 MiB"
+        },
+        {
+          "gpu": "GPU-054b90ab-93bd-a0ab-15e1-1e54202ede83",
+          "pid": 3417401,
+          "starttime": "51730896",
+          "cmdline": "VLLM::Worker_PP0_TP6_EP6                                                                                                               ",
+          "memory": "78612 MiB"
+        },
+        {
+          "gpu": "GPU-9b8794c0-638b-8da7-f071-5b11f3b54cb0",
+          "pid": 3417402,
+          "starttime": "51730899",
+          "cmdline": "VLLM::Worker_PP0_TP7_EP7                                                                                                               ",
+          "memory": "78612 MiB"
+        }
+      ]
+    },
+    "10.10.4.2": {
+      "stop_exit": 0,
+      "container_id": "e93bb55789a759f874b988086a7d431ce5712edbea3634a5f9ef7de9cfa3f6a9",
+      "expected_container_id": "e93bb55789a759f874b988086a7d431ce5712edbea3634a5f9ef7de9cfa3f6a9",
+      "running": false,
+      "shared_identity_equal": true,
+      "after": [
+        {
+          "gpu": "GPU-a17d04f4-3674-c1bc-c3f8-2189ea56fcb1",
+          "pid": 1128247,
+          "starttime": "134924841",
+          "cmdline": "VLLM::Worker_PP1_TP0_EP0                                                                                                              ",
+          "memory": "75870 MiB"
+        },
+        {
+          "gpu": "GPU-53793bfd-0c74-13bd-2209-3afc070c2f10",
+          "pid": 1128248,
+          "starttime": "134924844",
+          "cmdline": "VLLM::Worker_PP1_TP1_EP1                                                                                                              ",
+          "memory": "75870 MiB"
+        },
+        {
+          "gpu": "GPU-60b56423-d365-0851-1913-e07785e8b16a",
+          "pid": 1128249,
+          "starttime": "134924847",
+          "cmdline": "VLLM::Worker_PP1_TP2_EP2                                                                                                              ",
+          "memory": "76038 MiB"
+        },
+        {
+          "gpu": "GPU-02d3ce23-a079-d334-eb97-62fe0c9ab3b8",
+          "pid": 1128250,
+          "starttime": "134924849",
+          "cmdline": "VLLM::Worker_PP1_TP3_EP3                                                                                                              ",
+          "memory": "76038 MiB"
+        },
+        {
+          "gpu": "GPU-3e60a8e7-2982-6d8a-b34f-5e76ae173f45",
+          "pid": 1128251,
+          "starttime": "134924852",
+          "cmdline": "VLLM::Worker_PP1_TP4_EP4                                                                                                              ",
+          "memory": "76038 MiB"
+        },
+        {
+          "gpu": "GPU-ed8170d0-b2c3-5c0b-714e-1befa83e432d",
+          "pid": 1128252,
+          "starttime": "134924855",
+          "cmdline": "VLLM::Worker_PP1_TP5_EP5                                                                                                               ",
+          "memory": "76038 MiB"
+        },
+        {
+          "gpu": "GPU-6e7c62c2-354f-2cc7-da1d-a18f5b07de64",
+          "pid": 1128253,
+          "starttime": "134924857",
+          "cmdline": "VLLM::Worker_PP1_TP6_EP6                                                                                                               ",
+          "memory": "75870 MiB"
+        },
+        {
+          "gpu": "GPU-6a51ce14-d531-d5fe-8fea-db29230410e5",
+          "pid": 1128254,
+          "starttime": "134924860",
+          "cmdline": "VLLM::Worker_PP1_TP7_EP7                                                                                                               ",
+          "memory": "75870 MiB"
+        }
+      ]
+    }
+  }
+}
